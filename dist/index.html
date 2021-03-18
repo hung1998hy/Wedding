@@ -11,893 +11,673 @@
     <!-- Font Awesome CSS-->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
     <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;family=Dancing+Script:wght@400;500;600;700&amp;family=Hind:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;family=Dancing+Script:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
     <!-- Owl Carousel CSS-->
     <link href="css/owl.carousel.min.css" rel="stylesheet">
     <link href="css/owl.theme.default.min.css" rel="stylesheet">
     <!-- Fancybox-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <!-- Flaticon CSS-->
+    <link rel="stylesheet" href="http://wedco.themetechmount.net/wp-content/themes/wedco/assets/themetechmount-wedco-extra-icons/font/flaticon.css?ver=5.5.3">
+    <!-- Wow JS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- Main CSS-->
     <link href="./css/main.css" rel="stylesheet">
   </head>
   <body>
     <div class="wrapper">
       <div class="header">
-        <div class="container">
-          <div class="header__box">
-            <div class="header__top">
-              <div class="header__top-left">
-                <div class="header__logo"><a class="header__logo-link" href="index.html" title="title"><img class="img-fluid" src="images/layout/kyna_logo.png" alt="logo"></a></div>
-                <div class="header__search">
-                  <form action="" method="get" id="search-form">
-                    <div class="input-group">
-                      <label for="live-search-bar">Tìm kiếm</label>
-                      <input class="form-control live-search-bar" type="text" placeholder="Nhập tên khóa học/giảng viên" id="live-search-bar">
-                      <button class="search-btn" type="submit" aria-label><i class="fal fa-search"></i></button>
+        <div class="header__top">
+          <div class="header__top-nav">
+            <div class="nav__site">
+              <div class="container">
+                <div class="flex d-flex justify-content-between align-items-center"> 
+                  <div class="nav__site-logo"><a class="logo__link d-flex align-items-center" href=""><img class="logo__link-img white__logo" src="images/layout/logo.png" alt=""><img class="logo__link-img dark__logo" src="images/layout/logo-dark.png" alt=""></a></div>
+                  <div class="nav__site-menu d-flex justify-content-between align-items-center"> 
+                    <div class="menu__pc"> 
+                      <ul class="menu__pc-list">
+                        <li class="list__item"><a class="list__item-link" href="index.html">Home</a>
+                          <ul class="sub__menu"></ul>
+                        </li>
+                        <li class="list__item"><a class="list__item-link" href="about.html">About</a>
+                          <ul class="sub__menu"></ul>
+                        </li>
+                        <li class="list__item"><a class="list__item-link" href="portfolio.html">Portfolio</a>
+                          <ul class="sub__menu"></ul>
+                        </li>
+                        <li class="list__item"><a class="list__item-link" href="blog.html">Block</a>
+                          <ul class="sub__menu"></ul>
+                        </li>
+                        <li class="list__item"><a class="list__item-link" href="contact.html">Contact Us</a>
+                          <ul class="sub__menu"></ul>
+                        </li>
+                      </ul>
                     </div>
-                  </form>
-                </div>
-              </div>
-              <div class="header__top-direction">
-                <div class="header__item"><a class="header__item-link" href="#"><i class="fal fa-unlock-alt"></i>Học miễn phí</a></div>
-                <div class="header__item">
-                  <div class="header__item-cart"><a class="dropdown-toggle cart_anchor" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="far fa-shopping-cart"></i><span class="count-number d-none">0 </span></a>
-                    <ul class="dropdown-menu">
-                      <div class="hidden" id="items-id-in-current-cart" style="display: none" data-all-cart-items=""></div>
-                      <li class="cart-rgister">
-                        <ul class="list">
-                          <li class="list__item">
-                            <div class="col-12"><a class="list__item-link" href="#">
-                                 Khóa học HTMl, CSS, JS cơ bản<br><span class="price"> 490.000 ₫</span></a></div>
-                          </li>
-                          <li class="list__item">
-                            <div class="col-12">
-                              <div class="view"><a class="view__link"><i class="fas fa-angle-double-right"></i>Xem Giỏ Hàng</a>
-                                <p class="view__sum">Tổng cộng: 198000 ₫   </p>
-                              </div>
-                              <div class="btn__click">
-                                <button class="btn__click-pay">Thanh Toán                      </button>
+                    <div class="menu__icon">
+                      <div class="menu__icon-search"><a class="search__click" href="#"><i class="fas fa-search"></i></a>
+                        <div class="search__overlay">
+                          <form action="" method="">
+                            <div class="search__overlay-form">
+                              <div class="form__row">
+                                <div class="form__row-input">
+                                  <input class="input__field" type="text" placeholder="Type Word Then Enter..">
+                                  <button type="submit"><span class="input__icon"><i class="fas fa-search"></i></span></button>
+                                </div>
                               </div>
                             </div>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
+                          </form>
+                        </div>
+                      </div>
+                    </div><a class="menu__toggle"><i class="fal fa-bars"></i></a>
+                    <div class="menu__mobile">
+                      <ul class="menu__mobile-list">
+                        <li class="list__item"><a class="list__item-link" href="index.html">Home</a>
+                          <ul class="sub__menu"></ul>
+                        </li>
+                        <li class="list__item"><a class="list__item-link" href="about.html">About</a>
+                          <ul class="sub__menu"></ul>
+                        </li>
+                        <li class="list__item"><a class="list__item-link" href="portfolio.html">Portfolio</a>
+                          <ul class="sub__menu"></ul>
+                        </li>
+                        <li class="list__item"><a class="list__item-link" href="blog.html">Block</a>
+                          <ul class="sub__menu"></ul>
+                        </li>
+                        <li class="list__item"><a class="list__item-link" href="contact.html">Contact Us</a>
+                          <ul class="sub__menu"></ul>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
-                <div class="header__item">
-                  <div class="header__item-login">Đăng nhập<span class="logo-login"><a href="#" title="title"><i class="fab fa-facebook"></i></a><a href="#" title="title"><i class="fab fa-google"></i></a><a href="#" title="title"><i class="fab fa-instagram"></i></a></span></div>
                 </div>
               </div>
             </div>
-            <div class="header__menu">
-              <ul class="header__menu-list">
-                <li class="header__menu-item"><a class="header__menu-link" href="index.html">Giới thiệu</a></li>
-                <li class="header__menu-item"><a class="header__menu-link" href="courses.html">Khóa học</a></li>
-                <li class="header__menu-item"><a class="header__menu-link" href="jobs.html">Việc làm</a></li>
-                <li class="header__menu-item"><a class="header__menu-link" href="posts.html">Bí quyết</a></li>
-              </ul>
+          </div>
+        </div>
+      </div>
+      <div class="banner">
+        <div class="banner__img owl-carousel owl-theme">
+          <div class="banner__img-box"><img src="images/layout/slider-main-img05.jpg" alt="">
+            <div class="box__content">
+              <p class="box__content-turn">Planning</p>
+              <h2 class="box__content-heading">Wedding Management</h2>
+              <p class="box__content-text">We’ve delivered fabulous wedding event experiences over the last two<br>  decades and are now out a whole new growth story.</p>
+              <div class="box__content-bot">
+                <div class="bot__line"></div><a class="bot__btn" href="#">Contant Us</a>
+              </div>
+            </div>
+          </div>
+          <div class="banner__img-box"><img src="images/layout/slider-main-img06.jpg" alt="">
+            <div class="box__content">
+              <p class="box__content-turn ps">Wedco</p>
+              <h2 class="box__content-heading">Wedding Planning Services </h2>
+              <p class="box__content-text">We’ve delivered fabulous wedding event experiences over the last two <br>  decades and are now out a whole new growth story.</p>
+              <div class="box__content-bot">
+                <div class="bot__line"></div><a class="bot__btn" href="#">We Can Help</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="header__mobile">
-        <div class="header__mobile-wrap">
-          <div class="header__mobile-btn"><i class="fal fa-bars"></i></div>
-          <div class="header__mobile-logo"><a href="index.html"><img class="img-fluid" src="images/layout/kyna_logo.png" alt="logo"></a></div>
-          <div class="header__mobile-cart">
-            <div class="header__mobile-cartSearch"><i class="fal fa-search"></i></div>
-            <div class="header__item-cart"><a href="#"><i class="far fa-shopping-cart"></i><span class="count-number d-none">0 </span></a>
-              <ul class="dropdown-menu">
-                <div class="hidden" id="items-id-in-current-cart" style="display: none" data-all-cart-items=""></div>
-                <li class="cart-rgister">
-                  <ul class="list">
-                    <li class="list__item">
-                      <div class="col-12"><a class="list__item-link" href="#">
-                           Khóa học HTMl, CSS, JS cơ bản<br><span class="price"> 490.000 ₫</span></a></div>
-                    </li>
-                    <li class="list__item">
-                      <div class="col-12">
-                        <div class="view"><a class="view__link"><i class="fas fa-angle-double-right"></i>Xem Giỏ Hàng</a>
-                          <p class="view__sum">Tổng cộng: 198000 ₫   </p>
-                        </div>
-                        <div class="btn__click">
-                          <button class="btn__click-pay">Thanh Toán  </button>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="header__mobile-bottom"><a class="header__item-link" href="#"><i class="fal fa-unlock-alt"></i>Học miễn phí</a><a class="header__item-link" href="#">Đăng nhập</a></div>
-        <div class="header__mobile-search">
-          <form class="search-form" action="" method="get">
-            <div class="input-group">
-              <input type="text" placeholder="Nhập tên khóa học/giảng viên">
-            </div>
-          </form>
-        </div>
-        <div class="header__mobile-menu">
-          <div class="btn-close"><i class="fal fa-times"></i></div>
-          <div class="header__mobile-inner"><a class="login" href="#">Đăng nhập</a>
-            <ul class="header__mobile-list">
-              <li class="header__list-item"><a class="header__list-link" href="index.html"><img src="images/home/menu-icon-1.png" alt=""><span class="name">Giới thiệu</span></a></li>
-              <li class="header__list-item"><a class="header__list-link" href="courses.html"><img src="images/home/menu-icon-1.png" alt=""><span class="name">Khóa học</span>
-                  <div class="child-icon"><i class="fas fa-caret-right"></i></div></a>
-                <div class="header__mobile-category">
-                  <div class="go-back"><i class="fal fa-chevron-left"></i>Trở về</div>
-                  <ul class="header__mobile-list">
-                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>HTML, CSS</span></a></li>
-                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>JS</span></a></li>
-                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>ReactJS</span></a></li>
-                  </ul>
-                </div>
-              </li>
-              <li class="header__list-item"><a class="header__list-link" href="jobs.html"><img src="images/home/menu-icon-1.png" alt=""><span class="name">Việc làm</span>
-                  <div class="child-icon"><i class="fas fa-caret-right"></i></div></a>
-                <div class="header__mobile-category">
-                  <div class="go-back"><i class="fal fa-chevron-left"></i>Trở về</div>
-                  <ul class="header__mobile-list">
-                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>HTML, CSS</span></a></li>
-                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>JS</span></a></li>
-                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>ReactJS</span></a></li>
-                  </ul>
-                </div>
-              </li>
-              <li class="header__list-item"><a class="header__list-link" href="post.html"><img src="images/home/menu-icon-1.png" alt=""><span class="name">Bí quyết</span>
-                  <div class="child-icon"><i class="fas fa-caret-right"></i></div></a>
-                <div class="header__mobile-category">
-                  <div class="go-back"><i class="fal fa-chevron-left"></i>Trở về</div>
-                  <ul class="header__mobile-list">
-                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>HTML, CSS</span></a></li>
-                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>JS</span></a></li>
-                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>ReactJS</span></a></li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="slider">
+      <div class="agency">
         <div class="container">
-          <div class="slider__wrap owl-carousel owl-theme"><img src="images/home/slider-1.jpg" alt="slider-img" title="#caption1"><img src="images/home/slider-2.jpg" alt="slider-img" title="#caption2"><img src="images/home/slider-1.jpg" alt="slider-img" title="#caption3"></div>
-        </div>
-      </div>
-      <div class="skillCourse bgcLightGrey px-60">
-        <div class="container">
-          <h2 class="skillCourse__heading title"> Khóa học phát triển sự nghiệp cùng Oncode</h2>
-          <h5 class="skillCourse__paragraph">Thăng tiến vượt bậc với các khóa học phát triển kỹ năng</h5>
-          <div class="skillCourse__tab">
+          <div class="agency__content">
             <div class="row">
-              <div class="col-12">
-                <div class="tab__menu mb-4 text-center">
-                  <ul class="tab__menu-list nav nav-tabs" role="tablist">
-                    <li class="tab__menu-item nav-item"><a class="nav-link tab__menu-link active" href="#html" data-toggle="tab" role="tab">html(11)</a></li>
-                    <li class="tab__menu-item nav-item"><a class="nav-link tab__menu-link" href="#css" data-toggle="tab" role="tab">css(8)</a></li>
-                    <li class="tab__menu-item nav-item"><a class="nav-link tab__menu-link" href="#javascript" data-toggle="tab" role="tab">javascript(7)</a></li>
-                    <li class="tab__menu-item nav-item"><a class="nav-link tab__menu-link" href="#reactjs" data-toggle="tab" role="tab">reactjs(5)</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="skillCourse__tab-content">
-              <div class="skillCourse__tab-pane tab-pane active" id="html" role="tabpanel">
-                <div class="skillCourse__pane-box">
-                        <div class="course__box course__big"><a class="course__big-link" href="#"><img src="images/home/item-1.jpg" alt=""></a>
-                          <div class="course__big-body">
-                            <div class="course__info"><a class="course__info-link" href="#" title="title">
-                                <h5 class="course__info-heading"><span>Xây dựng và phát triển hệ thống đào tạo nội bộ</span></h5>
-                                <div class="course__info-wrap">
-                                  <div class="course__info-avatar"><img src="images/home/avatar-1.jpg" alt=""></div>
-                                  <div class="course__info-title">
-                                    <p class="info-card">Phan Thi Khoa</p><span class="info-card">Thạc sỹ QTKD trường Đại học Columbia Southern University</span>
-                                  </div>
-                                </div></a>
-                              <p class="course__info-pricing"><a href="#" title="title">Học thử </a><span class="course-pricing">490.000
-                                  <u>đ  </u></span></p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="course__box"><a class="course__box-image" href="course-detail.html"><img src="images/courseDetail/mobile.jpg">
-                            <div class="image__rating">
-                              <div class="image__rating-text"><b><i class="fas fa-play-circle"></i><span>26</span></b></div>
-                              <div class="image__rating-number"><i class="fas fa-star"></i><span> <span>5</span>
-                                  <div class="detail">đăng ký học</div></span></div>
-                            </div></a>
-                          <div class="course__box-content"><a class="content__title" href="course-detail.html">Lập trình Website cho di động</a>
-                            <div class="content__name"><i class="fas fa-user-tie"></i><span>Trần Duy Thanh</span></div>
-                            <div class="content__position"><i class="fas fa-briefcase"></i><span>Thạc sỹ Khoa học máy tính</span></div>
-                            <div class="content__price">
-                              <div class="content__price-text"><a class="video__button" href="#"><i class="fas fa-play"></i></a><span>Học Thử</span></div>
-                              <div class="content__price-number">700.000 đ</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="course__box"><a class="course__box-image" href="course-detail.html"><img src="images/courseDetail/mobile.jpg">
-                            <div class="image__rating">
-                              <div class="image__rating-text"><b><i class="fas fa-play-circle"></i><span>5</span></b></div>
-                              <div class="image__rating-number"><i class="fas fa-star"></i><span> <span>5</span>
-                                  <div class="detail">đăng ký học</div></span></div>
-                            </div></a>
-                          <div class="course__box-content"><a class="content__title" href="course-detail.html">Lập trình Website cho di động</a>
-                            <div class="content__name"><i class="fas fa-user-tie"></i><span>Trần Duy Thanh</span></div>
-                            <div class="content__position"><i class="fas fa-briefcase"></i><span>Thạc sỹ Khoa học máy tính</span></div>
-                            <div class="content__price">
-                              <div class="content__price-text"><a class="video__button" href="#"><i class="fas fa-play"></i></a><span>Học Thử</span></div>
-                              <div class="content__price-number">198.000 đ</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="course__box"><a class="course__box-image" href="course-detail.html"><img src="images/courseDetail/android.jpg">
-                            <div class="image__rating">
-                              <div class="image__rating-text"><b><i class="fas fa-play-circle"></i><span>5</span></b></div>
-                              <div class="image__rating-number"><i class="fas fa-star"></i><span> <span>5</span>
-                                  <div class="detail">đăng ký học</div></span></div>
-                            </div></a>
-                          <div class="course__box-content"><a class="content__title" href="course-detail.html">Lập trình Android cơ bản</a>
-                            <div class="content__name"><i class="fas fa-user-tie"></i><span>Trần Duy Thanh</span></div>
-                            <div class="content__position"><i class="fas fa-briefcase"></i><span>Thạc sỹ Khoa học máy tính</span></div>
-                            <div class="content__price">
-                              <div class="content__price-text"><a class="video__button" href="#"><i class="fas fa-play"></i></a><span>Học Thử</span></div>
-                              <div class="content__price-number">500.000 đ</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="course__box"><a class="course__box-image" href="course-detail.html"><img src="images/courseDetail/mobile.jpg">
-                            <div class="image__rating">
-                              <div class="image__rating-text"><b><i class="fas fa-play-circle"></i><span>5</span></b></div>
-                              <div class="image__rating-number"><i class="fas fa-star"></i><span> <span>5</span>
-                                  <div class="detail">đăng ký học</div></span></div>
-                            </div></a>
-                          <div class="course__box-content"><a class="content__title" href="course-detail.html">Lập trình Website cho di động</a>
-                            <div class="content__name"><i class="fas fa-user-tie"></i><span>Trần Duy Thanh</span></div>
-                            <div class="content__position"><i class="fas fa-briefcase"></i><span>Thạc sỹ Khoa học máy tính</span></div>
-                            <div class="content__price">
-                              <div class="content__price-text"><a class="video__button" href="#"><i class="fas fa-play"></i></a><span>Học Thử</span></div>
-                              <div class="content__price-number">700.000 đ</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="course__box"><a class="course__box-image" href="course-detail.html"><img src="images/courseDetail/mobile.jpg">
-                            <div class="image__rating">
-                              <div class="image__rating-text"><b><i class="fas fa-play-circle"></i><span>5</span></b></div>
-                              <div class="image__rating-number"><i class="fas fa-star"></i><span> <span>5</span>
-                                  <div class="detail">đăng ký học</div></span></div>
-                            </div></a>
-                          <div class="course__box-content"><a class="content__title" href="course-detail.html">Lập trình Website cho di động</a>
-                            <div class="content__name"><i class="fas fa-user-tie"></i><span>Trần Duy Thanh</span></div>
-                            <div class="content__position"><i class="fas fa-briefcase"></i><span>Thạc sỹ Khoa học máy tính</span></div>
-                            <div class="content__price">
-                              <div class="content__price-text"><a class="video__button" href="#"><i class="fas fa-play"></i></a><span>Học Thử</span></div>
-                              <div class="content__price-number">700.000 đ</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="course__box"><a class="course__box-image" href="course-detail.html"><img src="images/courseDetail/mobile.jpg">
-                            <div class="image__rating">
-                              <div class="image__rating-text"><b><i class="fas fa-play-circle"></i><span>5</span></b></div>
-                              <div class="image__rating-number"><i class="fas fa-star"></i><span> <span>5</span>
-                                  <div class="detail">đăng ký học</div></span></div>
-                            </div></a>
-                          <div class="course__box-content"><a class="content__title" href="course-detail.html">Lập trình Website cho di động</a>
-                            <div class="content__name"><i class="fas fa-user-tie"></i><span>Trần Duy Thanh</span></div>
-                            <div class="content__position"><i class="fas fa-briefcase"></i><span>Thạc sỹ Khoa học máy tính</span></div>
-                            <div class="content__price">
-                              <div class="content__price-text"><a class="video__button" href="#"><i class="fas fa-play"></i></a><span>Học Thử</span></div>
-                              <div class="content__price-number">700.000 đ</div>
-                            </div>
-                          </div>
-                        </div>
-                </div>
-              </div>
-              <div class="skillCourse__tab-pane tab-pane" id="css" role="tabpanel">
-                <div class="skillCourse__pane-box">
-                        <div class="course__box course__big"><a class="course__big-link" href="#"><img src="images/home/item-1.jpg" alt=""></a>
-                          <div class="course__big-body">
-                            <div class="course__info"><a class="course__info-link" href="#" title="title">
-                                <h5 class="course__info-heading"><span>Xây dựng và phát triển hệ thống đào tạo nội bộ</span></h5>
-                                <div class="course__info-wrap">
-                                  <div class="course__info-avatar"><img src="images/home/avatar-1.jpg" alt=""></div>
-                                  <div class="course__info-title">
-                                    <p class="info-card">Phan Thi Khoa</p><span class="info-card">Thạc sỹ QTKD trường Đại học Columbia Southern University</span>
-                                  </div>
-                                </div></a>
-                              <p class="course__info-pricing"><a href="#" title="title">Học thử </a><span class="course-pricing">490.000
-                                  <u>đ  </u></span></p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="course__box"><a class="course__box-image" href="course-detail.html"><img src="images/courseDetail/js.jpg">
-                            <div class="image__rating">
-                              <div class="image__rating-text"><b><i class="fas fa-play-circle"></i><span>20</span></b></div>
-                              <div class="image__rating-number"><i class="fas fa-star"></i><span> <span>5</span>
-                                  <div class="detail">đăng ký học</div></span></div>
-                            </div></a>
-                          <div class="course__box-content"><a class="content__title" href="course-detail.html">Xây dựng Multi-level menu với CSS Position</a>
-                            <div class="content__name"><i class="fas fa-user-tie"></i><span> Nordic Coder </span></div>
-                            <div class="content__position"><i class="fas fa-briefcase"></i><span>Trung Tâm</span></div>
-                            <div class="content__price">
-                              <div class="content__price-text"><a class="video__button" href="#"><i class="fas fa-play"></i></a><span>Học Thử</span></div>
-                              <div class="content__price-number">198.000 đ</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="course__box"><a class="course__box-image" href="course-detail.html"><img src="images/courseDetail/SPA.jpg">
-                            <div class="image__rating">
-                              <div class="image__rating-text"><b><i class="fas fa-play-circle"></i><span>30</span></b></div>
-                              <div class="image__rating-number"><i class="fas fa-star"></i><span> <span>5</span>
-                                  <div class="detail">đăng ký học</div></span></div>
-                            </div></a>
-                          <div class="course__box-content"><a class="content__title" href="course-detail.html">Xây dựng SPA Shopping Cart bằng JS đơn thuần</a>
-                            <div class="content__name"><i class="fas fa-user-tie"></i><span> Nordic Coder </span></div>
-                            <div class="content__position"><i class="fas fa-briefcase"></i><span>Trung Tâm</span></div>
-                            <div class="content__price">
-                              <div class="content__price-text"><a class="video__button d-none" href="#"><i class="fas fa-play"></i></a><span></span></div>
-                              <div class="content__price-number">598.000 đ</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="course__box"><a class="course__box-image" href="course-detail.html"><img src="images/courseDetail/js.jpg">
-                            <div class="image__rating">
-                              <div class="image__rating-text"><b><i class="fas fa-play-circle"></i><span>32</span></b></div>
-                              <div class="image__rating-number"><i class="fas fa-star"></i><span> <span>5</span>
-                                  <div class="detail">đăng ký học</div></span></div>
-                            </div></a>
-                          <div class="course__box-content"><a class="content__title" href="course-detail.html">JavaScript dành cho người mới bắt đầu</a>
-                            <div class="content__name"><i class="fas fa-user-tie"></i><span> Nordic Coder </span></div>
-                            <div class="content__position"><i class="fas fa-briefcase"></i><span>Trung Tâm</span></div>
-                            <div class="content__price">
-                              <div class="content__price-text"><a class="video__button d-none" href="#"><i class="fas fa-play"></i></a><span></span></div>
-                              <div class="content__price-number">198.000 đ</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="course__box"><a class="course__box-image" href="course-detail.html"><img src="images/courseDetail/js.jpg">
-                            <div class="image__rating">
-                              <div class="image__rating-text"><b><i class="fas fa-play-circle"></i><span>40</span></b></div>
-                              <div class="image__rating-number"><i class="fas fa-star"></i><span> <span>5</span>
-                                  <div class="detail">đăng ký học</div></span></div>
-                            </div></a>
-                          <div class="course__box-content"><a class="content__title" href="course-detail.html">Xây dựng Multi-level menu với CSS Position</a>
-                            <div class="content__name"><i class="fas fa-user-tie"></i><span> Nordic Coder </span></div>
-                            <div class="content__position"><i class="fas fa-briefcase"></i><span>Trung Tâm</span></div>
-                            <div class="content__price">
-                              <div class="content__price-text"><a class="video__button" href="#"><i class="fas fa-play"></i></a><span>Học Thử</span></div>
-                              <div class="content__price-number">198.000 đ</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="course__box"><a class="course__box-image" href="course-detail.html"><img src="images/courseDetail/SPA.jpg">
-                            <div class="image__rating">
-                              <div class="image__rating-text"><b><i class="fas fa-play-circle"></i><span>22</span></b></div>
-                              <div class="image__rating-number"><i class="fas fa-star"></i><span> <span>5</span>
-                                  <div class="detail">đăng ký học</div></span></div>
-                            </div></a>
-                          <div class="course__box-content"><a class="content__title" href="course-detail.html">Xây dựng SPA Shopping Cart bằng JS đơn thuần</a>
-                            <div class="content__name"><i class="fas fa-user-tie"></i><span> Nordic Coder </span></div>
-                            <div class="content__position"><i class="fas fa-briefcase"></i><span>Trung Tâm</span></div>
-                            <div class="content__price">
-                              <div class="content__price-text"><a class="video__button d-none" href="#"><i class="fas fa-play"></i></a><span></span></div>
-                              <div class="content__price-number">598.000 đ</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="course__box"><a class="course__box-image" href="course-detail.html"><img src="images/courseDetail/js.jpg">
-                            <div class="image__rating">
-                              <div class="image__rating-text"><b><i class="fas fa-play-circle"></i><span>12</span></b></div>
-                              <div class="image__rating-number"><i class="fas fa-star"></i><span> <span>5</span>
-                                  <div class="detail">đăng ký học</div></span></div>
-                            </div></a>
-                          <div class="course__box-content"><a class="content__title" href="course-detail.html">Xây dựng Multi-level menu với CSS Position</a>
-                            <div class="content__name"><i class="fas fa-user-tie"></i><span> Nordic Coder </span></div>
-                            <div class="content__position"><i class="fas fa-briefcase"></i><span>Trung Tâm</span></div>
-                            <div class="content__price">
-                              <div class="content__price-text"><a class="video__button" href="#"><i class="fas fa-play"></i></a><span>Học Thử</span></div>
-                              <div class="content__price-number">198.000 đ</div>
-                            </div>
-                          </div>
-                        </div>
-                </div>
-              </div>
-              <div class="skillCourse__tab-pane tab-pane" id="javascript" role="tabpanel">
-                <div class="skillCourse__pane-box">
-                        <div class="course__box course__big"><a class="course__big-link" href="#"><img src="images/home/item-1.jpg" alt=""></a>
-                          <div class="course__big-body">
-                            <div class="course__info"><a class="course__info-link" href="#" title="title">
-                                <h5 class="course__info-heading"><span>Xây dựng và phát triển hệ thống đào tạo nội bộ</span></h5>
-                                <div class="course__info-wrap">
-                                  <div class="course__info-avatar"><img src="images/home/avatar-1.jpg" alt=""></div>
-                                  <div class="course__info-title">
-                                    <p class="info-card">Phan Thi Khoa</p><span class="info-card">Thạc sỹ QTKD trường Đại học Columbia Southern University</span>
-                                  </div>
-                                </div></a>
-                              <p class="course__info-pricing"><a href="#" title="title">Học thử </a><span class="course-pricing">490.000
-                                  <u>đ  </u></span></p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="course__box"><a class="course__box-image" href="course-detail.html"><img src="images/courseDetail/android.jpg">
-                            <div class="image__rating">
-                              <div class="image__rating-text"><b><i class="fas fa-play-circle"></i><span>text 1</span></b></div>
-                              <div class="image__rating-number"><i class="fas fa-star"></i><span> <span>5</span>
-                                  <div class="detail">đăng ký học</div></span></div>
-                            </div></a>
-                          <div class="course__box-content"><a class="content__title" href="course-detail.html">Lập trình Android cơ bản</a>
-                            <div class="content__name"><i class="fas fa-user-tie"></i><span>Trần Duy Thanh</span></div>
-                            <div class="content__position"><i class="fas fa-briefcase"></i><span>Thạc sỹ Khoa học máy tính</span></div>
-                            <div class="content__price">
-                              <div class="content__price-text"><a class="video__button" href="#"><i class="fas fa-play"></i></a><span>Học Thử</span></div>
-                              <div class="content__price-number">500.000 đ</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="course__box"><a class="course__box-image" href="course-detail.html"><img src="images/courseDetail/mobile.jpg">
-                            <div class="image__rating">
-                              <div class="image__rating-text"><b><i class="fas fa-play-circle"></i><span>14</span></b></div>
-                              <div class="image__rating-number"><i class="fas fa-star"></i><span> <span>5</span>
-                                  <div class="detail">đăng ký học</div></span></div>
-                            </div></a>
-                          <div class="course__box-content"><a class="content__title" href="course-detail.html">Lập trình Website cho di động</a>
-                            <div class="content__name"><i class="fas fa-user-tie"></i><span>Trần Duy Thanh</span></div>
-                            <div class="content__position"><i class="fas fa-briefcase"></i><span>Thạc sỹ Khoa học máy tính</span></div>
-                            <div class="content__price">
-                              <div class="content__price-text"><a class="video__button" href="#"><i class="fas fa-play"></i></a><span>Học Thử</span></div>
-                              <div class="content__price-number">700.000 đ</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="course__box"><a class="course__box-image" href="course-detail.html"><img src="images/courseDetail/mobile.jpg">
-                            <div class="image__rating">
-                              <div class="image__rating-text"><b><i class="fas fa-play-circle"></i><span>text 1</span></b></div>
-                              <div class="image__rating-number"><i class="fas fa-star"></i><span> <span>5</span>
-                                  <div class="detail">đăng ký học</div></span></div>
-                            </div></a>
-                          <div class="course__box-content"><a class="content__title" href="course-detail.html">Lập trình Website cho di động</a>
-                            <div class="content__name"><i class="fas fa-user-tie"></i><span>Trần Duy Thanh</span></div>
-                            <div class="content__position"><i class="fas fa-briefcase"></i><span>Thạc sỹ Khoa học máy tính</span></div>
-                            <div class="content__price">
-                              <div class="content__price-text"><a class="video__button" href="#"><i class="fas fa-play"></i></a><span>Học Thử</span></div>
-                              <div class="content__price-number">198.000 đ</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="course__box"><a class="course__box-image" href="course-detail.html"><img src="images/courseDetail/android.jpg">
-                            <div class="image__rating">
-                              <div class="image__rating-text"><b><i class="fas fa-play-circle"></i><span>22</span></b></div>
-                              <div class="image__rating-number"><i class="fas fa-star"></i><span> <span>5</span>
-                                  <div class="detail">đăng ký học</div></span></div>
-                            </div></a>
-                          <div class="course__box-content"><a class="content__title" href="course-detail.html">Lập trình Android cơ bản</a>
-                            <div class="content__name"><i class="fas fa-user-tie"></i><span>Trần Duy Thanh</span></div>
-                            <div class="content__position"><i class="fas fa-briefcase"></i><span>Thạc sỹ Khoa học máy tính</span></div>
-                            <div class="content__price">
-                              <div class="content__price-text"><a class="video__button" href="#"><i class="fas fa-play"></i></a><span>Học Thử</span></div>
-                              <div class="content__price-number">500.000 đ</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="course__box"><a class="course__box-image" href="course-detail.html"><img src="images/courseDetail/mobile.jpg">
-                            <div class="image__rating">
-                              <div class="image__rating-text"><b><i class="fas fa-play-circle"></i><span>24</span></b></div>
-                              <div class="image__rating-number"><i class="fas fa-star"></i><span> <span>5</span>
-                                  <div class="detail">đăng ký học</div></span></div>
-                            </div></a>
-                          <div class="course__box-content"><a class="content__title" href="course-detail.html">Lập trình Website cho di động</a>
-                            <div class="content__name"><i class="fas fa-user-tie"></i><span>Trần Duy Thanh</span></div>
-                            <div class="content__position"><i class="fas fa-briefcase"></i><span>Thạc sỹ Khoa học máy tính</span></div>
-                            <div class="content__price">
-                              <div class="content__price-text"><a class="video__button" href="#"><i class="fas fa-play"></i></a><span>Học Thử</span></div>
-                              <div class="content__price-number">700.000 đ</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="course__box"><a class="course__box-image" href="course-detail.html"><img src="images/courseDetail/mobile.jpg">
-                            <div class="image__rating">
-                              <div class="image__rating-text"><b><i class="fas fa-play-circle"></i><span>11</span></b></div>
-                              <div class="image__rating-number"><i class="fas fa-star"></i><span> <span>5</span>
-                                  <div class="detail">đăng ký học</div></span></div>
-                            </div></a>
-                          <div class="course__box-content"><a class="content__title" href="course-detail.html">Lập trình Website cho di động</a>
-                            <div class="content__name"><i class="fas fa-user-tie"></i><span>Trần Duy Thanh</span></div>
-                            <div class="content__position"><i class="fas fa-briefcase"></i><span>Thạc sỹ Khoa học máy tính</span></div>
-                            <div class="content__price">
-                              <div class="content__price-text"><a class="video__button" href="#"><i class="fas fa-play"></i></a><span>Học Thử</span></div>
-                              <div class="content__price-number">700.000 đ</div>
-                            </div>
-                          </div>
-                        </div>
-                </div>
-              </div>
-              <div class="skillCourse__tab-pane tab-pane" id="reactjs" role="tabpanel">
-                <div class="skillCourse__pane-box">
-                        <div class="course__box course__big"><a class="course__big-link" href="#"><img src="images/home/item-1.jpg" alt=""></a>
-                          <div class="course__big-body">
-                            <div class="course__info"><a class="course__info-link" href="#" title="title">
-                                <h5 class="course__info-heading"><span>Xây dựng và phát triển hệ thống đào tạo nội bộ</span></h5>
-                                <div class="course__info-wrap">
-                                  <div class="course__info-avatar"><img src="images/home/avatar-1.jpg" alt=""></div>
-                                  <div class="course__info-title">
-                                    <p class="info-card">Phan Thi Khoa</p><span class="info-card">Thạc sỹ QTKD trường Đại học Columbia Southern University</span>
-                                  </div>
-                                </div></a>
-                              <p class="course__info-pricing"><a href="#" title="title">Học thử </a><span class="course-pricing">490.000
-                                  <u>đ  </u></span></p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="course__box"><a class="course__box-image" href="course-detail.html"><img src="images/courseDetail/js.jpg">
-                            <div class="image__rating">
-                              <div class="image__rating-text"><b><i class="fas fa-play-circle"></i><span>26</span></b></div>
-                              <div class="image__rating-number"><i class="fas fa-star"></i><span> <span>5</span>
-                                  <div class="detail">đăng ký học</div></span></div>
-                            </div></a>
-                          <div class="course__box-content"><a class="content__title" href="course-detail.html">Xây dựng Multi-level menu với CSS Position</a>
-                            <div class="content__name"><i class="fas fa-user-tie"></i><span> Nordic Coder </span></div>
-                            <div class="content__position"><i class="fas fa-briefcase"></i><span>Trung Tâm</span></div>
-                            <div class="content__price">
-                              <div class="content__price-text"><a class="video__button" href="#"><i class="fas fa-play"></i></a><span>Học Thử</span></div>
-                              <div class="content__price-number">198.000 đ</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="course__box"><a class="course__box-image" href="course-detail.html"><img src="images/courseDetail/SPA.jpg">
-                            <div class="image__rating">
-                              <div class="image__rating-text"><b><i class="fas fa-play-circle"></i><span>10</span></b></div>
-                              <div class="image__rating-number"><i class="fas fa-star"></i><span> <span>5</span>
-                                  <div class="detail">đăng ký học</div></span></div>
-                            </div></a>
-                          <div class="course__box-content"><a class="content__title" href="course-detail.html">Xây dựng SPA Shopping Cart bằng JS đơn thuần</a>
-                            <div class="content__name"><i class="fas fa-user-tie"></i><span> Nordic Coder </span></div>
-                            <div class="content__position"><i class="fas fa-briefcase"></i><span>Trung Tâm</span></div>
-                            <div class="content__price">
-                              <div class="content__price-text"><a class="video__button d-none" href="#"><i class="fas fa-play"></i></a><span></span></div>
-                              <div class="content__price-number">598.000 đ</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="course__box"><a class="course__box-image" href="course-detail.html"><img src="images/courseDetail/js.jpg">
-                            <div class="image__rating">
-                              <div class="image__rating-text"><b><i class="fas fa-play-circle"></i><span>32</span></b></div>
-                              <div class="image__rating-number"><i class="fas fa-star"></i><span> <span>5</span>
-                                  <div class="detail">đăng ký học</div></span></div>
-                            </div></a>
-                          <div class="course__box-content"><a class="content__title" href="course-detail.html">JavaScript dành cho người mới bắt đầu</a>
-                            <div class="content__name"><i class="fas fa-user-tie"></i><span> Nordic Coder </span></div>
-                            <div class="content__position"><i class="fas fa-briefcase"></i><span>Trung Tâm</span></div>
-                            <div class="content__price">
-                              <div class="content__price-text"><a class="video__button d-none" href="#"><i class="fas fa-play"></i></a><span></span></div>
-                              <div class="content__price-number">198.000 đ</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="course__box"><a class="course__box-image" href="course-detail.html"><img src="images/courseDetail/js.jpg">
-                            <div class="image__rating">
-                              <div class="image__rating-text"><b><i class="fas fa-play-circle"></i><span>47</span></b></div>
-                              <div class="image__rating-number"><i class="fas fa-star"></i><span> <span>5</span>
-                                  <div class="detail">đăng ký học</div></span></div>
-                            </div></a>
-                          <div class="course__box-content"><a class="content__title" href="course-detail.html">Xây dựng Multi-level menu với CSS Position</a>
-                            <div class="content__name"><i class="fas fa-user-tie"></i><span> Nordic Coder </span></div>
-                            <div class="content__position"><i class="fas fa-briefcase"></i><span>Trung Tâm</span></div>
-                            <div class="content__price">
-                              <div class="content__price-text"><a class="video__button" href="#"><i class="fas fa-play"></i></a><span>Học Thử</span></div>
-                              <div class="content__price-number">198.000 đ</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="course__box"><a class="course__box-image" href="course-detail.html"><img src="images/courseDetail/SPA.jpg">
-                            <div class="image__rating">
-                              <div class="image__rating-text"><b><i class="fas fa-play-circle"></i><span>26</span></b></div>
-                              <div class="image__rating-number"><i class="fas fa-star"></i><span> <span>5</span>
-                                  <div class="detail">đăng ký học</div></span></div>
-                            </div></a>
-                          <div class="course__box-content"><a class="content__title" href="course-detail.html">Xây dựng SPA Shopping Cart bằng JS đơn thuần</a>
-                            <div class="content__name"><i class="fas fa-user-tie"></i><span> Nordic Coder </span></div>
-                            <div class="content__position"><i class="fas fa-briefcase"></i><span>Trung Tâm</span></div>
-                            <div class="content__price">
-                              <div class="content__price-text"><a class="video__button d-none" href="#"><i class="fas fa-play"></i></a><span></span></div>
-                              <div class="content__price-number">598.000 đ</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="course__box"><a class="course__box-image" href="course-detail.html"><img src="images/courseDetail/js.jpg">
-                            <div class="image__rating">
-                              <div class="image__rating-text"><b><i class="fas fa-play-circle"></i><span>17</span></b></div>
-                              <div class="image__rating-number"><i class="fas fa-star"></i><span> <span>5</span>
-                                  <div class="detail">đăng ký học</div></span></div>
-                            </div></a>
-                          <div class="course__box-content"><a class="content__title" href="course-detail.html">Xây dựng Multi-level menu với CSS Position</a>
-                            <div class="content__name"><i class="fas fa-user-tie"></i><span> Nordic Coder </span></div>
-                            <div class="content__position"><i class="fas fa-briefcase"></i><span>Trung Tâm</span></div>
-                            <div class="content__price">
-                              <div class="content__price-text"><a class="video__button" href="#"><i class="fas fa-play"></i></a><span>Học Thử</span></div>
-                              <div class="content__price-number">198.000 đ</div>
-                            </div>
-                          </div>
-                        </div>
+              <div class="col-lg-6"><img src="images/home/single.jpg" alt="" srcset=""></div>
+              <div class="col-lg-6">
+                <div class="agency__content-detail">
+                  <div class="detail__title">
+                    <div class="detail__title-header">
+                      <h4 class="header__subtitle">Welcome To Our Wedco</h4>
+                      <h2 class="header__heading">The Most Creative Agency</h2>
+                    </div>
+                    <div class="detail__title-wrapper"> 
+                      <p>We’ve delivered fabulous wedding event experiences over the last two decades and are now out a whole new growth story.</p>
+                    </div>
+                  </div>
+                  <div class="detail__inner">
+                    <div class="row">
+                      <div class="detail__inner-icon col-2"><img src="images/home/wedding-card.png" alt=""></div>
+                      <div class="detail__inner-text col-10">
+                        <h2 class="text__heading">We Bring Quality Services</h2><span>Experience in corporate events, hospitality and wedding planning is certain to make your wedding memorable.</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="detail__line"></div>
+                  <div class="detail__inner">
+                    <div class="row">
+                      <div class="detail__inner-icon col-2"><img src="images/home/balloons.png" alt=""></div>
+                      <div class="detail__inner-text col-10">
+                        <h2 class="text__heading">Experiance & Talented</h2><span>We assure a wedding that is stress-free, relaxed and with enjoyable & the way a destination wedding should be!</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="detail__line"></div>
+                  <div class="detail__inner">
+                    <div class="row">
+                      <div class="detail__inner-icon col-2"><img src="images/home/wedding-invitation.png" alt=""></div>
+                      <div class="detail__inner-text col-10">
+                        <h2 class="text__heading">Offers 24/7 Quick Support</h2><span>With years of services in the event industry, Wedco is a wedding planner stands on a stronger base with.        </span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="jobs px-60">
+      <div class="service">
         <div class="container">
-          <div class="jobs__carousel owl-carousel owl-theme">
-            <div class="jobs__box">
-              <div class="row">
-                <div class="col-lg-8 lg-banner">
-                  <div class="jobs__item"><a class="jobs__item-link" href="#"><img class="img-fluid" src="images/home/image-10.jpg" alt=""></a></div>
-                  <div class="jobs__item"><a class="jobs__item-link" href="#"><img class="img-fluid" src="images/home/image-9.jpg" alt=""></a></div>
+          <div class="service__title">
+            <div class="service__title-top"> 
+              <h4 class="top__subheading">Our Wedding Services</h4>
+              <h2 class="top__heading">We Provide The Best Services</h2>
+            </div>
+            <div class="service__title-detail"> 
+              <p class="detail__text">Our efforts will help to have a better approach to the planning phase, help build a better vision to make it entertaining & memorable</p>
+            </div>
+          </div>
+          <div class="service__modal">
+            <div class="row">
+              <div class="col-md-4 col-sm-6 magin-bot">
+                      <div class="service__modal-item"> 
+                        <div class="item__content">
+                          <div class="item__content-logo"><img src="images/home/camera.png" alt=""></div>
+                          <div class="item__content-title">
+                            <h2 class="title__heading">Photography &amp; video</h2>
+                            <p class="title__detail">Apart from the best ever professional photographer we’re artists, to beautify amazing memories from events!</p>
+                          </div>
+                        </div>
+                      </div>
+              </div>
+              <div class="col-md-4 col-sm-6 magin-bot">
+                      <div class="service__modal-item"> 
+                        <div class="item__content">
+                          <div class="item__content-logo"><img src="images/home/wedding-rings.png" alt=""></div>
+                          <div class="item__content-title">
+                            <h2 class="title__heading">Wedding Registry</h2>
+                            <p class="title__detail">Receive the your wedding gifts are you want from your friends and relatives including cash gifts. Add products</p>
+                          </div>
+                        </div>
+                      </div>
+              </div>
+              <div class="col-md-4 col-sm-6 magin-bot">
+                      <div class="service__modal-item"> 
+                        <div class="item__content">
+                          <div class="item__content-logo"><img src="images/home/wedding-couple.png" alt=""></div>
+                          <div class="item__content-title">
+                            <h2 class="title__heading">Wedding Ceremony</h2>
+                            <p class="title__detail">Every wedding has a story to tell. It can be chosen based on your heritage &amp; culture, on your life story!</p>
+                          </div>
+                        </div>
+                      </div>
+              </div>
+              <div class="col-md-4 col-sm-6 magin-bot">
+                      <div class="service__modal-item"> 
+                        <div class="item__content">
+                          <div class="item__content-logo"><img src="images/home/wine.png" alt=""></div>
+                          <div class="item__content-title">
+                            <h2 class="title__heading">Seating Chart</h2>
+                            <p class="title__detail">There are so many aspects to take it and look into consideration. We know would worry how our guests be treated!</p>
+                          </div>
+                        </div>
+                      </div>
+              </div>
+              <div class="col-md-4 col-sm-6 magin-bot">
+                      <div class="service__modal-item"> 
+                        <div class="item__content">
+                          <div class="item__content-logo"><img src="images/home/church.png" alt=""></div>
+                          <div class="item__content-title">
+                            <h2 class="title__heading">Vendor Manager</h2>
+                            <p class="title__detail">A complete wedding service, including strong focus on vendor selection and management on board hassle free!</p>
+                          </div>
+                        </div>
+                      </div>
+              </div>
+              <div class="col-md-4 col-sm-6 magin-bot">
+                      <div class="service__modal-item"> 
+                        <div class="item__content">
+                          <div class="item__content-logo"><img src="images/home/romantic-dinner.png" alt=""></div>
+                          <div class="item__content-title">
+                            <h2 class="title__heading">The Perfect Cake</h2>
+                            <p class="title__detail">Food and drinks are very important and integral parts of our Indian weddings. Provide would be able to cater</p>
+                          </div>
+                        </div>
+                      </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="upComing">
+        <div class="container">
+          <div class="upComing__content">
+            <div class="upComing__content-title">
+              <div class="title__heading">
+                <h4 class="title__heading-sub">Upcoming Weddings</h4>
+                <h2 class="title__heading-logo">Featured Weddings Plans</h2>
+              </div>
+              <div class="title__text">
+                <p>It&rsquo;s no secret that a wedding is the most expensive party most people will ever throw. Wedco will you might want to opt for something edible, like a box of sweets. <a class="tm-skincolor" href="http://wedco.themetechmount.net/our-events/">View more</a></p>
+              </div>
+            </div>
+            <div class="upComing__content-slide owl-carousel owl-theme">
+              <div class="slide__item">
+                <div class="slide__item-over">
+                  <div class="over__cover">
+                    <div class="link"><a class="over__cover-sreach" href="images/home/post-01.jpg" data-fancybox="gallery"><i class="fal fa-search"></i></a><a class="over__cover-share" href="#"><i class="fal fa-random"></i></a></div>
+                  </div>
+                  <div class="over__img"><img src="images/home/post-01.jpg" alt=""></div>
                 </div>
-                <div class="col-lg-4 sm-banner">
-                  <div class="jobs__item"><a class="jobs__item-link" href="#"><img class="img-fluid" src="images/home/image-11.jpg" alt=""></a>
-                    <div class="jobs__item-info">
-                      <h5><a class="jobs__info-link" href="#" title="title" target="_blank">Đầu tư chứng khoán cho người mới bắt đầu</a></h5>Xem chi tiết
+                <div class="slide__item-text">
+                  <div class="text__header">  
+                    <div class="text__header-location">Decorate, Stories11</div>
+                    <div class="text__header-date">22 Jul 2020</div>
+                  </div>
+                  <div class="text__bot"><a class="text__bot-link" href="#">Bride & Groom</a></div>
+                </div>
+              </div>
+              <div class="slide__item">
+                <div class="slide__item-over">
+                  <div class="over__cover">
+                    <div class="link"><a class="over__cover-sreach" href="images/home/post-02.jpg" data-fancybox="gallery"><i class="fal fa-search"></i></a><a class="over__cover-share" href="#"><i class="fal fa-random"></i></a></div>
+                  </div>
+                  <div class="over__img"><img src="images/home/post-02.jpg" alt=""></div>
+                </div>
+                <div class="slide__item-text">
+                  <div class="text__header">  
+                    <div class="text__header-location">Decorate, Stories</div>
+                    <div class="text__header-date">22 Jul 2020</div>
+                  </div>
+                  <div class="text__bot"><a class="text__bot-link" href="#">Bride & Groom</a></div>
+                </div>
+              </div>
+              <div class="slide__item">
+                <div class="slide__item-over">
+                  <div class="over__cover">
+                    <div class="link"><a class="over__cover-sreach" href="images/home/post-03.jpg" data-fancybox="gallery"><i class="fal fa-search"></i></a><a class="over__cover-share" href="#"><i class="fal fa-random"></i></a></div>
+                  </div>
+                  <div class="over__img"><img src="images/home/post-03.jpg" alt=""></div>
+                </div>
+                <div class="slide__item-text">
+                  <div class="text__header">  
+                    <div class="text__header-location">Decorate, Stories</div>
+                    <div class="text__header-date">22 Jul 2020</div>
+                  </div>
+                  <div class="text__bot"><a class="text__bot-link" href="#">Bride & Groom</a></div>
+                </div>
+              </div>
+              <div class="slide__item">
+                <div class="slide__item-over">
+                  <div class="over__cover">
+                    <div class="link"><a class="over__cover-sreach" href="images/home/post-04.jpg" data-fancybox="gallery"><i class="fal fa-search"></i></a><a class="over__cover-share" href="#"><i class="fal fa-random"></i></a></div>
+                  </div>
+                  <div class="over__img"><img src="images/home/post-04.jpg" alt=""></div>
+                </div>
+                <div class="slide__item-text">
+                  <div class="text__header">  
+                    <div class="text__header-location">Decorate, Stories</div>
+                    <div class="text__header-date">22 Jul 2020</div>
+                  </div>
+                  <div class="text__bot"><a class="text__bot-link" href="#">Bride & Groom</a></div>
+                </div>
+              </div>
+              <div class="slide__item">
+                <iframe src="https://www.youtube.com/embed/PMiKu0UTAp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                <div class="slide__item-text">
+                  <div class="text__header">  
+                    <div class="text__header-location">Decorate, Stories</div>
+                    <div class="text__header-date">22 Jul 2020</div>
+                  </div>
+                  <div class="text__bot"><a class="text__bot-link" href="#">Bride & Groom</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <div class="video__img"></div>
+        <div class="video__text">
+          <div class="container">
+            <div class="video__text-detail">
+              <div class="detail__icon"><a class="detail__icon-play" href=""><i class="far fa-play"></i></a></div>
+              <p class="detail__subheading">WE ARE GETTING MARRIAGE</p>
+              <h2 class="detail__heading">Save The date October 16th, 2020</h2>
+              <p class="detail__contact">Get Your Quote or Call: (0095) 123-456-789</p>
+              <div class="detail__btn"><a class="detail__btn-link" href="#">View Details</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="egencySecond">
+        <div class="container">
+          <div class="egencySecond__content">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="egencySecond__content-statistical">
+                  <div class="statistical__text">
+                    <h4 class="statistical__text-subheading">Why Choose Us</h4>
+                    <h2 class="statistical__text-heading">The Most Creatives Agency</h2>
+                    <p>We are creative for flawless execution, WedCo takes pride in being the most preferred event management companies all over the world since,1995!</p>
+                    <p>We&rsquo;ve delivered fabulous wedding event experiences over the last two decades and are now 
+                      <u><a class="tm-skincolor" href="#">poised to chart</a></u> out a whole new growth story. We have hosted the most great reputed company ever!. We make our best to make your event memorable and Unforgettable
+                    </p>
+                  </div>
+                  <div class="statistical__line">
+                    <div class="line__detail"><span>Decoration</span><span>85%</span></div>
+                    <div class="line__slide1"><span></span></div>
+                  </div>
+                  <div class="statistical__line">
+                    <div class="line__detail"><span>Planing</span><span>80%</span></div>
+                    <div class="line__slide2"><span></span></div>
+                  </div>
+                  <div class="statistical__line">
+                    <div class="line__detail"><span>Catering</span><span>92%</span></div>
+                    <div class="line__slide3"><span></span></div>
+                  </div>
+                  <div class="statistical__line">
+                    <div class="line__detail"><span>Management</span><span>80%</span></div>
+                    <div class="line__slide4"><span></span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="egencySecond__content-img"><img src="images/home/single-02.jpg" alt="" srcset="">
+                  <div class="img__text">
+                    <h2 class="img__text-heading">Do You Need Our Help ?</h2>
+                    <div class="img__text-icon"> <a class="icon__link" href=""><i class="fal fa-chevron-right"></i></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="feedback">
+        <div class="feedback__bg">
+          <div class="container">
+            <div class="feedback__content">
+              <div class="feedback__content-text">
+                <h4 class="text__subtitle">Beautiful Client Thoughts</h4>
+                <h2 class="text__title">What Our Client Feedback</h2>
+              </div>
+              <div class="feedback__content-slide owl-carousel owl-theme">
+                <div class="slide__item">
+                  <div class="slide__item-img"><span class="img__detail"><img src="images/home/review-01.jpg" alt=""></span></div>
+                  <div class="slide__item-text"><i class="fas fa-quote-left"></i>
+                    <p class="text__content">Thank you wedco for helping me give my daughter the wedding of her dreams. You guys did a fantastic job of turning our thoughts into reality!!</p>
+                    <div class="text__footer">
+                      <h3 class="text__footer-name">Elina Christopher</h3><span class="text__footer-sub">Beauty Bride</span>
                     </div>
                   </div>
-                  <div class="jobs__item"><a class="jobs__item-link" href="#"><img class="img-fluid" src="images/home/image-11.jpg" alt=""></a>
-                    <div class="jobs__item-info">
-                      <h5><a class="jobs__info-link" href="#" title="title" target="_blank">Đầu tư chứng khoán cho người mới bắt đầu</a></h5>Xem chi tiết
+                </div>
+                <div class="slide__item">
+                  <div class="slide__item-img"><span class="img__detail"><img src="images/home/review-02.jpg" alt=""></span></div>
+                  <div class="slide__item-text"><i class="fas fa-quote-left"></i>
+                    <p class="text__content">Thank you wedco for helping me give my daughter the wedding of her dreams. You guys did a fantastic job of turning our thoughts into reality!!</p>
+                    <div class="text__footer">
+                      <h3 class="text__footer-name">Elina Christopher</h3><span class="text__footer-sub">Beauty Bride</span>
                     </div>
                   </div>
-                  <div class="jobs__item"><a class="jobs__item-link" href="#"><img class="img-fluid" src="images/home/image-11.jpg" alt=""></a>
-                    <div class="jobs__item-info">
-                      <h5><a class="jobs__info-link" href="#" title="title" target="_blank">Đầu tư chứng khoán cho người mới bắt đầu</a></h5>Xem chi tiết
+                </div>
+                <div class="slide__item">
+                  <div class="slide__item-img"><span class="img__detail"><img src="images/home/review-03.jpg" alt=""></span></div>
+                  <div class="slide__item-text"><i class="fas fa-quote-left"></i>
+                    <p class="text__content">Thank you wedco for helping me give my daughter the wedding of her dreams. You guys did a fantastic job of turning our thoughts into reality!!</p>
+                    <div class="text__footer">
+                      <h3 class="text__footer-name">Elina Christopher</h3><span class="text__footer-sub">Beauty Bride</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide__item">
+                  <div class="slide__item-img"><span class="img__detail"><img src="images/home/review-04.jpg" alt=""></span></div>
+                  <div class="slide__item-text"><i class="fas fa-quote-left"></i>
+                    <p class="text__content">Thank you wedco for helping me give my daughter the wedding of her dreams. You guys did a fantastic job of turning our thoughts into reality!!</p>
+                    <div class="text__footer">
+                      <h3 class="text__footer-name">Elina Christopher</h3><span class="text__footer-sub">Beauty Bride</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="jobs__box">
-              <div class="row">
-                <div class="col-lg-8 lg-banner">
-                  <div class="jobs__item"><a class="jobs__item-link" href="#"><img class="img-fluid" src="images/home/image-13.jpg" alt=""></a></div>
-                  <div class="jobs__item"><a class="jobs__item-link" href="#"><img class="img-fluid" src="images/home/image-14.jpg" alt=""></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="memorie">
+        <div class="container">
+          <div class="memorie__text">
+            <h4 class="memorie__text-subheading">Wedding Gallery</h4>
+            <h2 class="memorie__text-heading">Your Forever Memories</h2>
+            <div class="memorie__text-detail"> 
+              <p>We are an artist to create the best memories for our clients and couples of their fairy tale best wedding saga forever.</p>
+            </div>
+          </div>
+          <div class="memorie__fancy">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="memorie__fancy-img">
+                  <div class="img__over"><a class="img__over-search" href="images/home/gallery-ten.jpg" data-fancybox="gallery"><i class="fal fa-search"></i></a></div><img src="images/home/gallery-ten.jpg" alt="">
                 </div>
-                <div class="col-lg-4 sm-banner">
-                  <div class="jobs__item"><a class="jobs__item-link" href="#"><img class="img-fluid" src="images/home/image-11.jpg" alt=""></a>
-                    <div class="jobs__item-info">
-                      <h5><a class="jobs__info-link" href="#" title="title" target="_blank">Đầu tư chứng khoán cho người mới bắt đầu</a></h5>Xem chi tiết
-                    </div>
-                  </div>
-                  <div class="jobs__item"><a class="jobs__item-link" href="#"><img class="img-fluid" src="images/home/image-11.jpg" alt=""></a>
-                    <div class="jobs__item-info">
-                      <h5><a class="jobs__info-link" href="#" title="title" target="_blank">Đầu tư chứng khoán cho người mới bắt đầu</a></h5>Xem chi tiết
-                    </div>
-                  </div>
-                  <div class="jobs__item"><a class="jobs__item-link" href="#"><img class="img-fluid" src="images/home/image-11.jpg" alt=""></a>
-                    <div class="jobs__item-info">
-                      <h5><a class="jobs__info-link" href="#" title="title" target="_blank">Đầu tư chứng khoán cho người mới bắt đầu</a></h5>Xem chi tiết
-                    </div>
-                  </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="memorie__fancy-img">
+                  <div class="img__over"><a class="img__over-search" href="images/home/gallery-ten.jpg" data-fancybox="gallery"><i class="fal fa-search"></i></a></div><img src="images/home/gallery-02.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="memorie__fancy-img">
+                  <div class="img__over"><a class="img__over-search" href="images/home/gallery-ten.jpg" data-fancybox="gallery"><i class="fal fa-search"></i></a></div><img src="images/home/gallery-03.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="memorie__fancy-img">
+                  <div class="img__over"><a class="img__over-search" href="images/home/gallery-ten.jpg" data-fancybox="gallery"><i class="fal fa-search"></i></a></div><img src="images/home/gallery-04.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="memorie__fancy-img">
+                  <div class="img__over"><a class="img__over-search" href="images/home/gallery-ten.jpg" data-fancybox="gallery"><i class="fal fa-search"></i></a></div><img src="images/home/gallery-05.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="memorie__fancy-img">
+                  <div class="img__over"><a class="img__over-search" href="images/home/gallery-ten.jpg" data-fancybox="gallery"><i class="fal fa-search"></i></a></div><img src="images/home/gallery-06.jpg" alt="">
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="freeCourse bgcLightGrey px-60">
+      <div class="blog">
         <div class="container">
-          <h2 class="skillCourse__heading title">Khóa học 0 đồng</h2>
-          <div class="freeCourse__box owl-carousel owl-theme">
-                  <div class="course__box"><a class="course__box-image" href="course-detail.html"><img src="images/courseDetail/js.jpg">
-                      <div class="image__rating">
-                        <div class="image__rating-text"><b><i class="fas fa-play-circle"></i><span>32</span></b></div>
-                        <div class="image__rating-number"><i class="fas fa-star"></i><span> <span>5</span>
-                            <div class="detail">đăng ký học</div></span></div>
-                      </div></a>
-                    <div class="course__box-content"><a class="content__title" href="course-detail.html">JavaScript dành cho người mới bắt đầu</a>
-                      <div class="content__name"><i class="fas fa-user-tie"></i><span> Nordic Coder </span></div>
-                      <div class="content__position"><i class="fas fa-briefcase"></i><span>Trung Tâm</span></div>
-                      <div class="content__price">
-                        <div class="content__price-text"><a class="video__button" href="#"><i class="fas fa-play"></i></a><span>Học thử</span></div>
-                        <div class="content__price-number">Miễn phí</div>
-                      </div>
-                    </div>
+          <div class="blog__text">
+            <h4 class="blog__text-subheading">Latest News Articles</h4>
+            <h2 class="blog__text-heading">Watch Our Latest Blog</h2>
+            <div class="blog__text-detail"> 
+              <p>Checkout our least blog from the most liked bloggers regarding wedding and different aspects that most helpful for others</p>
+            </div>
+          </div>
+          <div class="blog__slide owl-carousel owl-theme">
+            <div class="blog__slide-item">
+              <div class="item__img"><img src="images/home/party-01.jpg" alt="">
+                <div class="item__img-date"><span class="date__detail">30</span>  OCT</div>
+              </div>
+              <div class="item__text">
+                <div class="item__text-header">
+                  <div class="header__wrapper"><span class="header__wrapper-link"><i class="fas fa-folder-open"></i><a class="link__detail" href="">Home-catering</a></span><span class="header__wrapper-user"><i class="fas fa-user"></i><a class="user__detail">John Doe</a></span></div>
+                  <div class="header__title">
+                    <h4 class="header__title-heading"><a class="heading__link" href="">Special Considerations for Outdoor Wedding Catering</a></h4>
                   </div>
-                  <div class="course__box"><a class="course__box-image" href="course-detail.html"><img src="images/courseDetail/js.jpg">
-                      <div class="image__rating">
-                        <div class="image__rating-text"><b><i class="fas fa-play-circle"></i><span>10</span></b></div>
-                        <div class="image__rating-number"><i class="fas fa-star"></i><span> <span>4.7</span>
-                            <div class="detail">đăng ký học</div></span></div>
-                      </div></a>
-                    <div class="course__box-content"><a class="content__title" href="course-detail.html">Xây dựng Multi-level menu với CSS Position</a>
-                      <div class="content__name"><i class="fas fa-user-tie"></i><span> Nordic Coder </span></div>
-                      <div class="content__position"><i class="fas fa-briefcase"></i><span>Trung Tâm</span></div>
-                      <div class="content__price">
-                        <div class="content__price-text"><a class="video__button" href="#"><i class="fas fa-play"></i></a><span>Học Thử</span></div>
-                        <div class="content__price-number">Miễn phí</div>
-                      </div>
-                    </div>
+                </div>
+                <div class="item__text-detail">
+                  <p class="detail__content">The right pair of safe hands and the peace of mind delivered by your event We’ve de...</p>
+                </div>
+              </div>
+            </div>
+            <div class="blog__slide-item">
+              <div class="item__img"><img src="images/home/party-02.jpg" alt="">
+                <div class="item__img-date"><span class="date__detail">30</span>  OCT</div>
+              </div>
+              <div class="item__text">
+                <div class="item__text-header">
+                  <div class="header__wrapper"><span class="header__wrapper-link"><i class="fas fa-folder-open"></i><a class="link__detail" href="">Home-catering</a></span><span class="header__wrapper-user"><i class="fas fa-user"></i><a class="user__detail">John Doe</a></span></div>
+                  <div class="header__title">
+                    <h4 class="header__title-heading"><a class="heading__link" href="">Special Considerations for Outdoor Wedding Catering</a></h4>
                   </div>
-                  <div class="course__box"><a class="course__box-image" href="course-detail.html"><img src="images/courseDetail/SPA.jpg">
-                      <div class="image__rating">
-                        <div class="image__rating-text"><b><i class="fas fa-play-circle"></i><span>5</span></b></div>
-                        <div class="image__rating-number"><i class="fas fa-star"></i><span> <span>4.5</span>
-                            <div class="detail">đăng ký học</div></span></div>
-                      </div></a>
-                    <div class="course__box-content"><a class="content__title" href="course-detail.html">Xây dựng SPA Shopping Cart bằng JS đơn thuần</a>
-                      <div class="content__name"><i class="fas fa-user-tie"></i><span> Nordic Coder </span></div>
-                      <div class="content__position"><i class="fas fa-briefcase"></i><span>Trung Tâm</span></div>
-                      <div class="content__price">
-                        <div class="content__price-text"><a class="video__button" href="#"><i class="fas fa-play"></i></a><span>Học thử</span></div>
-                        <div class="content__price-number">Miễn phí</div>
-                      </div>
-                    </div>
+                </div>
+                <div class="item__text-detail">
+                  <p class="detail__content">The right pair of safe hands and the peace of mind delivered by your event We’ve de...</p>
+                </div>
+              </div>
+            </div>
+            <div class="blog__slide-item">
+              <div class="item__img"><img src="images/home/party-03.jpg" alt="">
+                <div class="item__img-date"><span class="date__detail">30</span>  OCT</div>
+              </div>
+              <div class="item__text">
+                <div class="item__text-header">
+                  <div class="header__wrapper"><span class="header__wrapper-link"><i class="fas fa-folder-open"></i><a class="link__detail" href="">Home-catering</a></span><span class="header__wrapper-user"><i class="fas fa-user"></i><a class="user__detail">John Doe</a></span></div>
+                  <div class="header__title">
+                    <h4 class="header__title-heading"><a class="heading__link" href="">Special Considerations for Outdoor Wedding Catering</a></h4>
                   </div>
-                  <div class="course__box"><a class="course__box-image" href="course-detail.html"><img src="images/courseDetail/mobile.jpg">
-                      <div class="image__rating">
-                        <div class="image__rating-text"><b><i class="fas fa-play-circle"></i><span>8</span></b></div>
-                        <div class="image__rating-number"><i class="fas fa-star"></i><span> <span>4.6</span>
-                            <div class="detail">đăng ký học</div></span></div>
-                      </div></a>
-                    <div class="course__box-content"><a class="content__title" href="course-detail.html">Lập trình Website cho di động</a>
-                      <div class="content__name"><i class="fas fa-user-tie"></i><span>Trần Duy Thanh</span></div>
-                      <div class="content__position"><i class="fas fa-briefcase"></i><span>Thạc sỹ Khoa học máy tính</span></div>
-                      <div class="content__price">
-                        <div class="content__price-text"><a class="video__button" href="#"><i class="fas fa-play"></i></a><span>Học Thử</span></div>
-                        <div class="content__price-number">Miễn phí</div>
-                      </div>
-                    </div>
+                </div>
+                <div class="item__text-detail">
+                  <p class="detail__content">The right pair of safe hands and the peace of mind delivered by your event We’ve de...</p>
+                </div>
+              </div>
+            </div>
+            <div class="blog__slide-item">
+              <div class="item__img"><img src="images/home/party-04.jpg" alt="">
+                <div class="item__img-date"><span class="date__detail">30</span>  OCT</div>
+              </div>
+              <div class="item__text">
+                <div class="item__text-header">
+                  <div class="header__wrapper"><span class="header__wrapper-link"><i class="fas fa-folder-open"></i><a class="link__detail" href="">Home-catering</a></span><span class="header__wrapper-user"><i class="fas fa-user"></i><a class="user__detail">John Doe</a></span></div>
+                  <div class="header__title">
+                    <h4 class="header__title-heading"><a class="heading__link" href="">Special Considerations for Outdoor Wedding Catering</a></h4>
                   </div>
+                </div>
+                <div class="item__text-detail">
+                  <p class="detail__content">The right pair of safe hands and the peace of mind delivered by your event We’ve de...</p>
+                </div>
+              </div>
+            </div>
+            <div class="blog__slide-item">
+              <div class="item__img"><img src="images/home/party-05.jpg" alt="">
+                <div class="item__img-date"><span class="date__detail">30</span>  OCT</div>
+              </div>
+              <div class="item__text">
+                <div class="item__text-header">
+                  <div class="header__wrapper"><span class="header__wrapper-link"><i class="fas fa-folder-open"></i><a class="link__detail" href="">Home-catering</a></span><span class="header__wrapper-user"><i class="fas fa-user"></i><a class="user__detail">John Doe</a></span></div>
+                  <div class="header__title">
+                    <h4 class="header__title-heading"><a class="heading__link" href="">Special Considerations for Outdoor Wedding Catering</a></h4>
+                  </div>
+                </div>
+                <div class="item__text-detail">
+                  <p class="detail__content">The right pair of safe hands and the peace of mind delivered by your event We’ve de...</p>
+                </div>
+              </div>
+            </div>
+            <div class="blog__slide-item">
+              <div class="item__img"><img src="images/home/party-06.jpg" alt="">
+                <div class="item__img-date"><span class="date__detail">30</span>  OCT</div>
+              </div>
+              <div class="item__text">
+                <div class="item__text-header">
+                  <div class="header__wrapper"><span class="header__wrapper-link"><i class="fas fa-folder-open"></i><a class="link__detail" href="">Home-catering</a></span><span class="header__wrapper-user"><i class="fas fa-user"></i><a class="user__detail">John Doe</a></span></div>
+                  <div class="header__title">
+                    <h4 class="header__title-heading"><a class="heading__link" href="">Special Considerations for Outdoor Wedding Catering</a></h4>
+                  </div>
+                </div>
+                <div class="item__text-detail">
+                  <p class="detail__content">The right pair of safe hands and the peace of mind delivered by your event We’ve de...</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="teachers px-60">
-        <div class="container">
-          <h2 class="title">Đội ngũ giảng viên</h2>
-          <div class="teachers__list owl-carousel owl-theme">
-                  <div class="teacher__item">
-                    <div class="teacher__item-header">
-                      <div class="teacher__avatar">
-                        <div class="teacher__avatar-img"><img src="images/home/teacher-1.jpg" alt="avatar teacher"></div>
-                      </div>
-                    </div>
-                    <div class="teacher__item-body">
-                      <h3 class="teacher__name">Nguyễn Đức Việt</h3>
-                      <p class="teacher__major"><i class="fal fa-briefcase"></i>Giảng viên FPT Arena
-                      </p>
-                      <div class="teacher__info">
-                        <div class="teacher__info-item">
-                          <p>Số khóa học</p><span>16</span>
-                        </div>
-                        <div class="teacher__info-item">
-                          <p>Tổng giờ giảng</p><span>350</span>
-                        </div>
-                        <div class="teacher__info-item">
-                          <p>Số khóa học</p><span>79</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="teacher__item-footer"><a class="teacher__item-btn" href="#">Xem thêm</a></div>
-                  </div>
-                  <div class="teacher__item">
-                    <div class="teacher__item-header">
-                      <div class="teacher__avatar">
-                        <div class="teacher__avatar-img"><img src="images/home/teacher-2.jpg" alt="avatar teacher"></div>
-                      </div>
-                    </div>
-                    <div class="teacher__item-body">
-                      <h3 class="teacher__name">Bạch Ngọc Toàn</h3>
-                      <p class="teacher__major"><i class="fal fa-briefcase"></i>Senior .NET
-                      </p>
-                      <div class="teacher__info">
-                        <div class="teacher__info-item">
-                          <p>Số khóa học</p><span>10</span>
-                        </div>
-                        <div class="teacher__info-item">
-                          <p>Tổng giờ giảng</p><span>300</span>
-                        </div>
-                        <div class="teacher__info-item">
-                          <p>Số khóa học</p><span>68</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="teacher__item-footer"><a class="teacher__item-btn" href="#">Xem thêm</a></div>
-                  </div>
-                  <div class="teacher__item">
-                    <div class="teacher__item-header">
-                      <div class="teacher__avatar">
-                        <div class="teacher__avatar-img"><img src="images/home/teacher-3.png" alt="avatar teacher"></div>
-                      </div>
-                    </div>
-                    <div class="teacher__item-body">
-                      <h3 class="teacher__name">Trần Duy Thanh</h3>
-                      <p class="teacher__major"><i class="fal fa-briefcase"></i>Thạc Sỹ khoa học máy tính
-                      </p>
-                      <div class="teacher__info">
-                        <div class="teacher__info-item">
-                          <p>Số khóa học</p><span>16</span>
-                        </div>
-                        <div class="teacher__info-item">
-                          <p>Tổng giờ giảng</p><span>400</span>
-                        </div>
-                        <div class="teacher__info-item">
-                          <p>Số khóa học</p><span>77</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="teacher__item-footer"><a class="teacher__item-btn" href="#">Xem thêm</a></div>
-                  </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer bgcLightGrey">
+      <div class="footer">
         <div class="footer__top">
           <div class="container">
-            <div class="row">
-              <div class="mb-3 col-sm-6 col-lg-3">
-                <div class="footer__top-hotline">
-                  <h4 class="footer__title">Kết nối với Oncode</h4>
-                  <ul class="footer__hotline-contact">
-                    <li><span class="first"><i class="fal fa-phone"></i>Hotline</span><span class="second">0965863079</span></li>
-                    <li><span class="first"><i class="fal fa-envelope"></i>Email</span><span class="second">hotro@oncode.edu.vn</span></li>
-                  </ul>
-                  <div class="footer__hotline-social"><a href="#" target="_blank"><img src="images/layout/fb_icon_footer.png" alt="fanpage"></a><a href="#" target="_blank"><img src="images/layout/youtube_icon_footer.png" alt="fanpage"></a><a href="#" target="_blank"><img src="images/layout/zalo_icon_footer.png" alt="fanpage"></a></div>
+            <div class="footer__top-content">
+              <div class="content__img"><img src="images/layout/logo-dark.png" alt=""></div>
+              <div class="content__box row">
+                <div class="content__box-text col-md-4">
+                  <h2 class="text__heading">Office Address</h2>
+                  <p class="text__detail">Evanto HQ 24 Fifth st., Los Angeles, USA</p>
+                </div>
+                <div class="content__box-text col-md-4">
+                  <h2 class="text__heading">Talk To Expert</h2>
+                  <p class="text__detail">(+01) 123 456 7890</p>
+                </div>
+                <div class="content__box-text col-md-4">
+                  <h2 class="text__heading">Email Us</h2>
+                  <p class="text__detail">info@yourdomain.com</p>
                 </div>
               </div>
-              <div class="mb-3 col-sm-6 col-lg-3">
-                <div class="footer__top-info">
-                  <h4 class="footer__title">Thông tin Oncode</h4>
-                  <ul>
-                    <li><a href="#">Danh sách khóa học</a></li>
-                    <li><a href="#">Câu hỏi thường gặp</a></li>
-                    <li><a href="#">Cách thanh toán học phí</a></li>
-                    <li><a href="#">Thông tin hữu ích</a></li>
-                    <li><a href="#">VietnamWorks</a></li>
-                    <li><a href="#">PRIMUS</a></li>
+              <form class="content__form" action="">
+                <div class="content__form-input"><i class="fal fa-envelope"></i>
+                  <input class="input__email" type="email" name="EMAIL" placeholder="Your Email Address.." required="">
+                  <input class="input__submit" type="submit" value="Submit">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bot">
+          <div class="container marginAuto">
+            <div class="row footer__bot-area">
+              <div class="area__widget col-xs-12 col-sm-6 col-md-3 col-lg-4">
+                <h3 class="area__widget-heading">About WedCo</h3>
+                <div class="area__widget-text">
+                  <p class="text__detail">We’ve delivered fabulous wedding event experiences over the last two decades and are now poised to chart out a whole new growth story. We hosted for reputed company</p>
+                </div>
+                <div class="area__widget-icon"><a class="icon__link" href=""><i class="fab fa-facebook-f"></i></a><a class="icon__link" href=""><i class="fab fa-twitter"></i></a><a class="icon__link" href=""><i class="fab fa-flickr"></i></a><a class="icon__link" href=""><i class="fab fa-linkedin-in"></i></a></div>
+              </div>
+              <div class="area__widget col-xs-12 col-sm-6 col-md-3 col-lg-2">
+                <h3 class="area__widget-heading">Our Services</h3>
+                <div class="area__widget-link">
+                  <ul class="link__list">
+                    <li class="link__list-item"><i class="fal fa-chevron-right"></i><a class="item__link" href="">User Strategy</a></li>
+                    <li class="link__list-item"><i class="fal fa-chevron-right"></i><a class="item__link" href="">Product Designing</a></li>
+                    <li class="link__list-item"><i class="fal fa-chevron-right"></i><a class="item__link" href="">Marketing Strategy</a></li>
+                    <li class="link__list-item"><i class="fal fa-chevron-right"></i><a class="item__link" href="">IT Consultancy</a></li>
+                    <li class="link__list-item"><i class="fal fa-chevron-right"></i><a class="item__link" href="">Server Security</a></li>
                   </ul>
                 </div>
               </div>
-              <div class="mb-3 col-sm-6 col-lg-3">
-                <div class="footer__top-about">
-                  <h4 class="footer__title">Về Oncode</h4>
-                  <ul>
-                    <li class="iconfeature"><a href="#">Giảng dạy tại Oncode</a></li>
-                    <li><a href="#">Hợp tác với Oncode</a></li>
-                    <li><a href="#">Đối tác phân phối</a></li>
-                    <li><a href="#">Quy chế hoạt động sàn GDTMĐT</a></li>
+              <div class="area__widget col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <h3 class="area__widget-heading">Wedding Planner Faqs</h3>
+                <div class="area__widget-link">
+                  <ul class="link__list">
+                    <li class="link__list-item"><i class="fal fa-chevron-right"></i><a class="item__link" href="">Why hire a planner ?</a></li>
+                    <li class="link__list-item"><i class="fal fa-chevron-right"></i><a class="item__link" href="">How can i make an appointment ?</a></li>
+                    <li class="link__list-item"><i class="fal fa-chevron-right"></i><a class="item__link" href="">How to choose a venue ?</a></li>
+                    <li class="link__list-item"><i class="fal fa-chevron-right"></i><a class="item__link" href="">Event catalogue ?</a></li>
+                    <li class="link__list-item"><i class="fal fa-chevron-right"></i><a class="item__link" href="">Pyment type you accept</a></li>
                   </ul>
                 </div>
               </div>
-              <div class="mb-3 col-sm-6 col-lg-3">
-                <div class="footer__top-fanpage">
-                  <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Foncodeacademy&amp;tabs=272&amp;width=255&amp;height=220&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId=168015681053039" width="255" height="150" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                </div>
+              <div class="area__widget col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <h3 class="area__widget-heading">Instagram Gallery</h3>
               </div>
             </div>
           </div>
         </div>
-        <div class="footer__copyright">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8">
-                <div class="footer__address">
-                  <div class="footer__address-text">
-                    <p class="footer__address-copyright">&copy; 2020 - Bản quyền của Công ty TNHH Bigvio Media</p>
-                    <p><span>Trụ sở chính: Số nhà 19 ngõ 77 phố Lãng Yên, phường Thanh Lương, quận Hai Bà Trưng, Tp Hà Nội</span>
-                      </p><p>Giấy phép ĐKKD số 123456789 do Sở Kế hoạch và Đầu tư TP Hà Nội cấp</p>
-                    <p></p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 footer__info"><a class="col-lg-6" href="#" target="_blank"><img class="img-fluid" src="images/layout/dathongbao.png" alt="da thong bao"></a><a class="col-lg-6" href="#" target="_blank"><img class="img-fluid" src="images/layout/logoCCDV.png" alt="da dang ky"></a>
-                <ul>
-                  <li><a href="#" title="title">Điều khoản dịch vụ </a></li>
-                  <li><a href="#" title="title">Chính sách bảo mật</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="footer__copyright">  Copyright &copy; 2020. All rights reserved by <a class="footer__copyright-link" href="http://themetechmount.com/">Themetechmount</a></div>
       </div>
       <!-- Start Back to Top-->
-      <div class="back-to-top" id="back-to-top"><a href="#"><i class="fas fa-arrow-up"></i></a></div>
+      <div class="back-to-top" id="back-to-top"><a href="#"><i class="far fa-chevron-up"></i></a></div>
+      <!-- End Back to Top-->
+      <!-- Start Back to Top-->
+      <div class="back-to-top" id="back-to-top"><a href="#"><i class="far fa-chevron-up"></i></a></div>
       <!-- End Back to Top-->
     </div>
     <!-- Jquery-->
@@ -908,7 +688,12 @@
     <script src="js/owl.carousel.min.js"></script>
     <!-- Fancybox-->
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!-- Isotope-->
+    <script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="https://npmcdn.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
     <!-- Main Js-->
     <script src="js/main.js"></script>
+    <!-- Wow JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   </body>
 </html>
