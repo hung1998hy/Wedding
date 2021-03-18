@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Oncode Education</title>
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="images/layout/favicon.ico">
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet">
+    <!-- Owl Carousel CSS-->
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/owl.theme.default.min.css" rel="stylesheet">
+    <!-- Fancybox-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <!-- Main CSS-->
+    <link href="./css/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <div class="container">
+          <div class="header__box">
+            <div class="header__top">
+              <div class="header__top-left">
+                <div class="header__logo"><a class="header__logo-link" href="index.html" title="title"><img class="img-fluid" src="images/layout/kyna_logo.png" alt="logo"></a></div>
+                <div class="header__search">
+                  <form action="" method="get" id="search-form">
+                    <div class="input-group">
+                      <label for="live-search-bar">Tìm kiếm</label>
+                      <input class="form-control live-search-bar" type="text" placeholder="Nhập tên khóa học/giảng viên" id="live-search-bar">
+                      <button class="search-btn" type="submit" aria-label><i class="fal fa-search"></i></button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="header__top-direction">
+                <div class="header__item"><a class="header__item-link" href="#"><i class="fal fa-unlock-alt"></i>Học miễn phí</a></div>
+                <div class="header__item">
+                  <div class="header__item-cart"><a class="dropdown-toggle cart_anchor" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="far fa-shopping-cart"></i><span class="count-number d-none">0 </span></a>
+                    <ul class="dropdown-menu">
+                      <div class="hidden" id="items-id-in-current-cart" style="display: none" data-all-cart-items=""></div>
+                      <li class="cart-rgister">
+                        <ul class="list">
+                          <li class="list__item">
+                            <div class="col-12"><a class="list__item-link" href="#">
+                                 Khóa học HTMl, CSS, JS cơ bản<br><span class="price"> 490.000 ₫</span></a></div>
+                          </li>
+                          <li class="list__item">
+                            <div class="col-12">
+                              <div class="view"><a class="view__link"><i class="fas fa-angle-double-right"></i>Xem Giỏ Hàng</a>
+                                <p class="view__sum">Tổng cộng: 198000 ₫   </p>
+                              </div>
+                              <div class="btn__click">
+                                <button class="btn__click-pay">Thanh Toán                      </button>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="header__item">
+                  <div class="header__item-login">Đăng nhập<span class="logo-login"><a href="#" title="title"><i class="fab fa-facebook"></i></a><a href="#" title="title"><i class="fab fa-google"></i></a><a href="#" title="title"><i class="fab fa-instagram"></i></a></span></div>
+                </div>
+              </div>
+            </div>
+            <div class="header__menu">
+              <ul class="header__menu-list">
+                <li class="header__menu-item"><a class="header__menu-link" href="index.html">Giới thiệu</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="courses.html">Khóa học</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="jobs.html">Việc làm</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="posts.html">Bí quyết</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__mobile">
+        <div class="header__mobile-wrap">
+          <div class="header__mobile-btn"><i class="fal fa-bars"></i></div>
+          <div class="header__mobile-logo"><a href="index.html"><img class="img-fluid" src="images/layout/kyna_logo.png" alt="logo"></a></div>
+          <div class="header__mobile-cart">
+            <div class="header__mobile-cartSearch"><i class="fal fa-search"></i></div>
+            <div class="header__item-cart"><a href="#"><i class="far fa-shopping-cart"></i><span class="count-number d-none">0 </span></a>
+              <ul class="dropdown-menu">
+                <div class="hidden" id="items-id-in-current-cart" style="display: none" data-all-cart-items=""></div>
+                <li class="cart-rgister">
+                  <ul class="list">
+                    <li class="list__item">
+                      <div class="col-12"><a class="list__item-link" href="#">
+                           Khóa học HTMl, CSS, JS cơ bản<br><span class="price"> 490.000 ₫</span></a></div>
+                    </li>
+                    <li class="list__item">
+                      <div class="col-12">
+                        <div class="view"><a class="view__link"><i class="fas fa-angle-double-right"></i>Xem Giỏ Hàng</a>
+                          <p class="view__sum">Tổng cộng: 198000 ₫   </p>
+                        </div>
+                        <div class="btn__click">
+                          <button class="btn__click-pay">Thanh Toán  </button>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="header__mobile-bottom"><a class="header__item-link" href="#"><i class="fal fa-unlock-alt"></i>Học miễn phí</a><a class="header__item-link" href="#">Đăng nhập</a></div>
+        <div class="header__mobile-search">
+          <form class="search-form" action="" method="get">
+            <div class="input-group">
+              <input type="text" placeholder="Nhập tên khóa học/giảng viên">
+            </div>
+          </form>
+        </div>
+        <div class="header__mobile-menu">
+          <div class="btn-close"><i class="fal fa-times"></i></div>
+          <div class="header__mobile-inner"><a class="login" href="#">Đăng nhập</a>
+            <ul class="header__mobile-list">
+              <li class="header__list-item"><a class="header__list-link" href="index.html"><img src="images/home/menu-icon-1.png" alt=""><span class="name">Giới thiệu</span></a></li>
+              <li class="header__list-item"><a class="header__list-link" href="courses.html"><img src="images/home/menu-icon-1.png" alt=""><span class="name">Khóa học</span>
+                  <div class="child-icon"><i class="fas fa-caret-right"></i></div></a>
+                <div class="header__mobile-category">
+                  <div class="go-back"><i class="fal fa-chevron-left"></i>Trở về</div>
+                  <ul class="header__mobile-list">
+                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>HTML, CSS</span></a></li>
+                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>JS</span></a></li>
+                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>ReactJS</span></a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__list-item"><a class="header__list-link" href="jobs.html"><img src="images/home/menu-icon-1.png" alt=""><span class="name">Việc làm</span>
+                  <div class="child-icon"><i class="fas fa-caret-right"></i></div></a>
+                <div class="header__mobile-category">
+                  <div class="go-back"><i class="fal fa-chevron-left"></i>Trở về</div>
+                  <ul class="header__mobile-list">
+                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>HTML, CSS</span></a></li>
+                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>JS</span></a></li>
+                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>ReactJS</span></a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__list-item"><a class="header__list-link" href="post.html"><img src="images/home/menu-icon-1.png" alt=""><span class="name">Bí quyết</span>
+                  <div class="child-icon"><i class="fas fa-caret-right"></i></div></a>
+                <div class="header__mobile-category">
+                  <div class="go-back"><i class="fal fa-chevron-left"></i>Trở về</div>
+                  <ul class="header__mobile-list">
+                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>HTML, CSS</span></a></li>
+                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>JS</span></a></li>
+                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>ReactJS</span></a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Start Breadcrumb-->
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <div class="container">
+            <li class="breadcrumb-item"><i class="fas fa-home"></i><a href="index.html">Trang chủ</a></li>
+            <li class="breadcrumb-item"><a href="#">Bí quyết chuyên gia</a></li>
+          </div>
+        </ol>
+      </nav>
+      <!-- End Breadcrumb-->
+      <div class="slider-item px-20"> 
+        <div class="container">
+          <div class="slider owl-carousel owl-theme"><img src="images/layout/slider.png" alt="slider-img"><img src="images/layout/slider-2.png" alt="slider-img"><img src="images/layout/slider-3.png" alt="slider-img"></div>
+        </div>
+      </div>
+      <div class="block"> 
+        <div class="container"> 
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="row">
+                <div class="col-lg-6 px-0">
+                        <div class="block__module">
+                          <div class="block__module-img"><a href="#"><img src="./images/post/img1.webp" alt=""></a></div>
+                          <h3 class="block__module-title"> <a href="post-detail.html">Nhìn lại chuỗi training của Chặng 2 Cuộc thi Khởi nghiệp trẻ 2020: Bước đệm vững chắc để ý...</a></h3>
+                          <div class="block__module-info"><span class="td__name"> <a href="#">Ronaldo</a><span>-</span></span><span class="td__date">
+                              <time class="td__date-updat" datetime="2020-10-06T20:55:44+00:00">October 6, 2020</time></span></div>
+                        </div>
+                </div>
+                <div class="col-lg-6 px-0">
+                        <div class="block__module">
+                          <div class="block__module-img"><a href="#"><img src="./images/post/img2.jpg" alt=""></a></div>
+                          <h3 class="block__module-title"> <a href="post-detail.html">TopCV lọt Top 100 Thương hiệu hàng đầu Việt Nam</a></h3>
+                          <div class="block__module-info"><span class="td__name"> <a href="#">Ronaldo</a><span>-</span></span><span class="td__date">
+                              <time class="td__date-updat" datetime="2020-10-06T20:55:44+00:00">September 30, 2020</time></span></div>
+                        </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 px-0">
+                        <div class="block__module">
+                          <div class="block__module-img"><a href="#"><img src="./images/post/img3.webp" alt=""></a></div>
+                          <h3 class="block__module-title"> <a href="post-detail.html">TopCV được Google lựa chọn tham gia chương trình Google for Startups Accelerator: Southeast Asia</a></h3>
+                          <div class="block__module-info"><span class="td__name"> <a href="#">Ronaldo</a><span>-</span></span><span class="td__date">
+                              <time class="td__date-updat" datetime="2020-10-06T20:55:44+00:00">August 7, 2020</time></span></div>
+                        </div>
+                </div>
+                <div class="col-lg-6 px-0">
+                        <div class="block__module">
+                          <div class="block__module-img"><a href="#"><img src="./images/post/img4.jpg" alt=""></a></div>
+                          <h3 class="block__module-title"> <a href="post-detail.html">FUNiX và TOPCV hợp tác xây dựng CV toàn diện cho ứng viên</a></h3>
+                          <div class="block__module-info"><span class="td__name"> <a href="#">Ronaldo</a><span>-</span></span><span class="td__date">
+                              <time class="td__date-updat" datetime="2020-10-06T20:55:44+00:00">July 31, 2020</time></span></div>
+                        </div>
+                </div>
+              </div>
+              <div class="pagination__title">
+                <h4>Bài mới nhất                </h4>
+              </div>
+                    <div class="pagination__inner">
+                      <div class="row">
+                        <div class="col-md-4 col-sm-4 col-4 px-1">
+                          <div class="pagination__inner-thumb"><a href="post-detail.html"> <img src="./images/post/marketing.jpg"></a></div>
+                        </div>
+                        <div class="col-md-8 col-sm-8 col-8">
+                          <div class="pagination__inner-detail">
+                            <h3 class="block__module-title"><a href="post-detail.html">Sale marketing là gì? Cơ hội việc làm ngành sale and marketing</a></h3>
+                            <div class="block__module-info">
+                              <div class="td__name"><a href="#">Ronaldo<span>-</span></a></div>
+                              <div class="td__date">
+                                <time class="td__date-updat" datetime="2020-10-06T20:55:44+00:00">November 2, 2020</time>
+                              </div>
+                            </div>
+                            <div class="pagination-excerpt">Khi nói đến lĩnh vực kinh doanh, nhất là trong thời đại kinh tế phát triển hẳn bạn cũng đang thắc mắc định nghĩa về Sale marketing...</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pagination__inner">
+                      <div class="row">
+                        <div class="col-md-4 col-sm-4 col-4 px-1">
+                          <div class="pagination__inner-thumb"><a href="post-detail.html"> <img src="./images/post/img4.jpg"></a></div>
+                        </div>
+                        <div class="col-md-8 col-sm-8 col-8">
+                          <div class="pagination__inner-detail">
+                            <h3 class="block__module-title"><a href="post-detail.html">8 kỹ năng bán hàng qua điện thoại giúp bạn thành công trong sự nghiệp</a></h3>
+                            <div class="block__module-info">
+                              <div class="td__name"><a href="#">Ronaldo<span>-</span></a></div>
+                              <div class="td__date">
+                                <time class="td__date-updat" datetime="2020-10-06T20:55:44+00:00">November 2, 2020</time>
+                              </div>
+                            </div>
+                            <div class="pagination-excerpt">Sự bùng nổ của công nghệ thông tin đã tạo ra những thay đổi lớn cho kinh tế - xã hội. Song song với sự phát triển...</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pagination__inner">
+                      <div class="row">
+                        <div class="col-md-4 col-sm-4 col-4 px-1">
+                          <div class="pagination__inner-thumb"><a href="post-detail.html"> <img src="./images/post/img5.jpg"></a></div>
+                        </div>
+                        <div class="col-md-8 col-sm-8 col-8">
+                          <div class="pagination__inner-detail">
+                            <h3 class="block__module-title"><a href="post-detail.html">Nhân viên bán hàng là gì? Mô tả công việc và kỹ năng cần thiết</a></h3>
+                            <div class="block__module-info">
+                              <div class="td__name"><a href="#">Ronaldo<span>-</span></a></div>
+                              <div class="td__date">
+                                <time class="td__date-updat" datetime="2020-10-06T20:55:44+00:00">November 2, 2020</time>
+                              </div>
+                            </div>
+                            <div class="pagination-excerpt">Nhân viên bán hàng là gì? họ làm những công việc gì? đang là câu hỏi chúng với các bạn trẻ đang có mong muốn tìm hiểu...</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pagination__inner">
+                      <div class="row">
+                        <div class="col-md-4 col-sm-4 col-4 px-1">
+                          <div class="pagination__inner-thumb"><a href="post-detail.html"> <img src="./images/post/img6.jpg"></a></div>
+                        </div>
+                        <div class="col-md-8 col-sm-8 col-8">
+                          <div class="pagination__inner-detail">
+                            <h3 class="block__module-title"><a href="post-detail.html">Thiết kế đồ họa là gì? Nghề Graphic design ra trường có triển vọng không?</a></h3>
+                            <div class="block__module-info">
+                              <div class="td__name"><a href="#">Ronaldo<span>-</span></a></div>
+                              <div class="td__date">
+                                <time class="td__date-updat" datetime="2020-10-06T20:55:44+00:00">November 2, 2020</time>
+                              </div>
+                            </div>
+                            <div class="pagination-excerpt">Đi cùng sự phát triển của khoa học công nghệ, ngành nghề nghệ thuật nói chung và thiết kế đồ họa nói riêng cũng bắt kịp xu...</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pagination__inner">
+                      <div class="row">
+                        <div class="col-md-4 col-sm-4 col-4 px-1">
+                          <div class="pagination__inner-thumb"><a href="post-detail.html"> <img src="./images/post/img7.jpg"></a></div>
+                        </div>
+                        <div class="col-md-8 col-sm-8 col-8">
+                          <div class="pagination__inner-detail">
+                            <h3 class="block__module-title"><a href="post-detail.html">Hành chính nhân sự là gì? Mô tả nhiệm vụ của chuyên viên hành chính</a></h3>
+                            <div class="block__module-info">
+                              <div class="td__name"><a href="#">Ronaldo<span>-</span></a></div>
+                              <div class="td__date">
+                                <time class="td__date-updat" datetime="2020-10-06T20:55:44+00:00">November 2, 2020</time>
+                              </div>
+                            </div>
+                            <div class="pagination-excerpt">Hành chính nhân sự là một vị trí quan trọng trong mọi tổ chức, doanh nghiệp. Vậy hành chính nhân sự là gì? Công việc của một...</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pagination__inner">
+                      <div class="row">
+                        <div class="col-md-4 col-sm-4 col-4 px-1">
+                          <div class="pagination__inner-thumb"><a href="post-detail.html"> <img src="./images/post/img9.webp"></a></div>
+                        </div>
+                        <div class="col-md-8 col-sm-8 col-8">
+                          <div class="pagination__inner-detail">
+                            <h3 class="block__module-title"><a href="post-detail.html">Cập nhật mẫu biên bản bàn giao công việc chuẩn mới nhất</a></h3>
+                            <div class="block__module-info">
+                              <div class="td__name"><a href="#">Ronaldo<span>-</span></a></div>
+                              <div class="td__date">
+                                <time class="td__date-updat" datetime="2020-10-06T20:55:44+00:00">November 2, 2020</time>
+                              </div>
+                            </div>
+                            <div class="pagination-excerpt">Khi nghỉ việc tạm thời hoặc thôi việc hẳn, bạn cần bàn giao công việc của mình. Sau đây là mẫu biên bản bàn giao công việc...</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pagination__inner">
+                      <div class="row">
+                        <div class="col-md-4 col-sm-4 col-4 px-1">
+                          <div class="pagination__inner-thumb"><a href="post-detail.html"> <img src="./images/post/img10.jpg"></a></div>
+                        </div>
+                        <div class="col-md-8 col-sm-8 col-8">
+                          <div class="pagination__inner-detail">
+                            <h3 class="block__module-title"><a href="post-detail.html">HCNS là gì? Mẫu mô tả công việc hành chính nhân sự hiện nay</a></h3>
+                            <div class="block__module-info">
+                              <div class="td__name"><a href="#">Ronaldo<span>-</span></a></div>
+                              <div class="td__date">
+                                <time class="td__date-updat" datetime="2020-10-06T20:55:44+00:00">November 2, 2020</time>
+                              </div>
+                            </div>
+                            <div class="pagination-excerpt">Nhân viên hành chính là gì? Họ là một bộ phận quan trọng với tất cả các công ty, doanh nghiệp được Topcv bật mí trong bài...</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pagination__inner">
+                      <div class="row">
+                        <div class="col-md-4 col-sm-4 col-4 px-1">
+                          <div class="pagination__inner-thumb"><a href="post-detail.html"> <img src="./images/post/img11.jpg"></a></div>
+                        </div>
+                        <div class="col-md-8 col-sm-8 col-8">
+                          <div class="pagination__inner-detail">
+                            <h3 class="block__module-title"><a href="post-detail.html">Bạn không phù hợp làm HR nếu thiếu 7 tố chất của người làm nhân sự sau đây</a></h3>
+                            <div class="block__module-info">
+                              <div class="td__name"><a href="#">Ronaldo<span>-</span></a></div>
+                              <div class="td__date">
+                                <time class="td__date-updat" datetime="2020-10-06T20:55:44+00:00">November 2, 2020</time>
+                              </div>
+                            </div>
+                            <div class="pagination-excerpt">Nhân sự là một ngành nghề khá hấp dẫn vì mức thu nhập tốt và nhu cầu tuyển dụng cao. Hầu như mọi tổ chức đều cần...</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              <div class="btn__box text-center mb-3"><a class="btn btn-green mx-auto" href="#">Xem thêm</a></div>
+            </div>
+            <div class="col-lg-4">
+                    <div class="image__scroll">
+                      <div class="image__scroll-item"><img src="https://blog.topcv.vn/wp-content/uploads/2020/05/Banner-blog-topcv-Sidebar-Right.png"><img src="https://blog.topcv.vn/wp-content/uploads/2020/05/Banner-blog-topcv-Sidebar-Right.png"></div>
+                    </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer bgcLightGrey">
+        <div class="footer__top">
+          <div class="container">
+            <div class="row">
+              <div class="mb-3 col-sm-6 col-lg-3">
+                <div class="footer__top-hotline">
+                  <h4 class="footer__title">Kết nối với Oncode</h4>
+                  <ul class="footer__hotline-contact">
+                    <li><span class="first"><i class="fal fa-phone"></i>Hotline</span><span class="second">0965863079</span></li>
+                    <li><span class="first"><i class="fal fa-envelope"></i>Email</span><span class="second">hotro@oncode.edu.vn</span></li>
+                  </ul>
+                  <div class="footer__hotline-social"><a href="#" target="_blank"><img src="images/layout/fb_icon_footer.png" alt="fanpage"></a><a href="#" target="_blank"><img src="images/layout/youtube_icon_footer.png" alt="fanpage"></a><a href="#" target="_blank"><img src="images/layout/zalo_icon_footer.png" alt="fanpage"></a></div>
+                </div>
+              </div>
+              <div class="mb-3 col-sm-6 col-lg-3">
+                <div class="footer__top-info">
+                  <h4 class="footer__title">Thông tin Oncode</h4>
+                  <ul>
+                    <li><a href="#">Danh sách khóa học</a></li>
+                    <li><a href="#">Câu hỏi thường gặp</a></li>
+                    <li><a href="#">Cách thanh toán học phí</a></li>
+                    <li><a href="#">Thông tin hữu ích</a></li>
+                    <li><a href="#">VietnamWorks</a></li>
+                    <li><a href="#">PRIMUS</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mb-3 col-sm-6 col-lg-3">
+                <div class="footer__top-about">
+                  <h4 class="footer__title">Về Oncode</h4>
+                  <ul>
+                    <li class="iconfeature"><a href="#">Giảng dạy tại Oncode</a></li>
+                    <li><a href="#">Hợp tác với Oncode</a></li>
+                    <li><a href="#">Đối tác phân phối</a></li>
+                    <li><a href="#">Quy chế hoạt động sàn GDTMĐT</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mb-3 col-sm-6 col-lg-3">
+                <div class="footer__top-fanpage">
+                  <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Foncodeacademy&amp;tabs=272&amp;width=255&amp;height=220&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId=168015681053039" width="255" height="150" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="footer__address">
+                  <div class="footer__address-text">
+                    <p class="footer__address-copyright">&copy; 2020 - Bản quyền của Công ty TNHH Bigvio Media</p>
+                    <p><span>Trụ sở chính: Số nhà 19 ngõ 77 phố Lãng Yên, phường Thanh Lương, quận Hai Bà Trưng, Tp Hà Nội</span>
+                      </p><p>Giấy phép ĐKKD số 123456789 do Sở Kế hoạch và Đầu tư TP Hà Nội cấp</p>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 footer__info"><a class="col-lg-6" href="#" target="_blank"><img class="img-fluid" src="images/layout/dathongbao.png" alt="da thong bao"></a><a class="col-lg-6" href="#" target="_blank"><img class="img-fluid" src="images/layout/logoCCDV.png" alt="da dang ky"></a>
+                <ul>
+                  <li><a href="#" title="title">Điều khoản dịch vụ </a></li>
+                  <li><a href="#" title="title">Chính sách bảo mật</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Start Back to Top-->
+      <div class="back-to-top" id="back-to-top"><a href="#"><i class="fas fa-arrow-up"></i></a></div>
+      <!-- End Back to Top-->
+    </div>
+    <!-- Jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Owl Carousel-->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Fancybox-->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!-- Main Js-->
+    <script src="js/main.js"></script>
+  </body>
+</html>

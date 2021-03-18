@@ -1,0 +1,25 @@
+mixin blog-content-item(srcOne, srcTwo, linkOne, linkTwo, text, srcThree, name, cmt, tag)
+    .box
+        .area__img
+            a.area__img-link(href="#")
+                img(src= srcOne, alt="")
+        .area__text
+            .area__text-header
+                .header__icon
+                    .header__icon-img
+                        img(src= srcTwo, alt="")
+                    a.header__icon-link(href="")= linkOne
+                h2.header__title
+                    a.header__title-link(href="#")= linkTwo
+            .area__text-detail
+                p.detail__content= text
+                .detail__contact 
+                    span.detail__contact-byline
+                        img(src= srcThree, alt="")
+                        a.byline__link(href="")= name
+                    span.detail__contact-cmt
+                        i.fal.fa-comment  
+                        a.cmt__link(href="")= cmt
+                    span.detail__contact-tag
+                        i.fad&attributes(attributes)
+                        a.tag__link(href="")= tag

@@ -1,0 +1,93 @@
+.memorie {
+    padding: 82px 0 60px 0;
+    text-align: center;
+    @include max-breakpoint(991) {
+        padding: 45px 0 35px;
+    }
+    &__text {
+        &-subheading {
+            font-size: 16px;
+            font-family: $font-hind;
+            margin: 4px 0 5px 0;
+            font-weight: 500;
+            color: #c78665;
+            letter-spacing: 0.5px;
+            line-height: 20px;
+        }
+        &-heading {
+            font-size: 40px;
+            font-family: $font-cor;
+            font-weight: 700;
+            color: #121f38;
+            line-height: 52px;
+            margin-bottom: 10px;
+        }
+        &-detail {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+            p {
+                font-size: 16px;
+                line-height: 26px;
+                font-family: $font-hind;
+                color: #818491;
+                width: 52%;
+                margin-bottom: 15px;
+                @include max-breakpoint(991) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    &__fancy {
+        &-img {
+            margin-bottom: 30px;
+            position: relative;
+            .img__over {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: rgba(25, 25, 25, 0);
+                transform: scale(0);
+                transition: all 0.45s ease-in-out;
+                &-search {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    border: 1px solid transparent;
+                    color: #fff;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 0;
+                    text-align: center;
+                    line-height: 40px;
+                    font-size: 14px;
+                    background: #c78665;
+                    transform: translate(-50%, -50%);
+                    opacity: 0;
+                    -webkit-transition: all .45s ease 0ms;
+                    -khtml-transition: all .45s ease 0ms;
+                    -moz-transition: all .45s ease 0ms;
+                    -ms-transition: all .45s ease 0ms;
+                    -o-transition: all .45s ease 0ms;
+                    transition: all .45s ease 0ms;
+                }
+            }
+            img {
+                object-fit: cover;
+            }
+            &:hover {
+                .img__over {
+                    background: rgba(25, 25, 25, 0.7);
+                    z-index: 1;
+                    transform: scale(1);
+                    &-search {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

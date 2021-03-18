@@ -1,0 +1,18 @@
+mixin about-team-item(src, link, text)
+    .aboutTeam__member-slide
+                    .slide__img
+                        img(src= src, alt="")
+                        .slide__img-content
+                            a.content__link()
+                                i.fal.fa-plus
+                    .slide__box
+                        h4.slide__box-heading
+                            a.heading__link(href="")= link
+                        p.slide__box-text= text
+                        .slide__box-icon
+                            a.icon__link
+                                i.fab.fa-twitter
+                            a.icon__link
+                                i.fab.fa-youtube
+                            a.icon__link
+                                i.fab.fa-instagram

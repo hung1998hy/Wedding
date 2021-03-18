@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Oncode Education</title>
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="images/layout/favicon.ico">
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet">
+    <!-- Owl Carousel CSS-->
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/owl.theme.default.min.css" rel="stylesheet">
+    <!-- Fancybox-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <!-- Main CSS-->
+    <link href="./css/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <div class="container">
+          <div class="header__box">
+            <div class="header__top">
+              <div class="header__top-left">
+                <div class="header__logo"><a class="header__logo-link" href="index.html" title="title"><img class="img-fluid" src="images/layout/kyna_logo.png" alt="logo"></a></div>
+                <div class="header__search">
+                  <form action="" method="get" id="search-form">
+                    <div class="input-group">
+                      <label for="live-search-bar">Tìm kiếm</label>
+                      <input class="form-control live-search-bar" type="text" placeholder="Nhập tên khóa học/giảng viên" id="live-search-bar">
+                      <button class="search-btn" type="submit" aria-label><i class="fal fa-search"></i></button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="header__top-direction">
+                <div class="header__item"><a class="header__item-link" href="#"><i class="fal fa-unlock-alt"></i>Học miễn phí</a></div>
+                <div class="header__item">
+                  <div class="header__item-cart"><a class="dropdown-toggle cart_anchor" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="far fa-shopping-cart"></i><span class="count-number d-none">0 </span></a>
+                    <ul class="dropdown-menu">
+                      <div class="hidden" id="items-id-in-current-cart" style="display: none" data-all-cart-items=""></div>
+                      <li class="cart-rgister">
+                        <ul class="list">
+                          <li class="list__item">
+                            <div class="col-12"><a class="list__item-link" href="#">
+                                 Khóa học HTMl, CSS, JS cơ bản<br><span class="price"> 490.000 ₫</span></a></div>
+                          </li>
+                          <li class="list__item">
+                            <div class="col-12">
+                              <div class="view"><a class="view__link"><i class="fas fa-angle-double-right"></i>Xem Giỏ Hàng</a>
+                                <p class="view__sum">Tổng cộng: 198000 ₫   </p>
+                              </div>
+                              <div class="btn__click">
+                                <button class="btn__click-pay">Thanh Toán                      </button>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="header__item">
+                  <div class="header__item-login">Đăng nhập<span class="logo-login"><a href="#" title="title"><i class="fab fa-facebook"></i></a><a href="#" title="title"><i class="fab fa-google"></i></a><a href="#" title="title"><i class="fab fa-instagram"></i></a></span></div>
+                </div>
+              </div>
+            </div>
+            <div class="header__menu">
+              <ul class="header__menu-list">
+                <li class="header__menu-item"><a class="header__menu-link" href="index.html">Giới thiệu</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="courses.html">Khóa học</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="jobs.html">Việc làm</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="posts.html">Bí quyết</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__mobile">
+        <div class="header__mobile-wrap">
+          <div class="header__mobile-btn"><i class="fal fa-bars"></i></div>
+          <div class="header__mobile-logo"><a href="index.html"><img class="img-fluid" src="images/layout/kyna_logo.png" alt="logo"></a></div>
+          <div class="header__mobile-cart">
+            <div class="header__mobile-cartSearch"><i class="fal fa-search"></i></div>
+            <div class="header__item-cart"><a href="#"><i class="far fa-shopping-cart"></i><span class="count-number d-none">0 </span></a>
+              <ul class="dropdown-menu">
+                <div class="hidden" id="items-id-in-current-cart" style="display: none" data-all-cart-items=""></div>
+                <li class="cart-rgister">
+                  <ul class="list">
+                    <li class="list__item">
+                      <div class="col-12"><a class="list__item-link" href="#">
+                           Khóa học HTMl, CSS, JS cơ bản<br><span class="price"> 490.000 ₫</span></a></div>
+                    </li>
+                    <li class="list__item">
+                      <div class="col-12">
+                        <div class="view"><a class="view__link"><i class="fas fa-angle-double-right"></i>Xem Giỏ Hàng</a>
+                          <p class="view__sum">Tổng cộng: 198000 ₫   </p>
+                        </div>
+                        <div class="btn__click">
+                          <button class="btn__click-pay">Thanh Toán  </button>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="header__mobile-bottom"><a class="header__item-link" href="#"><i class="fal fa-unlock-alt"></i>Học miễn phí</a><a class="header__item-link" href="#">Đăng nhập</a></div>
+        <div class="header__mobile-search">
+          <form class="search-form" action="" method="get">
+            <div class="input-group">
+              <input type="text" placeholder="Nhập tên khóa học/giảng viên">
+            </div>
+          </form>
+        </div>
+        <div class="header__mobile-menu">
+          <div class="btn-close"><i class="fal fa-times"></i></div>
+          <div class="header__mobile-inner"><a class="login" href="#">Đăng nhập</a>
+            <ul class="header__mobile-list">
+              <li class="header__list-item"><a class="header__list-link" href="index.html"><img src="images/home/menu-icon-1.png" alt=""><span class="name">Giới thiệu</span></a></li>
+              <li class="header__list-item"><a class="header__list-link" href="courses.html"><img src="images/home/menu-icon-1.png" alt=""><span class="name">Khóa học</span>
+                  <div class="child-icon"><i class="fas fa-caret-right"></i></div></a>
+                <div class="header__mobile-category">
+                  <div class="go-back"><i class="fal fa-chevron-left"></i>Trở về</div>
+                  <ul class="header__mobile-list">
+                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>HTML, CSS</span></a></li>
+                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>JS</span></a></li>
+                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>ReactJS</span></a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__list-item"><a class="header__list-link" href="jobs.html"><img src="images/home/menu-icon-1.png" alt=""><span class="name">Việc làm</span>
+                  <div class="child-icon"><i class="fas fa-caret-right"></i></div></a>
+                <div class="header__mobile-category">
+                  <div class="go-back"><i class="fal fa-chevron-left"></i>Trở về</div>
+                  <ul class="header__mobile-list">
+                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>HTML, CSS</span></a></li>
+                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>JS</span></a></li>
+                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>ReactJS</span></a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__list-item"><a class="header__list-link" href="post.html"><img src="images/home/menu-icon-1.png" alt=""><span class="name">Bí quyết</span>
+                  <div class="child-icon"><i class="fas fa-caret-right"></i></div></a>
+                <div class="header__mobile-category">
+                  <div class="go-back"><i class="fal fa-chevron-left"></i>Trở về</div>
+                  <ul class="header__mobile-list">
+                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>HTML, CSS</span></a></li>
+                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>JS</span></a></li>
+                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>ReactJS</span></a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Start Breadcrumb-->
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <div class="container">
+            <li class="breadcrumb-item"><i class="fas fa-home"></i><a href="index.html">Trang chủ</a></li>
+            <li class="breadcrumb-item"><a href="#">Danh sách khóa học</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Phần mềm</li>
+          </div>
+        </ol>
+      </nav>
+      <!-- End Breadcrumb-->
+      <!-- Start Filter-->
+      <form class="filter" id="form-filter" action="" method="">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9 mb-4 mb-lg-0"><a class="btn btn-green filter__button" href="#"><img src="images/course/filter-icon.png" alt="">Lọc kết quả</a>
+              <div class="filter__checkbox">
+                <input id="form-filter-checkbox" type="checkbox" value="1">
+                <label for="form-filter-checkbox">Học qua Video</label>
+                <input id="form-filter-checkbox" type="checkbox" value="1">
+                <label for="form-filter-checkbox">Miễn phí</label>
+              </div>
+              <select class="form-control">
+                <option class="selected">Theo thời lượng</option>
+                <option>Dưới 3 tiếng</option>
+                <option>3 - 24 tiếng</option>
+              </select>
+              <select class="form-control">
+                <option class="selected">Theo trình độ</option>
+                <option>Cơ bản</option>
+                <option>Nâng cao</option>
+                <option>Mọi cấp độ</option>
+              </select>
+            </div>
+            <div class="col-lg-3 my-auto">
+              <div class="field-sort">
+                <label>Sắp xếp:</label>
+                <select class="form-control">
+                  <option class="selected">Mới nhất</option>
+                  <option>Nổi bật</option>
+                  <option>% Khuyến mãi</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <!-- Start Course-->
+      <div class="course">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-lg-3">
+              <div class="course__category">
+                <div class="course__category-title">IT và lập trình</div>
+                <ul class="course__category-list">
+                  <li class="list__item"><a class="list__item-link" href="#"><img src="images/course/course-icon-1.png" alt="">Tất cả khóa học</a></li>
+                  <li class="list__item"><a class="list__item-link" href="#"><img src="images/course/course-icon-2.png" alt="">Khóa học combo</a></li>
+                  <li class="list__item"><a class="list__item-link" href="#"><img src="images/course/course-icon-3.png" alt="">Quản trị mạng</a></li>
+                  <li class="list__item"><a class="list__item-link" href="#"><img src="images/course/course-icon-3.png" alt="">IT</a></li>
+                  <li class="list__item"><a class="list__item-link" href="#"><img src="images/course/course-icon-3.png" alt="">Lập trình web</a></li>
+                  <li class="list__item"><a class="list__item-link" href="#"><img src="images/course/course-icon-3.png" alt="">Lập trình ứng dụng</a></li>
+                  <li class="list__item turn-back"><a class="list__item-link" href="#"><i class="far fa-angle-left"></i>Xem các danh mục khác</a></li>
+                </ul>
+              </div>
+              <div class="course__image">
+                <div class="course__image-item"><img src="https://blog.topcv.vn/wp-content/uploads/2020/05/Banner-blog-topcv-Sidebar-Right.png" alt=""></div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-lg-9">
+              <div class="row">
+                <div class="col-12 col-lg-9">
+                  <div class="course__title">63 Khóa học<span> Phần mềm</span></div>
+                </div>
+              </div>
+              <div class="row">
+                      <div class="col-xs-12 col-md-6 col-xl-4">
+                        <div class="course__item">
+                          <div class="course__item-image"><img src="https://media-kyna.cdn.vccloud.vn/uploads/courses/1547/img/image_url-1594958048.cover-263x147.png">
+                            <div class="image__rating">
+                              <div class="image__rating-text"><b><span>0</span><i class="fas fa-star"></i></b><span><span>(0)</span></span></div>
+                              <div class="image__rating-number"><i class="fa fa-user"></i><span><span>4</span><span>học viên</span></span></div>
+                            </div>
+                            <div class="image__detail">
+                              <div class="image__detail-content"><a class="btn btn-transparent" href="#">Xem nhanh</a><a class="btn btn-green" href="course-detail.html">Xem chi tiết</a></div>
+                            </div>
+                          </div>
+                          <div class="course__item-content">
+                            <div class="content__title">Thiết kế trình chiếu PowerPoint 2016 từ A-Z</div>
+                            <div class="content__name"><i class="fas fa-user-tie"></i><span>Đỗ Trung Thành</span></div>
+                            <div class="content__position"><i class="fas fa-briefcase"></i><span>Thạc sỹ Khoa học máy tính</span></div>
+                            <div class="content__price">670.000đ</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-md-6 col-xl-4">
+                        <div class="course__item">
+                          <div class="course__item-image"><img src="https://media-kyna.cdn.vccloud.vn/uploads/courses/1547/img/image_url-1594958048.cover-263x147.png">
+                            <div class="image__rating">
+                              <div class="image__rating-text"><b><span>0</span><i class="fas fa-star"></i></b><span><span>(0)</span></span></div>
+                              <div class="image__rating-number"><i class="fa fa-user"></i><span><span>1</span><span>học viên</span></span></div>
+                            </div>
+                            <div class="image__detail">
+                              <div class="image__detail-content"><a class="btn btn-transparent" href="#">Xem nhanh</a><a class="btn btn-green" href="course-detail.html">Xem chi tiết</a></div>
+                            </div>
+                          </div>
+                          <div class="course__item-content">
+                            <div class="content__title">Trọn bộ VBA - Cách tăng hiệu quả và năng suất công việc trên Excel</div>
+                            <div class="content__name"><i class="fas fa-user-tie"></i><span>Đinh Hồng Lĩnh</span></div>
+                            <div class="content__position"><i class="fas fa-briefcase"></i><span>Trưởng phòng phát triển hệ thống</span></div>
+                            <div class="content__price">599.000đ</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-md-6 col-xl-4">
+                        <div class="course__item">
+                          <div class="course__item-image"><img src="https://media-kyna.cdn.vccloud.vn/uploads/courses/1547/img/image_url-1594958048.cover-263x147.png">
+                            <div class="image__rating">
+                              <div class="image__rating-text"><b><span>0</span><i class="fas fa-star"></i></b><span><span>(0)</span></span></div>
+                              <div class="image__rating-number"><i class="fa fa-user"></i><span><span>4</span><span>học viên</span></span></div>
+                            </div>
+                            <div class="image__detail">
+                              <div class="image__detail-content"><a class="btn btn-transparent" href="#">Xem nhanh</a><a class="btn btn-green" href="course-detail.html">Xem chi tiết</a></div>
+                            </div>
+                          </div>
+                          <div class="course__item-content">
+                            <div class="content__title">Trọn bộ VBA - Cách tăng hiệu quả và năng suất công việc trên Excel</div>
+                            <div class="content__name"><i class="fas fa-user-tie"></i><span>Đinh Hồng Lĩnh</span></div>
+                            <div class="content__position"><i class="fas fa-briefcase"></i><span>Trưởng phòng phát triển hệ thống</span></div>
+                            <div class="content__price">599.000đ</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-md-6 col-xl-4">
+                        <div class="course__item">
+                          <div class="course__item-image"><img src="https://media-kyna.cdn.vccloud.vn/uploads/courses/1547/img/image_url-1594958048.cover-263x147.png">
+                            <div class="image__rating">
+                              <div class="image__rating-text"><b><span>0</span><i class="fas fa-star"></i></b><span><span>(0)</span></span></div>
+                              <div class="image__rating-number"><i class="fa fa-user"></i><span><span>4</span><span>học viên</span></span></div>
+                            </div>
+                            <div class="image__detail">
+                              <div class="image__detail-content"><a class="btn btn-transparent" href="#">Xem nhanh</a><a class="btn btn-green" href="course-detail.html">Xem chi tiết</a></div>
+                            </div>
+                          </div>
+                          <div class="course__item-content">
+                            <div class="content__title">Trọn bộ VBA - Cách tăng hiệu quả và năng suất công việc trên Excel</div>
+                            <div class="content__name"><i class="fas fa-user-tie"></i><span>Đinh Hồng Lĩnh</span></div>
+                            <div class="content__position"><i class="fas fa-briefcase"></i><span>Trưởng phòng phát triển hệ thống</span></div>
+                            <div class="content__price">599.000đ</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-md-6 col-xl-4">
+                        <div class="course__item">
+                          <div class="course__item-image"><img src="https://media-kyna.cdn.vccloud.vn/uploads/courses/1547/img/image_url-1594958048.cover-263x147.png">
+                            <div class="image__rating">
+                              <div class="image__rating-text"><b><span>0</span><i class="fas fa-star"></i></b><span><span>(0)</span></span></div>
+                              <div class="image__rating-number"><i class="fa fa-user"></i><span><span>4</span><span>học viên</span></span></div>
+                            </div>
+                            <div class="image__detail">
+                              <div class="image__detail-content"><a class="btn btn-transparent" href="#">Xem nhanh</a><a class="btn btn-green" href="course-detail.html">Xem chi tiết</a></div>
+                            </div>
+                          </div>
+                          <div class="course__item-content">
+                            <div class="content__title">Trọn bộ VBA - Cách tăng hiệu quả và năng suất công việc trên Excel</div>
+                            <div class="content__name"><i class="fas fa-user-tie"></i><span>Đinh Hồng Lĩnh</span></div>
+                            <div class="content__position"><i class="fas fa-briefcase"></i><span>Trưởng phòng phát triển hệ thống</span></div>
+                            <div class="content__price">599.000đ</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-md-6 col-xl-4">
+                        <div class="course__item">
+                          <div class="course__item-image"><img src="https://media-kyna.cdn.vccloud.vn/uploads/courses/1547/img/image_url-1594958048.cover-263x147.png">
+                            <div class="image__rating">
+                              <div class="image__rating-text"><b><span>0</span><i class="fas fa-star"></i></b><span><span>(0)</span></span></div>
+                              <div class="image__rating-number"><i class="fa fa-user"></i><span><span>4</span><span>học viên</span></span></div>
+                            </div>
+                            <div class="image__detail">
+                              <div class="image__detail-content"><a class="btn btn-transparent" href="#">Xem nhanh</a><a class="btn btn-green" href="course-detail.html">Xem chi tiết</a></div>
+                            </div>
+                          </div>
+                          <div class="course__item-content">
+                            <div class="content__title">Trọn bộ VBA - Cách tăng hiệu quả và năng suất công việc trên Excel</div>
+                            <div class="content__name"><i class="fas fa-user-tie"></i><span>Đinh Hồng Lĩnh</span></div>
+                            <div class="content__position"><i class="fas fa-briefcase"></i><span>Trưởng phòng phát triển hệ thống</span></div>
+                            <div class="content__price">599.000đ</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-md-6 col-xl-4">
+                        <div class="course__item">
+                          <div class="course__item-image"><img src="https://media-kyna.cdn.vccloud.vn/uploads/courses/1547/img/image_url-1594958048.cover-263x147.png">
+                            <div class="image__rating">
+                              <div class="image__rating-text"><b><span>0</span><i class="fas fa-star"></i></b><span><span>(0)</span></span></div>
+                              <div class="image__rating-number"><i class="fa fa-user"></i><span><span>4</span><span>học viên</span></span></div>
+                            </div>
+                            <div class="image__detail">
+                              <div class="image__detail-content"><a class="btn btn-transparent" href="#">Xem nhanh</a><a class="btn btn-green" href="course-detail.html">Xem chi tiết</a></div>
+                            </div>
+                          </div>
+                          <div class="course__item-content">
+                            <div class="content__title">Trọn bộ VBA - Cách tăng hiệu quả và năng suất công việc trên Excel</div>
+                            <div class="content__name"><i class="fas fa-user-tie"></i><span>Đinh Hồng Lĩnh</span></div>
+                            <div class="content__position"><i class="fas fa-briefcase"></i><span>Trưởng phòng phát triển hệ thống</span></div>
+                            <div class="content__price">599.000đ</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-md-6 col-xl-4">
+                        <div class="course__item">
+                          <div class="course__item-image"><img src="https://media-kyna.cdn.vccloud.vn/uploads/courses/1547/img/image_url-1594958048.cover-263x147.png">
+                            <div class="image__rating">
+                              <div class="image__rating-text"><b><span>0</span><i class="fas fa-star"></i></b><span><span>(0)</span></span></div>
+                              <div class="image__rating-number"><i class="fa fa-user"></i><span><span>4</span><span>học viên</span></span></div>
+                            </div>
+                            <div class="image__detail">
+                              <div class="image__detail-content"><a class="btn btn-transparent" href="#">Xem nhanh</a><a class="btn btn-green" href="course-detail.html">Xem chi tiết</a></div>
+                            </div>
+                          </div>
+                          <div class="course__item-content">
+                            <div class="content__title">Trọn bộ VBA - Cách tăng hiệu quả và năng suất công việc trên Excel</div>
+                            <div class="content__name"><i class="fas fa-user-tie"></i><span>Đinh Hồng Lĩnh</span></div>
+                            <div class="content__position"><i class="fas fa-briefcase"></i><span>Trưởng phòng phát triển hệ thống</span></div>
+                            <div class="content__price">599.000đ</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-md-6 col-xl-4">
+                        <div class="course__item">
+                          <div class="course__item-image"><img src="https://media-kyna.cdn.vccloud.vn/uploads/courses/1547/img/image_url-1594958048.cover-263x147.png">
+                            <div class="image__rating">
+                              <div class="image__rating-text"><b><span>0</span><i class="fas fa-star"></i></b><span><span>(0)</span></span></div>
+                              <div class="image__rating-number"><i class="fa fa-user"></i><span><span>4</span><span>học viên</span></span></div>
+                            </div>
+                            <div class="image__detail">
+                              <div class="image__detail-content"><a class="btn btn-transparent" href="#">Xem nhanh</a><a class="btn btn-green" href="course-detail.html">Xem chi tiết</a></div>
+                            </div>
+                          </div>
+                          <div class="course__item-content">
+                            <div class="content__title">Trọn bộ VBA - Cách tăng hiệu quả và năng suất công việc trên Excel</div>
+                            <div class="content__name"><i class="fas fa-user-tie"></i><span>Đinh Hồng Lĩnh</span></div>
+                            <div class="content__position"><i class="fas fa-briefcase"></i><span>Trưởng phòng phát triển hệ thống</span></div>
+                            <div class="content__price">599.000đ</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-md-6 col-xl-4">
+                        <div class="course__item">
+                          <div class="course__item-image"><img src="https://media-kyna.cdn.vccloud.vn/uploads/courses/1547/img/image_url-1594958048.cover-263x147.png">
+                            <div class="image__rating">
+                              <div class="image__rating-text"><b><span>0</span><i class="fas fa-star"></i></b><span><span>(0)</span></span></div>
+                              <div class="image__rating-number"><i class="fa fa-user"></i><span><span>4</span><span>học viên</span></span></div>
+                            </div>
+                            <div class="image__detail">
+                              <div class="image__detail-content"><a class="btn btn-transparent" href="#">Xem nhanh</a><a class="btn btn-green" href="course-detail.html">Xem chi tiết</a></div>
+                            </div>
+                          </div>
+                          <div class="course__item-content">
+                            <div class="content__title">Trọn bộ VBA - Cách tăng hiệu quả và năng suất công việc trên Excel</div>
+                            <div class="content__name"><i class="fas fa-user-tie"></i><span>Đinh Hồng Lĩnh</span></div>
+                            <div class="content__position"><i class="fas fa-briefcase"></i><span>Trưởng phòng phát triển hệ thống</span></div>
+                            <div class="content__price">599.000đ</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-md-6 col-xl-4">
+                        <div class="course__item">
+                          <div class="course__item-image"><img src="https://media-kyna.cdn.vccloud.vn/uploads/courses/1547/img/image_url-1594958048.cover-263x147.png">
+                            <div class="image__rating">
+                              <div class="image__rating-text"><b><span>0</span><i class="fas fa-star"></i></b><span><span>(0)</span></span></div>
+                              <div class="image__rating-number"><i class="fa fa-user"></i><span><span>4</span><span>học viên</span></span></div>
+                            </div>
+                            <div class="image__detail">
+                              <div class="image__detail-content"><a class="btn btn-transparent" href="#">Xem nhanh</a><a class="btn btn-green" href="course-detail.html">Xem chi tiết</a></div>
+                            </div>
+                          </div>
+                          <div class="course__item-content">
+                            <div class="content__title">Trọn bộ VBA - Cách tăng hiệu quả và năng suất công việc trên Excel</div>
+                            <div class="content__name"><i class="fas fa-user-tie"></i><span>Đinh Hồng Lĩnh</span></div>
+                            <div class="content__position"><i class="fas fa-briefcase"></i><span>Trưởng phòng phát triển hệ thống</span></div>
+                            <div class="content__price">599.000đ</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-md-6 col-xl-4">
+                        <div class="course__item">
+                          <div class="course__item-image"><img src="https://media-kyna.cdn.vccloud.vn/uploads/courses/1547/img/image_url-1594958048.cover-263x147.png">
+                            <div class="image__rating">
+                              <div class="image__rating-text"><b><span>0</span><i class="fas fa-star"></i></b><span><span>(0)</span></span></div>
+                              <div class="image__rating-number"><i class="fa fa-user"></i><span><span>4</span><span>học viên</span></span></div>
+                            </div>
+                            <div class="image__detail">
+                              <div class="image__detail-content"><a class="btn btn-transparent" href="#">Xem nhanh</a><a class="btn btn-green" href="course-detail.html">Xem chi tiết</a></div>
+                            </div>
+                          </div>
+                          <div class="course__item-content">
+                            <div class="content__title">Trọn bộ VBA - Cách tăng hiệu quả và năng suất công việc trên Excel</div>
+                            <div class="content__name"><i class="fas fa-user-tie"></i><span>Đinh Hồng Lĩnh</span></div>
+                            <div class="content__position"><i class="fas fa-briefcase"></i><span>Trưởng phòng phát triển hệ thống</span></div>
+                            <div class="content__price">599.000đ</div>
+                          </div>
+                        </div>
+                      </div>
+              </div>
+                    <div class="newsletter">
+                      <div class="newsletter__background"><img src="images/newsletter.png" alt=""></div>
+                      <div class="row">
+                        <div class="col-12 col-md-6">
+                          <div class="newsletter__box">
+                            <div class="newsletter__box-title">Đăng ký nhận thông báo</div>
+                            <div class="newsletter__box-text">Đăng ký ngay để nhận tin tức mới nhất, độc quyền và nhiều ưu đãi khác.</div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                          <div class="newsletter__box ml-lg-auto">
+                            <div class="newsletter__box-form">
+                              <input class="form__email" id="email" type="email" placeholder="Email của bạn...">
+                            </div><a class="btn newsletter__box-button" href="#">Đăng ký ngay<i class="fal fa-paper-plane"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Course-->
+      <div class="footer bgcLightGrey">
+        <div class="footer__top">
+          <div class="container">
+            <div class="row">
+              <div class="mb-3 col-sm-6 col-lg-3">
+                <div class="footer__top-hotline">
+                  <h4 class="footer__title">Kết nối với Oncode</h4>
+                  <ul class="footer__hotline-contact">
+                    <li><span class="first"><i class="fal fa-phone"></i>Hotline</span><span class="second">0965863079</span></li>
+                    <li><span class="first"><i class="fal fa-envelope"></i>Email</span><span class="second">hotro@oncode.edu.vn</span></li>
+                  </ul>
+                  <div class="footer__hotline-social"><a href="#" target="_blank"><img src="images/layout/fb_icon_footer.png" alt="fanpage"></a><a href="#" target="_blank"><img src="images/layout/youtube_icon_footer.png" alt="fanpage"></a><a href="#" target="_blank"><img src="images/layout/zalo_icon_footer.png" alt="fanpage"></a></div>
+                </div>
+              </div>
+              <div class="mb-3 col-sm-6 col-lg-3">
+                <div class="footer__top-info">
+                  <h4 class="footer__title">Thông tin Oncode</h4>
+                  <ul>
+                    <li><a href="#">Danh sách khóa học</a></li>
+                    <li><a href="#">Câu hỏi thường gặp</a></li>
+                    <li><a href="#">Cách thanh toán học phí</a></li>
+                    <li><a href="#">Thông tin hữu ích</a></li>
+                    <li><a href="#">VietnamWorks</a></li>
+                    <li><a href="#">PRIMUS</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mb-3 col-sm-6 col-lg-3">
+                <div class="footer__top-about">
+                  <h4 class="footer__title">Về Oncode</h4>
+                  <ul>
+                    <li class="iconfeature"><a href="#">Giảng dạy tại Oncode</a></li>
+                    <li><a href="#">Hợp tác với Oncode</a></li>
+                    <li><a href="#">Đối tác phân phối</a></li>
+                    <li><a href="#">Quy chế hoạt động sàn GDTMĐT</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mb-3 col-sm-6 col-lg-3">
+                <div class="footer__top-fanpage">
+                  <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Foncodeacademy&amp;tabs=272&amp;width=255&amp;height=220&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId=168015681053039" width="255" height="150" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="footer__address">
+                  <div class="footer__address-text">
+                    <p class="footer__address-copyright">&copy; 2020 - Bản quyền của Công ty TNHH Bigvio Media</p>
+                    <p><span>Trụ sở chính: Số nhà 19 ngõ 77 phố Lãng Yên, phường Thanh Lương, quận Hai Bà Trưng, Tp Hà Nội</span>
+                      </p><p>Giấy phép ĐKKD số 123456789 do Sở Kế hoạch và Đầu tư TP Hà Nội cấp</p>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 footer__info"><a class="col-lg-6" href="#" target="_blank"><img class="img-fluid" src="images/layout/dathongbao.png" alt="da thong bao"></a><a class="col-lg-6" href="#" target="_blank"><img class="img-fluid" src="images/layout/logoCCDV.png" alt="da dang ky"></a>
+                <ul>
+                  <li><a href="#" title="title">Điều khoản dịch vụ </a></li>
+                  <li><a href="#" title="title">Chính sách bảo mật</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Start Back to Top-->
+      <div class="back-to-top" id="back-to-top"><a href="#"><i class="fas fa-arrow-up"></i></a></div>
+      <!-- End Back to Top-->
+    </div>
+    <!-- Jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Owl Carousel-->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Fancybox-->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!-- Main Js-->
+    <script src="js/main.js"></script>
+  </body>
+</html>

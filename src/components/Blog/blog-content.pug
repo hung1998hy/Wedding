@@ -1,0 +1,58 @@
+include ../../mixins/blog-content-item.pug
+.blogContent
+    .container
+        .blogContent__inter
+            .row
+                .blogContent__inter-area.col-lg-9.col-xs-12
+                    +blog-content-item("images/blog/post-01.jpg", "images/blog/fireworks.png", "DJ NIGHT", "What are Experiential Weddings?", "Upcycling is one of the best ways to decorate an intimate wedding setting. We’ve delivered fabulous wedding event experiences over the last two decades and are now poised", "images/blog/contact-01.jpg", "John Doe", " 0 Comments", "Occasion, Party")(class="fa-tag")
+                    +blog-content-item("images/blog/post-02.jpg", "images/blog/fireworks.png", "MUSIC", "How to Find the Perfect Wedding Venue", "The right pair of safe hands and the peace of mind delivered by your event We’ve delivered fabulous wedding event experiences over the last two decades and are now poised", "images/blog/contact-01.jpg", "John Doe", " 0 Comments", "")
+                    +blog-content-item("images/blog/post-03.jpg", "images/blog/fireworks.png", "PHOTOGRAPHY", "How Your Wedding Can Make An Impact", "Upcycling is one of the best ways to decorate an intimate wedding setting. We’ve delivered fabulous wedding event experiences over the last two decades and are now poised", "images/blog/contact-01.jpg", "John Doe", " 0 Comments", "")
+                    +blog-content-item("images/blog/post-04.jpg", "images/blog/fireworks.png", "CATERING", "Catering Can Make Any Special Meal a Celebration", "Upcycling is one of the best ways to decorate an intimate wedding setting. We’ve delivered fabulous wedding event experiences over the last two decades and are now poised", "images/blog/contact-01.jpg", "John Doe", " 0 Comments", "")
+                    .area__pagination
+                        a.area__pagination-prev(href="")
+                            i.fal.fa-arrow-left
+                        a.area__pagination-number(href="") 1
+                        a.area__pagination-number(href="") 2
+                        a.area__pagination-number(href="") 3
+                        a.area__pagination-next(href="")
+                            i.fal.fa-arrow-right
+                .col-lg-3.col-xs-12
+                    .blogContent__inter-form
+                        .form__input
+                            input.form__input-field(type="text" placeholder="Sreach")
+                            button(type="submit")
+                                span.form__input-icon
+                                    i.fas.fa-search
+                    .blogContent__inter-categories
+                        h3.categories__heading Categories
+                        ul.categories__list
+                            li.categories__list-item
+                                a.item__link(href="") Catering
+                                span 4
+                            li.categories__list-item
+                                a.item__link(href="") Costume
+                                span 1
+                            li.categories__list-item
+                                a.item__link(href="") Dancing
+                                span 1
+                            li.categories__list-item
+                                a.item__link(href="") DJ Night
+                                span 1
+                            li.categories__list-item
+                                a.item__link(href="") home-catering
+                                span 3
+                            li.categories__list-item
+                                a.item__link(href="") Music
+                                span 1
+                            li.categories__list-item
+                                a.item__link(href="") Photography
+                                span 1
+                            li.categories__list-item
+                                a.item__link(href="") Uncategorized
+                                span 1
+                    .blogContent__inter-posted
+                        h3.posted__heading Recently Posted
+                    .blogContent__inter-tag
+                        h3.tag__heading Tags Cloud
+                    .blogContent__inter-gallery
+                        h3.gallery__heading Gallery

@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Oncode Education</title>
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="images/layout/favicon.ico">
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet">
+    <!-- Owl Carousel CSS-->
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/owl.theme.default.min.css" rel="stylesheet">
+    <!-- Fancybox-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <!-- Main CSS-->
+    <link href="./css/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <div class="container">
+          <div class="header__box">
+            <div class="header__top">
+              <div class="header__top-left">
+                <div class="header__logo"><a class="header__logo-link" href="index.html" title="title"><img class="img-fluid" src="images/layout/kyna_logo.png" alt="logo"></a></div>
+                <div class="header__search">
+                  <form action="" method="get" id="search-form">
+                    <div class="input-group">
+                      <label for="live-search-bar">Tìm kiếm</label>
+                      <input class="form-control live-search-bar" type="text" placeholder="Nhập tên khóa học/giảng viên" id="live-search-bar">
+                      <button class="search-btn" type="submit" aria-label><i class="fal fa-search"></i></button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="header__top-direction">
+                <div class="header__item"><a class="header__item-link" href="#"><i class="fal fa-unlock-alt"></i>Học miễn phí</a></div>
+                <div class="header__item">
+                  <div class="header__item-cart"><a class="dropdown-toggle cart_anchor" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="far fa-shopping-cart"></i><span class="count-number d-none">0 </span></a>
+                    <ul class="dropdown-menu">
+                      <div class="hidden" id="items-id-in-current-cart" style="display: none" data-all-cart-items=""></div>
+                      <li class="cart-rgister">
+                        <ul class="list">
+                          <li class="list__item">
+                            <div class="col-12"><a class="list__item-link" href="#">
+                                 Khóa học HTMl, CSS, JS cơ bản<br><span class="price"> 490.000 ₫</span></a></div>
+                          </li>
+                          <li class="list__item">
+                            <div class="col-12">
+                              <div class="view"><a class="view__link"><i class="fas fa-angle-double-right"></i>Xem Giỏ Hàng</a>
+                                <p class="view__sum">Tổng cộng: 198000 ₫   </p>
+                              </div>
+                              <div class="btn__click">
+                                <button class="btn__click-pay">Thanh Toán                      </button>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="header__item">
+                  <div class="header__item-login">Đăng nhập<span class="logo-login"><a href="#" title="title"><i class="fab fa-facebook"></i></a><a href="#" title="title"><i class="fab fa-google"></i></a><a href="#" title="title"><i class="fab fa-instagram"></i></a></span></div>
+                </div>
+              </div>
+            </div>
+            <div class="header__menu">
+              <ul class="header__menu-list">
+                <li class="header__menu-item"><a class="header__menu-link" href="index.html">Giới thiệu</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="courses.html">Khóa học</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="jobs.html">Việc làm</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="posts.html">Bí quyết</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__mobile">
+        <div class="header__mobile-wrap">
+          <div class="header__mobile-btn"><i class="fal fa-bars"></i></div>
+          <div class="header__mobile-logo"><a href="index.html"><img class="img-fluid" src="images/layout/kyna_logo.png" alt="logo"></a></div>
+          <div class="header__mobile-cart">
+            <div class="header__mobile-cartSearch"><i class="fal fa-search"></i></div>
+            <div class="header__item-cart"><a href="#"><i class="far fa-shopping-cart"></i><span class="count-number d-none">0 </span></a>
+              <ul class="dropdown-menu">
+                <div class="hidden" id="items-id-in-current-cart" style="display: none" data-all-cart-items=""></div>
+                <li class="cart-rgister">
+                  <ul class="list">
+                    <li class="list__item">
+                      <div class="col-12"><a class="list__item-link" href="#">
+                           Khóa học HTMl, CSS, JS cơ bản<br><span class="price"> 490.000 ₫</span></a></div>
+                    </li>
+                    <li class="list__item">
+                      <div class="col-12">
+                        <div class="view"><a class="view__link"><i class="fas fa-angle-double-right"></i>Xem Giỏ Hàng</a>
+                          <p class="view__sum">Tổng cộng: 198000 ₫   </p>
+                        </div>
+                        <div class="btn__click">
+                          <button class="btn__click-pay">Thanh Toán  </button>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="header__mobile-bottom"><a class="header__item-link" href="#"><i class="fal fa-unlock-alt"></i>Học miễn phí</a><a class="header__item-link" href="#">Đăng nhập</a></div>
+        <div class="header__mobile-search">
+          <form class="search-form" action="" method="get">
+            <div class="input-group">
+              <input type="text" placeholder="Nhập tên khóa học/giảng viên">
+            </div>
+          </form>
+        </div>
+        <div class="header__mobile-menu">
+          <div class="btn-close"><i class="fal fa-times"></i></div>
+          <div class="header__mobile-inner"><a class="login" href="#">Đăng nhập</a>
+            <ul class="header__mobile-list">
+              <li class="header__list-item"><a class="header__list-link" href="index.html"><img src="images/home/menu-icon-1.png" alt=""><span class="name">Giới thiệu</span></a></li>
+              <li class="header__list-item"><a class="header__list-link" href="courses.html"><img src="images/home/menu-icon-1.png" alt=""><span class="name">Khóa học</span>
+                  <div class="child-icon"><i class="fas fa-caret-right"></i></div></a>
+                <div class="header__mobile-category">
+                  <div class="go-back"><i class="fal fa-chevron-left"></i>Trở về</div>
+                  <ul class="header__mobile-list">
+                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>HTML, CSS</span></a></li>
+                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>JS</span></a></li>
+                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>ReactJS</span></a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__list-item"><a class="header__list-link" href="jobs.html"><img src="images/home/menu-icon-1.png" alt=""><span class="name">Việc làm</span>
+                  <div class="child-icon"><i class="fas fa-caret-right"></i></div></a>
+                <div class="header__mobile-category">
+                  <div class="go-back"><i class="fal fa-chevron-left"></i>Trở về</div>
+                  <ul class="header__mobile-list">
+                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>HTML, CSS</span></a></li>
+                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>JS</span></a></li>
+                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>ReactJS</span></a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__list-item"><a class="header__list-link" href="post.html"><img src="images/home/menu-icon-1.png" alt=""><span class="name">Bí quyết</span>
+                  <div class="child-icon"><i class="fas fa-caret-right"></i></div></a>
+                <div class="header__mobile-category">
+                  <div class="go-back"><i class="fal fa-chevron-left"></i>Trở về</div>
+                  <ul class="header__mobile-list">
+                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>HTML, CSS</span></a></li>
+                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>JS</span></a></li>
+                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>ReactJS</span></a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="breadcrumb">
+        <div class="container">
+          <ul class="breadcrumb__list">
+            <li class="breadcrumb__list-item"><a class="item__link" href="index.html"><i class="fas fa-home"></i> Trang Chủ </a></li>
+            <li class="breadcrumb__list-item"><a class="item__link" href="courses.html"><i class="fas fa-angle-double-right"></i> Danh sách khóa học</a></li>
+            <li class="breadcrumb__list-item"><a class="item__link" href="#"><i class="fas fa-angle-double-right"></i> React native cơ bản</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="banner">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-xs-12">
+              <div class="banner__detail">
+                <h2 class="banner__detail-title"> <span class="title__text">React native cơ bản</span></h2>
+                <div class="banner__detail-rate"><span class="rate__items"><i class="fas fa-user"> </i><span>3 học viên đăng ký</span></span><span class="rate__items"><i class="fas fa-play-circle"> </i><span>23 bài</span></span><span class="rate__items"><i class="fas fa-clock"> </i><span>8 giờ</span></span><span class="rate__items">0 <i class="fas fa-star none"></i><i class="fas fa-star none"></i><i class="fas fa-star none"></i><i class="fas fa-star none"></i><i class="fas fa-star none"></i><span>(0 đánh giá)</span></span></div>
+                <div class="banner__detail-lever">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-6">
+                      <p class="lever__items"><i class="fas fa-layer-group"></i><span>Trình độ: Cơ bản</span></p>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                      <p class="lever__items"><i class="fas fa-infinity"></i><span>Sở hữu mãi mãi</span></p>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                      <p class="lever__items"><i class="fas fa-laptop-house"></i><span>Xem được trên máy tính, điện thoại, tablet</span></p>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                      <p class="lever__items"><i class="fas fa-graduation-cap"></i><span>Cấp chứng nhận hoàn thành</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-xs-12">
+              <div class="content__detail">
+                <div class="content__detail-general mt-4">
+                  <h5 class="general__heading">Bạn sẽ học được gì?</h5>
+                  <div class="general__hr"> </div>
+                  <div class="general__list">
+                    <ul class="general__list-content">
+                      <li class="content__items">Năm vững kiến thức và các thông tin liên quan về React native.</li>
+                      <li class="content__items">Làm quen với các công cụ: git, nodejs, yarn, Expo, xcode, android studio, AVD Manager…</li>
+                      <li class="content__items">Hiểu và làm việc được với với React Component.</li>
+                      <li class="content__items">Biết cách lấy dữ liệu từ API.</li>
+                      <li class="content__items">Làm quen với React native qua các bài tập thực hành thực tiễn.</li>
+                    </ul>
+                    <p>&nbsp;</p>
+                  </div>
+                </div>
+                <div class="content__detail-general mt-4">
+                  <h5 class="general__heading">Nôi dung khóa học</h5>
+                  <div class="general__hr"> </div>
+                  <div class="general__syllabus">
+                    <div class="mt-2"> <a class="general__syllabus-link" href="#" data-toggle="collapse" data-target="#chapter0" aria-expanded="false" aria-controls="collapseExample">
+                        <div class="link__content">
+                          <h6 class="link__content-detail">Nội dung khóa học</h6>
+                        </div>
+                        <div class="link__example">
+                          <div class="link__example-items">
+                            <p class="items__text"><i class="far fa-play-circle"></i>  21 video</p>
+                          </div>
+                          <div class="link__example-items">
+                            <p class="items__text"><i class="far fa-pen"></i>  0 bài tập</p>
+                          </div>
+                        </div><span class="link__icon"><i class="fas fa-chevron-down"></i></span></a>
+                      <div class="collapse" id="chapter0" style="height: 100px;">
+                        <div class="syllabus__section">
+                          <div class="syllabus__section-items"><span class="items__tittleChapter">Bài 1: Introduction.mp4</span></div>
+                          <div class="syllabus__section-items"><span class="items__tittleChapter">Bài 2: Why is React Native.mp4</span></div>
+                          <div class="syllabus__section-items"><span class="items__tittleChapter">Bài 3: ES6 features.mp4</span></div>
+                          <div class="syllabus__section-items"><span class="items__tittleChapter">Bài 4: Setup tools and environments.mp4</span></div>
+                          <div class="syllabus__section-items"><span class="items__tittleChapter">Bài 5: Create a mobile app by Expo CLI command.mp4</span></div>
+                          <div class="syllabus__section-items"><span class="items__tittleChapter">Bài 6: How to debug with Android Emulator.mp4</span></div>
+                          <div class="syllabus__section-items"><span class="items__tittleChapter">Bài 7: How to debug with iOS simulator.mp4</span></div>
+                          <div class="syllabus__section-items"><span class="items__tittleChapter">Bài 8: Main concepts of React.mp4</span></div>
+                          <div class="syllabus__section-items"><span class="items__tittleChapter">Bài 9: Dive into React .mp4</span></div>
+                          <div class="syllabus__section-items"><span class="items__tittleChapter">Bài 10: Style in React Native, how to works with Flatlist.mp4</span></div>
+                          <div class="syllabus__section-items"><span class="items__tittleChapter">Bài 11: Image and image background component .mp4</span></div>
+                          <div class="syllabus__section-items"><span class="items__tittleChapter">Bài 12: Build product list screen.mp4</span></div>
+                          <div class="syllabus__section-items"><span class="items__tittleChapter">Bài 13: Decorate product list screen with fancy UI and styles.mp4</span></div>
+                          <div class="syllabus__section-items"><span class="items__tittleChapter">Bài 14: Navigator in React Native.mp4</span></div>
+                          <div class="syllabus__section-items"><span class="items__tittleChapter">Bài 15: How to build drawer navigatior from scratch.mp4</span></div>
+                          <div class="syllabus__section-items"><span class="items__tittleChapter">Bài 16: Customize drawer navigatior component .mp4</span></div>
+                          <div class="syllabus__section-items"><span class="items__tittleChapter">Bài 17: Redux and state management.mp4</span></div>
+                          <div class="syllabus__section-items"><span class="items__tittleChapter">Bài 18: What is AJAX, fetch and how it's works.mp4</span></div>
+                          <div class="syllabus__section-items"><span class="items__tittleChapter">Bài 19: Working with API and implement with Nordic Shop API.mp4</span></div>
+                          <div class="syllabus__section-items"><span class="items__tittleChapter">Bài 20: Continue build the order screen of final project.mp4</span></div>
+                          <div class="syllabus__section-items"><span class="items__tittleChapter">Bài 21: 6 Implement Localization and course recap .mp4</span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mt-2"><a class="general__syllabus-link" href="#" data-toggle="collapse" data-target="#chapter1" aria-expanded="false" aria-controls="collapseExample">
+                        <div class="link__content">
+                          <h6 class="link__content-detail">Đánh giá góp ý cho khóa học</h6>
+                        </div>
+                        <div class="link__example">
+                          <div class="link__example-items">
+                            <p class="items__text"><i class="far fa-play-circle"></i>  0 video</p>
+                          </div>
+                          <div class="link__example-items">
+                            <p class="items__text"><i class="far fa-pen"></i>  0 bài tập</p>
+                          </div>
+                        </div><span class="link__icon"><i class="fas fa-chevron-down"></i></span></a>
+                      <div class="collapse" id="chapter1">
+                        <div class="syllabus__section">
+                          <div class="syllabus__section-items"><span class="items__tittleChapter">Đánh giá góp ý cho khóa học</span></div>
+                          <div class="syllabus__section-items"><span class="items__tittleChapter">Khóa học có liên quan                        </span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content__detail-general mt-4">
+                  <h5 class="general__heading">Giới thiệu khóa học</h5>
+                  <div class="general__hr"></div>
+                  <div class="general__wrapper" id="wrapper">
+                    <h3></h3><strong>Giới thiệu khóa học “React native cơ bản”:</strong>
+                    <p>Đối tượng chính của khóa học này là:</p>
+                    <p>&bull; Sinh viên ngành IT/ Công nghệ thông tin</p>
+                    <p>&bull; Fresher/ Junior Developer có nhu cầu nâng cao kỹ năng lập trình</p>
+                    <p>React Native là một framework do công ty công nghệ nổi tiếng Facebook phát triển nhằm mục đích giải quyết bài toán hiệu năng của Hybrid và bài toán chi phí khi mà phải viết nhiều loại ngôn ngữ native cho từng nền tảng di động.</p>
+                    <p>Tại sao cần học Reactive cơ bản?</p>
+                    <p>- Ứng dụng đa nền tảng: React Native là nền tảng giúp lập trình viên viết code 1 lần nhưng tạo được ứng dụng (native) hoạt động trên 2 nền tảng thông dụng hiện nay là iOS và Android..</p>
+                    <p>- Nhu cầu thị trường cao: Theo một nghiên cứu từ Stack Overflow, React Native là nền tảng được các lập trình viên mong muốn được sử dụng nhiều nhất trong việc phát triển các ứng dụng di động. Bên cạnh đó, số lượng các lập trình viên sử dụng thành thạo nền tảng này vẫn chưa đáp ứng được nhu cầu tuyển dụng.</p>
+                    <p>- Hỗ trợ chuyên sâu: Khóa học được xây dựng dựa theo phương pháp problem-based learning, đi kèm với dự án thiết kế cuối khóa, như xây dựng app giỏ hàng thương mại điện tử.</p>
+                    <p>Hãy cùng Kyna và Nordic Coder khám phá những kiến thức cơ bản của React native nhé!</p>
+                    <p>&nbsp;</p>
+                    <h3></h3><strong>Nội dung khóa học “React native cơ bản”:</strong>
+                    <p>&bull; Nắm kiến thức tổng quát nhất về React native. </p>
+                    <p>&bull; Cài đặt công cụ: git, nodejs, yarn, Expo, xcode, android studio, AVD Manager ….</p>
+                    <p>&bull; Hiểu và làm việc với React Component.</p>
+                    <p>&bull; Sử dụng react-nagivation triển khai điều hướng.</p>
+                    <p>&bull; Hiểu cách lấy dữ liệu từ API và dùng Fetch để nạp dữ liệu từ bên ngoài.</p>
+                    <p>&bull; Bài thực hành.</p>
+                    <p>&nbsp;</p>
+                    <h3></h3><strong>Giới thiệu giảng viên: Phạm Tấn Hùng</strong>
+                    <p>&bull;&nbsp;</p><span style="color: #333333; font-family: 'open sans', sans-serif; text-align: center;">Technical Architect - PYCO</span>
+                    <p>&nbsp;</p>
+                    <h3></h3><strong>Bên cạnh các kiến thức kể trên, Kyna.vn còn đem đến cho bạn một trải nghiệm học tập vô cùng thú vị:</strong>
+                    <p>&bull; Được học linh hoạt mọi lúc, mọi nơi trên nhiều thiết bị như máy tính, điện thoại, máy tính bảng, ...</p>
+                    <p>&bull; Được tham gia thảo luận và đặt câu hỏi cho giảng viên không khác gì các khóa học trực tiếp.</p>
+                    <p>&bull; Chỉ cần thanh toán học phí một lần để sở hữu khóa học trọn đời, có thể học lại bất cứ khi nào tùy thích.</p>
+                    <p>Hãy đăng ký ngay để bổ sung những kiến thức và kỹ năng thiết yếu giúp bạn phát triển bản thân và thăng tiến trên con đường sự nghiệp của mình. Chúc bạn có được nhiều kiến thức bổ ích khi học tại kyna.vn.</p>
+                  </div><a class="general__moreRead" href="#collapseRead" data-toggle="collapse" data-target="#wrapper" aria-expanded="false" aria-controls="collapseExample">Xem thêm <i class="fas fa-chevron-down"></i></a><a class="general__lessRead" href="#collapseRead" data-toggle="collapse" data-target="#wrapper" aria-expanded="false" aria-controls="collapseExample">Thu gọn<i class="fas fa-chevron-up"></i></a>
+                </div>
+                <div class="content__detail-general mt-4">
+                  <h5 class="general__heading">Thông tin giảng viên</h5>
+                  <div class="general__hr"></div>
+                  <div class="general__lecturer">
+                    <div class="row">
+                      <div class="col-md-3 col-xs-12"><a class="general__lecturer-link" href="#">
+                          <div class="link__avr"><img src="./images/courseDetail/thongtingiangvien.png" alt=""></div>
+                          <div class="link__info">
+                            <p class="link__info-name">Nordic Coder</p>
+                            <p class="link__info-major"><i class="fas fa-briefcase"></i>Trung tâm</p>
+                          </div></a></div>
+                      <div class="col-md-9 col-xs-12">
+                        <p><span style="color: #333333; font-family: 'Open Sans', sans-serif; font-size:14px">Nordic Coder tr&#x1B0;&#x1EDD;ng d&#x1EA1;y l&#x1EAD;p tr&igrave;nh cung c&#x1EA5;p ki&#x1EBF;n th&#x1EE9;c, k&#x1EF9; n&abreve;ng th&#x1EF1;c h&agrave;nh k&#x1EBF;t h&#x1EE3;p n&acirc;ng cao c&aacute;c k&#x1EF9; n&abreve;ng m&#x1EC1;m c&#x1EA7;n thi&#x1EBF;t cho th&#x1EBF; h&#x1EC7; IT tr&#x1EBB;. V&#x1EDB;i ch&#x1B0;&#x1A1;ng tr&igrave;nh &dstrok;&agrave;o t&#x1EA1;o &dstrok;&#x1B0;&#x1EE3;c thi&#x1EBF;t k&#x1EBF; v&agrave; &dstrok;&uacute;c k&#x1EBF;t t&#x1EEB; kinh nghi&#x1EC7;m c&#x1EE7;a nh&#x1EEF;ng chuy&ecirc;n gia t&#x1EA1;i c&aacute;c c&ocirc;ng ty c&ocirc;ng ngh&#x1EC7; &#x1EDF; Vi&#x1EC7;t  Nordic Coder  c&ugrave;ng ph&#x1B0;&#x1A1;ng ph&aacute;p h&#x1ECD;c m&ocirc; ph&#x1ECF;ng m&ocirc;i tr&#x1B0;&#x1EDD;ng l&agrave;m vi&#x1EC7;c th&#x1EF1;c t&#x1EBF;, NC gi&uacute;p h&#x1ECD;c vi&ecirc;n t&#x1EF1; tin tr&#x1EDF; th&agrave;nh l&#x1EAD;p nh&#x1EEF;ng tr&igrave;nh vi&ecirc;n chuy&ecirc;n nghi&#x1EC7;p trong th&#x1EDD;i gian ng&#x1EAF;n nh&#x1EA5;t.</span></p>
+                      </div>
+                    </div><a class="general__lecturer-info" href="/giang-vien/Nordic-coder">Chi tiết <i class="fas fa-chevron-right"></i></a>
+                  </div>
+                </div>
+                <div class="content__detail-general mt-4">
+                  <h5 class="general__heading">Khóa học của giảng viên <a class="general__heading-link" href="#">Nordic Coder</a></h5>
+                  <div class="row">
+                    <div class="col-xs-12 col-md-6 col-xl-4">
+                            <div class="course__box"><a class="course__box-image" href="course-detail.html"><img src="images/courseDetail/js.jpg">
+                                <div class="image__rating">
+                                  <div class="image__rating-text"><b><i class="fas fa-play-circle"></i><span>32</span></b></div>
+                                  <div class="image__rating-number"><i class="fas fa-star"></i><span> <span>5</span>
+                                      <div class="detail">đăng ký học</div></span></div>
+                                </div></a>
+                              <div class="course__box-content"><a class="content__title" href="course-detail.html">JavaScript dành cho người mới bắt đầu</a>
+                                <div class="content__name"><i class="fas fa-user-tie"></i><span> Nordic Coder </span></div>
+                                <div class="content__position"><i class="fas fa-briefcase"></i><span>Trung Tâm</span></div>
+                                <div class="content__price">
+                                  <div class="content__price-text"><a class="video__button d-none" href="#"><i class="fas fa-play"></i></a><span></span></div>
+                                  <div class="content__price-number">198.000 đ</div>
+                                </div>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-xl-4">
+                            <div class="course__box"><a class="course__box-image" href="course-detail.html"><img src="images/courseDetail/js.jpg">
+                                <div class="image__rating">
+                                  <div class="image__rating-text"><b><i class="fas fa-play-circle"></i><span>25</span></b></div>
+                                  <div class="image__rating-number"><i class="fas fa-star"></i><span> <span>5</span>
+                                      <div class="detail">đăng ký học</div></span></div>
+                                </div></a>
+                              <div class="course__box-content"><a class="content__title" href="course-detail.html">Xây dựng Multi-level menu với CSS Position</a>
+                                <div class="content__name"><i class="fas fa-user-tie"></i><span> Nordic Coder </span></div>
+                                <div class="content__position"><i class="fas fa-briefcase"></i><span>Trung Tâm</span></div>
+                                <div class="content__price">
+                                  <div class="content__price-text"><a class="video__button" href="#"><i class="fas fa-play"></i></a><span>Học Thử</span></div>
+                                  <div class="content__price-number">198.000 đ</div>
+                                </div>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-xl-4">            
+                            <div class="course__box"><a class="course__box-image" href="course-detail.html"><img src="images/courseDetail/SPA.jpg">
+                                <div class="image__rating">
+                                  <div class="image__rating-text"><b><i class="fas fa-play-circle"></i><span>14</span></b></div>
+                                  <div class="image__rating-number"><i class="fas fa-star"></i><span> <span>5</span>
+                                      <div class="detail">đăng ký học</div></span></div>
+                                </div></a>
+                              <div class="course__box-content"><a class="content__title" href="course-detail.html">Xây dựng SPA Shopping Cart bằng JS đơn thuần</a>
+                                <div class="content__name"><i class="fas fa-user-tie"></i><span> Nordic Coder </span></div>
+                                <div class="content__position"><i class="fas fa-briefcase"></i><span>Trung Tâm</span></div>
+                                <div class="content__price">
+                                  <div class="content__price-text"><a class="video__button d-none" href="#"><i class="fas fa-play"></i></a><span></span></div>
+                                  <div class="content__price-number">598.000 đ</div>
+                                </div>
+                              </div>
+                            </div>
+                    </div>
+                  </div><a class="general__link" href="#">Xem Thêm</a>
+                </div>
+                <div class="content__detail-general mt-4">
+                  <h5 class="general__heading">Khóa học phù hợp với bạn</h5>
+                  <div class="row">
+                    <div class="col-xs-12 col-md-6 col-xl-4">
+                            <div class="course__box"><a class="course__box-image" href="course-detail.html"><img src="images/courseDetail/mobile.jpg">
+                                <div class="image__rating">
+                                  <div class="image__rating-text"><b><i class="fas fa-play-circle"></i><span>30</span></b></div>
+                                  <div class="image__rating-number"><i class="fas fa-star"></i><span> <span>5</span>
+                                      <div class="detail">đăng ký học</div></span></div>
+                                </div></a>
+                              <div class="course__box-content"><a class="content__title" href="course-detail.html">Lập trình Website cho di động</a>
+                                <div class="content__name"><i class="fas fa-user-tie"></i><span>Trần Duy Thanh</span></div>
+                                <div class="content__position"><i class="fas fa-briefcase"></i><span>Thạc sỹ Khoa học máy tính</span></div>
+                                <div class="content__price">
+                                  <div class="content__price-text"><a class="video__button" href="#"><i class="fas fa-play"></i></a><span>Học Thử</span></div>
+                                  <div class="content__price-number">198.000 đ</div>
+                                </div>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-xl-4">
+                            <div class="course__box"><a class="course__box-image" href="course-detail.html"><img src="images/courseDetail/android.jpg">
+                                <div class="image__rating">
+                                  <div class="image__rating-text"><b><i class="fas fa-play-circle"></i><span>40</span></b></div>
+                                  <div class="image__rating-number"><i class="fas fa-star"></i><span> <span>5</span>
+                                      <div class="detail">đăng ký học</div></span></div>
+                                </div></a>
+                              <div class="course__box-content"><a class="content__title" href="course-detail.html">Lập trình Android cơ bản</a>
+                                <div class="content__name"><i class="fas fa-user-tie"></i><span>Trần Duy Thanh</span></div>
+                                <div class="content__position"><i class="fas fa-briefcase"></i><span>Thạc sỹ Khoa học máy tính</span></div>
+                                <div class="content__price">
+                                  <div class="content__price-text"><a class="video__button" href="#"><i class="fas fa-play"></i></a><span>Học Thử</span></div>
+                                  <div class="content__price-number">500.000 đ</div>
+                                </div>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-xl-4">
+                            <div class="course__box"><a class="course__box-image" href="course-detail.html"><img src="images/courseDetail/mobile.jpg">
+                                <div class="image__rating">
+                                  <div class="image__rating-text"><b><i class="fas fa-play-circle"></i><span>22</span></b></div>
+                                  <div class="image__rating-number"><i class="fas fa-star"></i><span> <span>5</span>
+                                      <div class="detail">đăng ký học</div></span></div>
+                                </div></a>
+                              <div class="course__box-content"><a class="content__title" href="course-detail.html">Lập trình Website cho di động</a>
+                                <div class="content__name"><i class="fas fa-user-tie"></i><span>Trần Duy Thanh</span></div>
+                                <div class="content__position"><i class="fas fa-briefcase"></i><span>Thạc sỹ Khoa học máy tính</span></div>
+                                <div class="content__price">
+                                  <div class="content__price-text"><a class="video__button" href="#"><i class="fas fa-play"></i></a><span>Học Thử</span></div>
+                                  <div class="content__price-number">700.000 đ</div>
+                                </div>
+                              </div>
+                            </div>
+                    </div>
+                  </div><a class="general__link" href="#">Xem Thêm      </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-xs-12">
+              <div class="content__cart">
+                <div class="content__cart-header">
+                  <div class="header__card">
+                    <div class="header__card-img"><img class="img__fluid" src="images/courseDetail/reactjs.png" alt="">
+                      <button class="img__bnt"><i class="fab fa-youtube"></i></button>
+                    </div>
+                    <div class="header__card-video">
+                      <iframe width="100%" height="215.42" src="https://www.youtube.com/embed/DbVCQQ5WZGM?autoplay=1&amp;mute=1&amp;enablejsapi=1" allow="autoplay" frameborder="0" allowfullscreen=""></iframe>
+                    </div>
+                  </div>
+                </div>
+                <div class="content__cart-body">
+                  <p class="body__price"><i class="fas fa-tags"></i>  398.000
+                    <u class="unline">đ</u>
+                  </p>
+                </div>
+                <div class="content__cart-footer"><a class="footer__linkOgrin" href="#"><b>MUA NGAY</b></a><a class="footer__linkGrey"><b>Thêm vào giỏ hàng</b></a>
+                  <div class="footer__icon">
+                    <div class="footer__icon-items"><a class="items__link" href="#"><span class="items__link-face"><i class="fab fa-facebook-f color"></i></span></a><a class="items__link" href="#"><span class="items__link-linkedin"><i class="fab fa-linkedin-in"></i></span></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="content__preview"> 
+                <div class="content__preview-wrapper"><span class="wrapper__learnTest">Học Thử</span>
+                  <h5 class="wrapper__heading">React native cơ bản</h5>
+                  <hr class="wrapper__line">
+                  <div class="wrapper__list">
+                    <div class="wrapper__list-video"><a class="video__test" href=""><a class="video__test-btn" href="#"><i class="fas fa-play"></i></a><span>Bài 1: Why is React Native.mp4 </span></a></div>
+                    <div class="wrapper__list-video"><a class="video__test" href="#"><a class="video__test-btn"><i class="fas fa-play"></i></a><span>Bài 2: Why is React Native.mp4 </span></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="content__advertise"><a class="content__advertise-link" href=""><img src="images/courseDetail/girl.jpg" alt=""></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer bgcLightGrey">
+        <div class="footer__top">
+          <div class="container">
+            <div class="row">
+              <div class="mb-3 col-sm-6 col-lg-3">
+                <div class="footer__top-hotline">
+                  <h4 class="footer__title">Kết nối với Oncode</h4>
+                  <ul class="footer__hotline-contact">
+                    <li><span class="first"><i class="fal fa-phone"></i>Hotline</span><span class="second">0965863079</span></li>
+                    <li><span class="first"><i class="fal fa-envelope"></i>Email</span><span class="second">hotro@oncode.edu.vn</span></li>
+                  </ul>
+                  <div class="footer__hotline-social"><a href="#" target="_blank"><img src="images/layout/fb_icon_footer.png" alt="fanpage"></a><a href="#" target="_blank"><img src="images/layout/youtube_icon_footer.png" alt="fanpage"></a><a href="#" target="_blank"><img src="images/layout/zalo_icon_footer.png" alt="fanpage"></a></div>
+                </div>
+              </div>
+              <div class="mb-3 col-sm-6 col-lg-3">
+                <div class="footer__top-info">
+                  <h4 class="footer__title">Thông tin Oncode</h4>
+                  <ul>
+                    <li><a href="#">Danh sách khóa học</a></li>
+                    <li><a href="#">Câu hỏi thường gặp</a></li>
+                    <li><a href="#">Cách thanh toán học phí</a></li>
+                    <li><a href="#">Thông tin hữu ích</a></li>
+                    <li><a href="#">VietnamWorks</a></li>
+                    <li><a href="#">PRIMUS</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mb-3 col-sm-6 col-lg-3">
+                <div class="footer__top-about">
+                  <h4 class="footer__title">Về Oncode</h4>
+                  <ul>
+                    <li class="iconfeature"><a href="#">Giảng dạy tại Oncode</a></li>
+                    <li><a href="#">Hợp tác với Oncode</a></li>
+                    <li><a href="#">Đối tác phân phối</a></li>
+                    <li><a href="#">Quy chế hoạt động sàn GDTMĐT</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mb-3 col-sm-6 col-lg-3">
+                <div class="footer__top-fanpage">
+                  <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Foncodeacademy&amp;tabs=272&amp;width=255&amp;height=220&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId=168015681053039" width="255" height="150" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="footer__address">
+                  <div class="footer__address-text">
+                    <p class="footer__address-copyright">&copy; 2020 - Bản quyền của Công ty TNHH Bigvio Media</p>
+                    <p><span>Trụ sở chính: Số nhà 19 ngõ 77 phố Lãng Yên, phường Thanh Lương, quận Hai Bà Trưng, Tp Hà Nội</span>
+                      </p><p>Giấy phép ĐKKD số 123456789 do Sở Kế hoạch và Đầu tư TP Hà Nội cấp</p>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 footer__info"><a class="col-lg-6" href="#" target="_blank"><img class="img-fluid" src="images/layout/dathongbao.png" alt="da thong bao"></a><a class="col-lg-6" href="#" target="_blank"><img class="img-fluid" src="images/layout/logoCCDV.png" alt="da dang ky"></a>
+                <ul>
+                  <li><a href="#" title="title">Điều khoản dịch vụ </a></li>
+                  <li><a href="#" title="title">Chính sách bảo mật</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Start Back to Top-->
+      <div class="back-to-top" id="back-to-top"><a href="#"><i class="fas fa-arrow-up"></i></a></div>
+      <!-- End Back to Top-->
+    </div>
+    <!-- Jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Owl Carousel-->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Fancybox-->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!-- Main Js-->
+    <script src="js/main.js"></script>
+  </body>
+</html>

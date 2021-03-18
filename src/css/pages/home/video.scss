@@ -1,0 +1,180 @@
+.video {
+    position: relative;
+    &__img {
+        background: url(../images/home/row.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 529px;
+    }
+    &__text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        color: #ffffff;
+        padding: 100px 0 78px 0;
+        &-detail {
+            position: relative;
+            .detail__icon {
+                opacity: 1;
+                width: 100%;
+                margin-bottom: 15px;
+                @include max-breakpoint(767) {
+                    margin-top: 20px;
+                }
+                &-play {
+                    transform: translate(0, 0);
+                    height: 80px;
+                    width: 80px;
+                    border-radius: 50%;
+                    text-align: center;
+                    border: 1px solid #ffffff;
+                    z-index: 5;
+                    color: white;
+                    transition: all 0.5s ease-in-out;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    @include max-breakpoint(767) {
+                        width: 56px;
+                        height: 56px;
+                    }
+                    i {
+                        font-size: 18px;
+                        transition: all 0.5s ease-in-out;
+                    }
+                    &:hover {
+                        border: none;
+                        background: #ffffff;
+                        color: white;
+                        i {
+                            color: #000000;
+                        }
+                        &::before {
+                            border: 5px solid #ffffff;
+                        }
+                        &::after {
+                            border: 5px solid #ffffff;
+                        }
+                    }
+                    &::before {
+                        opacity: 0;
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        width: 200px;
+                        height: 200px;
+                        top: 50%;
+                        left: 50%;
+                        border-radius: 50%;
+                        border: 5px solid rgba(255, 255, 255, 0.2);
+                        -webkit-animation: zoomBig 3.25s linear infinite;
+                        animation: zoomBig 3.25s linear infinite;
+                        -webkit-animation-delay: 0s;
+                        animation-delay: 0s;
+                        z-index: -1;
+                        transition: all 0.5s ease-in-out;
+                    }
+                    &::after {
+                        opacity: 0;
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        width: 150px;
+                        height: 150px;
+                        top: 50%;
+                        left: 50%;
+                        border-radius: 50%;
+                        border: 5px solid rgba(255, 255, 255, 0.2);
+                        -webkit-animation: zoomBig 3.25s linear infinite;
+                        animation: zoomBig 3.25s linear infinite;
+                        -webkit-animation-delay: 0s;
+                        animation-delay: 0s;
+                        z-index: -1;
+                        transition: all 0.5s ease-in-out;
+                    }
+                }
+            }
+            .detail__subheading {
+                font-size: 17px;
+                margin-bottom: 15px;
+                font-family: $font-hind;
+                font-weight: 500;
+                color: rgba(255, 255, 255, .85);
+                @include max-breakpoint(767) {
+                    font-size: 14px;
+                }
+            }
+            .detail__heading {
+                font-size: 60px;
+                font-family: $font-cor;
+                font-weight: 600;
+                margin-bottom: 15px;
+                @include max-breakpoint(991) {
+                    font-size: 53px;
+                }
+                @include max-breakpoint(767) {
+                    font-size: 39px;
+                }
+                @include max-breakpoint(425) {
+                    font-size: 35px;
+                }
+            }
+            .detail__contact {
+                font-size: 22px;
+                margin-bottom: 15px;
+                font-family: $font-hind;
+                font-weight: 400;
+                color: rgba(255, 255, 255, .85);
+                line-height: 30px;
+                @include max-breakpoint(991) {
+                    font-size: 20px;
+                }
+                @include max-breakpoint(767) {
+                    font-size: 18px;
+                }
+            }
+            .detail__btn {
+                padding-top: 15px;
+                margin-bottom: 21.74px;
+                &-link {
+                    padding: 15px 30px 15px 25px;
+                    border: 1px solid #ffff;
+                    border-radius: 5px;
+                    font-size: 17px;
+                    font-family: $font-cor;
+                    line-height: 17px;
+                    font-weight: 700;
+                    color: white;
+                    &:hover {
+                        color: #000000;
+                        background: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes zoomBig {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 1;
+        border-width: 3px;
+    }
+    40% {
+        opacity: 1;
+        border-width: 2px;
+    }
+    65% {
+        border-width: 1px;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0;
+        border-width: 1px;
+    }
+}

@@ -1,0 +1,54 @@
+                .address {
+                    &__content {
+                        &-box {
+                            box-shadow: 0 0 10px 0 rgba(18, 31, 56, .1);
+                            margin-top: -62px;
+                            .box__block {
+                                padding: 35px 35px 10px 35px;
+                                background: #ffffff;
+                                &-heading {
+                                    font-size: 26px;
+                                    font-family: $font-cor;
+                                    color: #121f38;
+                                    font-weight: 600;
+                                    line-height: 33px;
+                                    margin-bottom: 15px;
+                                }
+                                &-text {
+                                    font-size: 15px;
+                                    font-family: $font-hind;
+                                    color: #818491;
+                                    font-weight: 400;
+                                    line-height: 26px;
+                                    margin-bottom: 15px;
+                                }
+                                &-line {
+                                    height: 1px;
+                                    border-top: 1px solid rgba(0, 0, 0, 0.06);
+                                    margin-bottom: 15px;
+                                }
+                                &-map {
+                                    .map__text {
+                                        margin-top: 5px;
+                                        margin-bottom: 26px;
+                                        &-link {
+                                            color: #c78665;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                .address .address__content .c-w {
+                    color: white;
+                }
+                
+                .address .address__content .bg-c78665 {
+                    background: #c78665;
+                }
+                
+                .address .address__content .c-border {
+                    border-top: 1px solid rgba(255, 255, 255, 0.08);
+                }

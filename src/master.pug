@@ -1,0 +1,53 @@
+doctype
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Oncode Education
+    // Favicon
+    link(rel='shortcut icon' href='images/layout/favicon.ico')
+    // Bootstrap
+    link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css")
+    // Font Awesome CSS
+    link(rel='stylesheet' href='https://pro.fontawesome.com/releases/v5.10.0/css/all.css' integrity='sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p' crossorigin='anonymous')
+    // Google Fonts
+    link(href='https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400;500;600;700&family=Hind:wght@300;400;500;600;700&display=swap' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400;500;600;700&display=swap' rel='stylesheet')
+    // Owl Carousel CSS
+    link(href="css/owl.carousel.min.css", rel="stylesheet")
+    link(href="css/owl.theme.default.min.css", rel="stylesheet")
+    // Fancybox
+    link(rel='stylesheet' href='https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css')
+    // Flaticon CSS
+    link(rel="stylesheet", href="http://wedco.themetechmount.net/wp-content/themes/wedco/assets/themetechmount-wedco-extra-icons/font/flaticon.css?ver=5.5.3")
+    // Wow JS
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css")
+    // Main CSS
+    link(href="./css/main.css" rel="stylesheet")
+  body
+    .wrapper
+      include ./layouts/header.pug
+      block content
+      include ./layouts/footer.pug
+      include ./layouts/back-to-top.pug
+      include ./layouts/back-to-top.pug
+    // Jquery
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js ')
+    // Bootstrap JS
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js")
+    // Owl Carousel
+    script(src='js/owl.carousel.min.js')
+    // Fancybox
+    script(src='https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js')
+    // Isotope
+    script(src='https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js')
+    script(src='https://npmcdn.com/imagesloaded@4/imagesloaded.pkgd.js')
+    // Main Js
+    script(src='js/main.js')
+    // Wow JS
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js")
+
+

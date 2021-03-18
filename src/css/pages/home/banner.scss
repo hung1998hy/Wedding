@@ -1,0 +1,208 @@
+.banner {
+    &__img {
+        &-box {
+            position: relative;
+            height: 845px;
+            @include max-breakpoint(992) {
+                height: 676px;
+            }
+            @include max-breakpoint(768) {
+                height: 500px;
+            }
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+            .box__content {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                text-align: center;
+                color: white;
+                transform: translateY(-50%);
+                width: 100%;
+                @include max-breakpoint(768) {
+                    top: 47%;
+                }
+                &-turn {
+                    font-family: 'Dancing Script', cursive;
+                    font-size: 40px;
+                    display: inline-block;
+                    transform: rotate(-25deg);
+                    position: absolute;
+                    top: -57px;
+                    left: 43.5%;
+                    color: rgb(222, 222, 222);
+                    @include max-breakpoint(768) {
+                        font-size: 25px;
+                        top: -35px;
+                        left: 40.5%;
+                    }
+                    @include max-breakpoint(425) {
+                        display: none;
+                    }
+                }
+                &-heading {
+                    font-family: 'Cormorant', serif;
+                    font-size: 85px;
+                    @include max-breakpoint(768) {
+                        font-size: 64px;
+                    }
+                    @include max-breakpoint(425) {
+                        font-size: 40px;
+                    }
+                }
+                &-text {
+                    font-family: 'Hind', sans-serif;
+                    font-size: 16px;
+                    word-spacing: 2px;
+                    @include max-breakpoint(768) {
+                        font-size: 14px;
+                    }
+                    @include max-breakpoint(425) {
+                        display: none;
+                    }
+                }
+                &-bot {
+                    position: relative;
+                    .bot__line {
+                        z-index: 11;
+                        background-color: rgb(255, 255, 255);
+                        color: rgb(255, 255, 255);
+                        width: 1px;
+                        height: 35px;
+                        min-height: 0px;
+                        min-width: 0px;
+                        max-height: none;
+                        max-width: none;
+                        transform-origin: 50% 50%;
+                        opacity: 1;
+                        transform: translate(0px, 0px);
+                        visibility: visible;
+                        position: absolute;
+                        bottom: -60px;
+                        left: 50%;
+                        @include max-breakpoint(992) {
+                            height: 32px;
+                            bottom: -40px;
+                        }
+                        @include max-breakpoint(768) {
+                            bottom: -45px;
+                        }
+                    }
+                    .bot__btn {
+                        z-index: 12;
+                        font-family: Cormorant;
+                        height: auto;
+                        width: auto;
+                        color: rgb(255, 255, 255);
+                        text-decoration: none;
+                        white-space: nowrap;
+                        min-height: 0px;
+                        min-width: 0px;
+                        max-height: none;
+                        max-width: none;
+                        text-align: center;
+                        line-height: 28px;
+                        letter-spacing: 0px;
+                        font-weight: 700;
+                        font-size: 19px;
+                        border-color: rgb(255, 255, 255);
+                        border-style: solid;
+                        border-width: 1px;
+                        padding: 12px 45px;
+                        border-radius: 3px;
+                        background-color: rgba(0, 0, 0, 0);
+                        transform-origin: 50% 50%;
+                        opacity: 1;
+                        transform: translate(0px, 0px);
+                        visibility: visible;
+                        position: absolute;
+                        bottom: -150px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        @include max-breakpoint(992) {
+                            line-height: 21px;
+                            font-size: 14px;
+                            bottom: -105px;
+                        }
+                        @include max-breakpoint(768) {
+                            line-height: 20px;
+                            font-size: 17px;
+                            padding: 12px 35px;
+                            bottom: -110px;
+                        }
+                        &:hover {
+                            border-color: rgb(199, 134, 101);
+                            background-color: rgb(199, 134, 101);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.banner .banner__img .banner__img-box .box__content .ps {
+    position: absolute;
+    top: -57px;
+    left: 61.5%;
+    @include max-breakpoint(768) {
+        top: -30px;
+        left: 63.5%;
+    }
+}
+
+.owl-theme {
+    .owl-nav.disabled+.owl-dots {
+        margin: 0;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .owl-dots {
+        .owl-dot {
+            outline: none;
+            -webkit-box-sizing: content-box;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0);
+            -webkit-transition: opacity 0.3s ease;
+            transition: opacity 0.3s ease;
+            width: 13px;
+            height: 13px;
+            border: 2px solid #ffffff;
+            margin: 25px 3px;
+            &.active {
+                background: white;
+                transform: scale(1);
+                -webkit-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+                -webkit-transition: -webkit-transform 0.3s ease;
+                transition: transform 0.5s ease;
+            }
+            &:hover {
+                span {
+                    background: white;
+                    transform: scale(1.2);
+                    -webkit-transform-origin: 50% 50%;
+                    transform-origin: 50% 50%;
+                    -webkit-transition: -webkit-transform 0.3s ease;
+                    transition: transform 0.5s ease;
+                }
+            }
+            span {
+                width: 13px;
+                height: 13px;
+                margin: auto;
+                background: white;
+                display: block;
+                -webkit-backface-visibility: visible;
+                transition: opacity .2s ease;
+                border-radius: 30px;
+                transform: scale(0);
+            }
+        }
+    }
+}

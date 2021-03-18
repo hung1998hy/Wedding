@@ -1,0 +1,141 @@
+.aboutTeam {
+    padding: 82px 0 80px 0;
+    &__title {
+        text-align: center;
+        &-subheading {
+            font-weight: 500;
+            text-transform: capitalize;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0.5px;
+            color: #c78665;
+            font-family: "Hind", sans-serif;
+            margin: 4px 0;
+        }
+        &-heading {
+            font-weight: 700;
+            text-transform: capitalize;
+            font-size: 41px;
+            line-height: 52px;
+            color: #121f38;
+            font-family: "Cormorant", serif;
+            margin-bottom: 30px;
+        }
+    }
+    &__member {
+        &-slide {
+            padding: 0 15px;
+            &:hover {
+                .slide__img {
+                    &-content {
+                        .content__link {
+                            transform: scale(1);
+                            -webkit-transform: scale(1);
+                        }
+                    }
+                    &::before {
+                        opacity: 1;
+                        transform: rotate3d(0, 0, 0, 0deg);
+                    }
+                }
+                .slide__box {
+                    background: #c78665;
+                    &-heading {
+                        .heading__link {
+                            color: white;
+                        }
+                    }
+                    &-text {
+                        color: white;
+                    }
+                    &-icon {
+                        .icon__link {
+                            color: white;
+                        }
+                    }
+                }
+            }
+            .slide__img {
+                position: relative;
+                &::before {
+                    position: absolute;
+                    left: 20px;
+                    right: 20px;
+                    top: 20px;
+                    bottom: 20px;
+                    content: "";
+                    display: block;
+                    background-color: rgba(25, 25, 25, .5);
+                    opacity: 0;
+                    transform: rotate3d(-1, 1, 0, 100deg);
+                    transition: all .4s ease-in-out 0s;
+                    z-index: 1;
+                }
+                &-content {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                    width: 100%;
+                    text-align: center;
+                    z-index: 2;
+                    .content__link {
+                        border: none;
+                        text-align: center;
+                        height: 40px;
+                        width: 40px;
+                        line-height: 43px;
+                        border-radius: 0%;
+                        color: #fff;
+                        display: inline-block;
+                        margin: 0 auto;
+                        transform: scale(0);
+                        -webkit-transform: scale(0);
+                        -webkit-transition: all 0.4s ease-out 0s;
+                        transition: all 0.4s ease-in-out;
+                        font-weight: 500;
+                        font-size: 20px;
+                        background: #c78665;
+                        &:hover {
+                            color: black;
+                            background: white;
+                        }
+                    }
+                }
+            }
+            .slide__box {
+                text-align: center;
+                background: white;
+                margin: -60px 30px 0;
+                padding: 15px;
+                position: relative;
+                transition: all 0.45s ease-in-out;
+                z-index: 3;
+                box-shadow: 0 0 10px 0 rgba(18, 31, 56, .1);
+                &-heading {
+                    margin-bottom: 1px;
+                    .heading__link {
+                        font-size: 26px;
+                        font-family: $font-cor;
+                        font-weight: 600;
+                        line-height: 33px;
+                        color: #121f38;
+                    }
+                }
+                &-text {
+                    font-size: 14px;
+                    font-family: $font-hind;
+                    line-height: 26px;
+                    color: #818491;
+                    margin-bottom: 8px;
+                }
+                &-icon {
+                    .icon__link {
+                        padding: 0 5px;
+                        color: #818491;
+                    }
+                }
+            }
+        }
+    }
+}

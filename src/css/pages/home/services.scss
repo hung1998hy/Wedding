@@ -1,0 +1,130 @@
+.magin-bot {
+    margin-bottom: 30px;
+}
+
+.service {
+    padding: 82px 0 75px 0;
+    position: relative;
+    box-sizing: border-box;
+    background: #edf5f7;
+    @include max-breakpoint(768) {
+        padding: 45px 0 35px 0;
+    }
+    &__title {
+        text-align: center;
+        &-top {
+            .top__subheading {
+                font-weight: 500;
+                text-transform: capitalize;
+                font-size: 16px;
+                line-height: 20px;
+                letter-spacing: 0.5px;
+                color: #c78665;
+                font-family: $font-hind;
+                margin: 4px 0;
+            }
+            .top__heading {
+                font-weight: 700;
+                text-transform: capitalize;
+                font-size: 41px;
+                line-height: 52px;
+                color: #121f38;
+                font-family: $font-cor;
+                margin-bottom: 10px;
+                @include max-breakpoint(681) {
+                    font-size: 35px;
+                }
+            }
+        }
+        &-detail {
+            display: flex;
+            justify-content: center;
+            .detail__text {
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 26px;
+                color: #818491;
+                font-family: $font-hind;
+                margin: 0 0 15px;
+                width: 52%;
+                @include max-breakpoint(768) {
+                    width: 97%;
+                }
+            }
+        }
+    }
+    &__modal {
+        &-item {
+            text-align: center;
+            padding: 43px 30px 30px 30px;
+            background-color: #fff;
+            transition: all 0.45s ease-in-out;
+            &:hover {
+                box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+                margin-top: -10px;
+                .item__content {
+                    &-logo {
+                        &::before {
+                            margin-top: -10px;
+                        }
+                    }
+                }
+            }
+            .item__content {
+                &-logo {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img {
+                        width: 45px;
+                    }
+                    &::before {
+                        counter-increment: sbox;
+                        content: counter(sbox, decimal-leading-zero);
+                        position: absolute;
+                        top: 50px;
+                        right: 30px;
+                        font-size: 55px;
+                        line-height: 0;
+                        font-weight: 400;
+                        transition: all .6s;
+                        -webkit-text-stroke: 1px rgba(0, 0, 0, .10);
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+                &-title {
+                    .title__heading {
+                        line-height: 33px;
+                        position: relative;
+                        font-size: 26px;
+                        font-family: $font-cor;
+                        padding-top: 15px;
+                        margin: 0;
+                    }
+                    .title__detail {
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 26px;
+                        color: #818491;
+                        font-family: $font-hind;
+                        position: relative;
+                        padding-top: 32px;
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            width: 50px;
+                            height: 2px;
+                            background-color: #c78665;
+                            display: block;
+                            top: 0;
+                            left: 50%;
+                            margin-left: -25px;
+                            margin-top: 15px;
+                            transition: all 0.45s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

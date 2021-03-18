@@ -1,0 +1,8 @@
+mixin service-item(src, heading, text)
+    .service__modal-item 
+        .item__content
+            .item__content-logo
+                img(src= src, alt="")
+            .item__content-title
+                h2.title__heading= heading
+                p.title__detail= text

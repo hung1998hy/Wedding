@@ -1,0 +1,78 @@
+.aboutServices {
+    padding: 83px 0 165px;
+    &__content {
+        &-img {}
+        &-text {
+            .text__subheading {
+                font-family: "Hind", sans-serif;
+                color: #c78665;
+                font-weight: 500;
+                text-transform: capitalize;
+                font-size: 16px;
+                line-height: 20px;
+                letter-spacing: 0.5px;
+            }
+            .text__heading {
+                font-family: "Cormorant", serif;
+                font-weight: 700;
+                text-transform: capitalize;
+                font-size: 41px;
+                line-height: 52px;
+                color: #121f38;
+            }
+            p {
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 26px;
+                color: #818491;
+                font-family: "Hind", sans-serif;
+                padding-bottom: 15px;
+                .text__link {
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 26px;
+                    color: #c78665;
+                    font-family: "Hind", sans-serif;
+                }
+            }
+            .text__inner {
+                margin-top: 15px;
+                margin-bottom: 27px;
+                &-icon {
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        width: 45px;
+                        height: 45px;
+                    }
+                }
+                &-text {
+                    .text__heading {
+                        font-family: "Cormorant", serif;
+                        font-size: 26px;
+                        line-height: 33px;
+                        margin-bottom: 3px;
+                        font-weight: 600;
+                        color: #121f38;
+                    }
+                    span {
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 26px;
+                        color: #818491;
+                        font-family: "Hind", sans-serif;
+                    }
+                }
+            }
+            .text__line {
+                height: 1px;
+                border-top: 1px solid #ebebeb;
+                display: block;
+                position: relative;
+                top: 1px;
+                width: 100%;
+                margin-bottom: 31px;
+            }
+        }
+    }
+}

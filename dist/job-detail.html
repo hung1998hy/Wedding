@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Oncode Education</title>
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="images/layout/favicon.ico">
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet">
+    <!-- Owl Carousel CSS-->
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/owl.theme.default.min.css" rel="stylesheet">
+    <!-- Fancybox-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <!-- Main CSS-->
+    <link href="./css/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <div class="container">
+          <div class="header__box">
+            <div class="header__top">
+              <div class="header__top-left">
+                <div class="header__logo"><a class="header__logo-link" href="index.html" title="title"><img class="img-fluid" src="images/layout/kyna_logo.png" alt="logo"></a></div>
+                <div class="header__search">
+                  <form action="" method="get" id="search-form">
+                    <div class="input-group">
+                      <label for="live-search-bar">Tìm kiếm</label>
+                      <input class="form-control live-search-bar" type="text" placeholder="Nhập tên khóa học/giảng viên" id="live-search-bar">
+                      <button class="search-btn" type="submit" aria-label><i class="fal fa-search"></i></button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="header__top-direction">
+                <div class="header__item"><a class="header__item-link" href="#"><i class="fal fa-unlock-alt"></i>Học miễn phí</a></div>
+                <div class="header__item">
+                  <div class="header__item-cart"><a class="dropdown-toggle cart_anchor" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="far fa-shopping-cart"></i><span class="count-number d-none">0 </span></a>
+                    <ul class="dropdown-menu">
+                      <div class="hidden" id="items-id-in-current-cart" style="display: none" data-all-cart-items=""></div>
+                      <li class="cart-rgister">
+                        <ul class="list">
+                          <li class="list__item">
+                            <div class="col-12"><a class="list__item-link" href="#">
+                                 Khóa học HTMl, CSS, JS cơ bản<br><span class="price"> 490.000 ₫</span></a></div>
+                          </li>
+                          <li class="list__item">
+                            <div class="col-12">
+                              <div class="view"><a class="view__link"><i class="fas fa-angle-double-right"></i>Xem Giỏ Hàng</a>
+                                <p class="view__sum">Tổng cộng: 198000 ₫   </p>
+                              </div>
+                              <div class="btn__click">
+                                <button class="btn__click-pay">Thanh Toán                      </button>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="header__item">
+                  <div class="header__item-login">Đăng nhập<span class="logo-login"><a href="#" title="title"><i class="fab fa-facebook"></i></a><a href="#" title="title"><i class="fab fa-google"></i></a><a href="#" title="title"><i class="fab fa-instagram"></i></a></span></div>
+                </div>
+              </div>
+            </div>
+            <div class="header__menu">
+              <ul class="header__menu-list">
+                <li class="header__menu-item"><a class="header__menu-link" href="index.html">Giới thiệu</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="courses.html">Khóa học</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="jobs.html">Việc làm</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="posts.html">Bí quyết</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__mobile">
+        <div class="header__mobile-wrap">
+          <div class="header__mobile-btn"><i class="fal fa-bars"></i></div>
+          <div class="header__mobile-logo"><a href="index.html"><img class="img-fluid" src="images/layout/kyna_logo.png" alt="logo"></a></div>
+          <div class="header__mobile-cart">
+            <div class="header__mobile-cartSearch"><i class="fal fa-search"></i></div>
+            <div class="header__item-cart"><a href="#"><i class="far fa-shopping-cart"></i><span class="count-number d-none">0 </span></a>
+              <ul class="dropdown-menu">
+                <div class="hidden" id="items-id-in-current-cart" style="display: none" data-all-cart-items=""></div>
+                <li class="cart-rgister">
+                  <ul class="list">
+                    <li class="list__item">
+                      <div class="col-12"><a class="list__item-link" href="#">
+                           Khóa học HTMl, CSS, JS cơ bản<br><span class="price"> 490.000 ₫</span></a></div>
+                    </li>
+                    <li class="list__item">
+                      <div class="col-12">
+                        <div class="view"><a class="view__link"><i class="fas fa-angle-double-right"></i>Xem Giỏ Hàng</a>
+                          <p class="view__sum">Tổng cộng: 198000 ₫   </p>
+                        </div>
+                        <div class="btn__click">
+                          <button class="btn__click-pay">Thanh Toán  </button>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="header__mobile-bottom"><a class="header__item-link" href="#"><i class="fal fa-unlock-alt"></i>Học miễn phí</a><a class="header__item-link" href="#">Đăng nhập</a></div>
+        <div class="header__mobile-search">
+          <form class="search-form" action="" method="get">
+            <div class="input-group">
+              <input type="text" placeholder="Nhập tên khóa học/giảng viên">
+            </div>
+          </form>
+        </div>
+        <div class="header__mobile-menu">
+          <div class="btn-close"><i class="fal fa-times"></i></div>
+          <div class="header__mobile-inner"><a class="login" href="#">Đăng nhập</a>
+            <ul class="header__mobile-list">
+              <li class="header__list-item"><a class="header__list-link" href="index.html"><img src="images/home/menu-icon-1.png" alt=""><span class="name">Giới thiệu</span></a></li>
+              <li class="header__list-item"><a class="header__list-link" href="courses.html"><img src="images/home/menu-icon-1.png" alt=""><span class="name">Khóa học</span>
+                  <div class="child-icon"><i class="fas fa-caret-right"></i></div></a>
+                <div class="header__mobile-category">
+                  <div class="go-back"><i class="fal fa-chevron-left"></i>Trở về</div>
+                  <ul class="header__mobile-list">
+                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>HTML, CSS</span></a></li>
+                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>JS</span></a></li>
+                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>ReactJS</span></a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__list-item"><a class="header__list-link" href="jobs.html"><img src="images/home/menu-icon-1.png" alt=""><span class="name">Việc làm</span>
+                  <div class="child-icon"><i class="fas fa-caret-right"></i></div></a>
+                <div class="header__mobile-category">
+                  <div class="go-back"><i class="fal fa-chevron-left"></i>Trở về</div>
+                  <ul class="header__mobile-list">
+                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>HTML, CSS</span></a></li>
+                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>JS</span></a></li>
+                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>ReactJS</span></a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__list-item"><a class="header__list-link" href="post.html"><img src="images/home/menu-icon-1.png" alt=""><span class="name">Bí quyết</span>
+                  <div class="child-icon"><i class="fas fa-caret-right"></i></div></a>
+                <div class="header__mobile-category">
+                  <div class="go-back"><i class="fal fa-chevron-left"></i>Trở về</div>
+                  <ul class="header__mobile-list">
+                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>HTML, CSS</span></a></li>
+                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>JS</span></a></li>
+                    <li class="header__list-item"><a class="header__list-link" href="index.html"><span>ReactJS</span></a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Start Breadcrumb-->
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <div class="container">
+            <li class="breadcrumb-item"><i class="fas fa-home"></i><a href="index.html">Trang chủ</a></li>
+            <li class="breadcrumb-item"><a href="#">Việc làm</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Việc làm chi tiết</li>
+          </div>
+        </ol>
+      </nav>
+      <!-- End Breadcrumb-->
+      <div class="describe">
+        <div class="container">
+          <div class="describe__box">
+            <div class="row">
+              <div class="col-lg-8 col-md-12">
+                <div class="describe__box-top">
+                  <div class="describe__box-head">
+                    <h2 class="job__name">Front End Developer(VueJS, ReactJS)                            </h2><a class="box__save" href="#" data-title="Front End Developer(VueJS, ReactJS)"><span><img src="./images/job-detail/app-loading.webp" alt=""></span><i class="fal fa-heart"> </i> Lưu tin</a>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <p class="describe__content"><span class="describe__content-icon"> <i class="far fa-calendar-alt"></i></span><span data-toggle="tooltip" data-placement="right" data-original-title="Hạn ứng tuyển">25/11/2020</span></p>
+                      <p class="describe__content"><span class="describe__content-icon"> <i class="fas fa-users"></i></span><span data-toggle="tooltip" data-placement="right" data-original-title="Số lượng cần tuyển">5 người</span></p>
+                      <p class="describe__content"><span class="describe__content-icon"> <i class="fas fa-briefcase"></i></span><span data-toggle="tooltip" data-placement="right" data-original-title="Yêu cầu kinh nghiệm">1 năm</span></p>
+                    </div>
+                    <div class="col-md-6">
+                      <p class="describe__content"><span class="describe__content-icon"> <i class="fas fa-dollar-sign"></i></span><span data-toggle="tooltip" data-placement="right" data-original-title="Mức lương">15-30 triệu</span></p>
+                      <p class="describe__content"><span class="describe__content-icon"> <i class="far fa-clock"></i></span><span data-toggle="tooltip" data-placement="right" data-original-title="Hình thức làm việc">Toàn thời gian</span></p>
+                      <p class="describe__content"><span class="describe__content-icon">  <i class="fas fa-transgender"></i></span><span data-toggle="tooltip" data-placement="right" data-original-title="Giới tính">Không yêu cầu</span></p>
+                    </div>
+                  </div>
+                  <p class="describe__content"><span class="describe__content-icon"><i class="fas fa-map-marker-alt"></i></span><span data-toggle="tooltip" data-placement="right" data-original-title="Địa chỉ làm việc">Lô 29-31-33B Đường Tân Thuận, KCX Tân Thuận, Quận 7, Tp. Hồ Chí Minh</span></p>
+                </div>
+                <div class="describe__box-data">
+                  <p class="heading">mô tả công việc
+                    </p><div class="heading__content">
+                      <ul class="heading__content-list">
+                        <li>Building application and quality web pages and updates for clients with quick turnaround time</li>
+                        <li>Creating data presentation-layers in the form of static reports and interactive dashboards</li>
+                        <li>Being incredibly self-driven to learn, push new ideas, and teach others</li>
+                        <li>Working both independently and on a team</li>
+                      </ul>
+                    </div>
+                  <p></p>
+                  <p class="heading">yêu cầu ứng viên
+                    </p><div class="heading__content">
+                      <ul class="heading__content-list">
+                        <li>B.S. in Computer Science or equivalent</li>
+                        <li>At least 2 years experience in Front End Development both Web&app platform</li>
+                        <li>Strong HTML5/CSS3, jQuery, Bootstrap 3</li>
+                        <li>Strong knowledge of OOP, Design Pattern, Algorithm & Data Structure </li>
+                        <li> Good at using scripting languages as VueJS, React JS, NodeJs ...</li>
+                        <li>Good at using MySQL (store procedure, trigger) & NoSQL as postgres, mongoDB, redis</li>
+                      </ul>
+                    </div>
+                  <p></p>
+                  <p class="heading">quyền lợi được hưởng
+                    </p><div class="heading__content">
+                      <ul class="heading__content-list">
+                        <li>Offer around $700 - $1200 & 15-17 months' wage/year</li>
+                        <li>You’ll love working in our dynamic environment with >14.000 young & active employees,</li>
+                        <li>Honor & Award for the best employees who have great contribution to the company’s success, especially the awards night for 50 best employees each year will be held overseas</li>
+                        <li>Unique culture with many exciting activities: rookie training, 72 hours experience, team building, status quo, village festival ...</li>
+                        <li>Attractive sports activities: football, badminton, swimming, table tennis, billiards ...</li>
+                        <li>Being trained by professionals, having many promoting opportunities to become managers in the leading technology groups in Vietnam, with >30,000 people and a professional environment. • Obtaining full legal insurance coverage for yourself and your family with FPT-Care</li>
+                      </ul>
+                    </div>
+                  <p></p>
+                </div>
+                <div class="describe__btn"><a class="btn btn-premium btn-apply" href="javascript:showLoginPopup('https://www.topcv.vn/brand/fpt-telecom/tuyen-dung/front-end-developervuejs-reactjs-j145178.html', 'Đăng nhập hoặc Đăng ký để ứng tuyển công việc này!')">Ứng tuyển</a></div>
+                <hr>
+                <div class="describe__job">
+                  <h4>Ngành nghề</h4><span> <a class="btn btn-sm btn-default text-dark-gray" href="#">Điện tử viễn thông</a></span><span> <a class="btn btn-sm btn-default text-dark-gray" href="#">IT Phần cứng / Mạng</a></span><span> <a class="btn btn-sm btn-default text-dark-gray" href="#">IT phần mềm</a></span>
+                </div>
+                <div class="describe__job" style="margin-top:20px;">
+                  <h4>Kỹ năng</h4><span> <a class="btn btn-sm btn-default text-dark-gray" href="#">Javascript</a></span><span> <a class="btn btn-sm btn-default text-dark-gray" href="#">NodeJS</a></span><span> <a class="btn btn-sm btn-default text-dark-gray" href="#">PHP </a></span>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-12">
+                <div class="describe__box-company">
+                  <div class="box__heading">Việc làm cùng công ty</div>
+                  <div class="describe__box-top">
+                    <div class="describe__list">
+                      <div class="box__premium-job">
+                        <p class="jobDetail__title"> <a href="https://www.topcv.vn/brand/fpt-telecom/tuyen-dung/nhan-vien-kinh-doanh-vien-thong-tai-lao-cai-j293000.html">Nhân Viên Kinh Doanh Viễn Thông Tại Lào Cai</a></p>
+                        <p>Lào Cai</p>
+                        <p>5-15 triệu</p>
+                      </div>
+                      <hr>
+                    </div>
+                    <div class="describe__list">
+                      <div class="box__premium-job">
+                        <p class="jobDetail__title"> <a href="https://www.topcv.vn/brand/fpt-telecom/tuyen-dung/nhan-vien-kinh-doanh-vien-thong-tai-lao-cai-j293000.html">Nhân Viên Kỹ Thuật Triển Khai Bảo Trì Tại Sa Pa, Lào Cai</a></p>
+                        <p>Lào Cai</p>
+                        <p>5-13 triệu</p>
+                      </div>
+                      <hr>
+                    </div>
+                    <div class="describe__list">
+                      <div class="box__premium-job">
+                        <p class="jobDetail__title"> <a href="https://www.topcv.vn/brand/fpt-telecom/tuyen-dung/nhan-vien-kinh-doanh-vien-thong-tai-lao-cai-j293000.html">Nhân Viên Kiểm Soát Nghiệp Vụ - HCM</a></p>
+                        <p>Hồ Chí Minh, Quận 1, Quận 3, Quận 4, Quận 7, Quận 8</p>
+                        <p>7-10 triệu</p>
+                      </div>
+                      <hr>
+                    </div>
+                    <div class="describe__list">
+                      <div class="box__premium-job">
+                        <p class="jobDetail__title"> <a href="https://www.topcv.vn/brand/fpt-telecom/tuyen-dung/nhan-vien-kinh-doanh-vien-thong-tai-lao-cai-j293000.html">Nhân Viên Kinh Doanh Dịch Vụ Viễn Thông - Tại Quận 9, HCM</a></p>
+                        <p>Hồ Chí Minh</p>
+                        <p>Trên 5 triệu</p>
+                      </div>
+                      <hr>
+                    </div>
+                    <div class="describe__list">
+                      <div class="box__premium-job">
+                        <p class="jobDetail__title"> <a href="https://www.topcv.vn/brand/fpt-telecom/tuyen-dung/nhan-vien-kinh-doanh-vien-thong-tai-lao-cai-j293000.html">Kỹ Sư Network (9-25 Triệu)</a></p>
+                        <p>Hà Nội</p>
+                        <p>Thoả thuận</p>
+                      </div>
+                    </div>
+                    <div class="describe__btn" style="margin: 20px 0 40px 0;"><a class="btn btn-premium" href="https://www.topcv.vn/brand/fpt-telecom/tuyen-dung">Xem thêm</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="describe__box-suggestion">
+              <h3 class="describe__suggestion-title">Khóa học dành cho bạn</h3>
+              <div class="describe__suggestion-body">                   
+                <div class="course__slider owl-carousel owl-theme">
+                  <div class="course__slider-item">
+                    <div class="course__thumbnail"><img src="./images/job-detail/D2.webp" alt=""></div>
+                    <div class="course__body">
+                      <div class="course__body-title"><a href="#">Khóa học Blockchain 6 tháng</a></div>
+                      <div class="text-right"><a class="btn btn-default btn-sm" href="#">Tìm hiểu ngay</a></div>
+                    </div>
+                  </div>
+                  <div class="course__slider-item">
+                    <div class="course__thumbnail"><img src="./images/job-detail/D3.webp" alt=""></div>
+                    <div class="course__body">
+                      <div class="course__body-title"><a href="#">6 tháng trở thành Tester chuyên nghiệp</a></div>
+                      <div class="text-right"><a class="btn btn-default btn-sm" href="#">Tìm hiểu ngay</a></div>
+                    </div>
+                  </div>
+                  <div class="course__slider-item">
+                    <div class="course__thumbnail"><img src="./images/job-detail/D4.webp" alt=""></div>
+                    <div class="course__body">
+                      <div class="course__body-title"><a href="#">Khóa học Data Science Online đầu tiên tại VN, bạn đã biết?</a></div>
+                      <div class="text-right"><a class="btn btn-default btn-sm" href="#">Tìm hiểu ngay</a></div>
+                    </div>
+                  </div>
+                  <div class="course__slider-item">
+                    <div class="course__thumbnail"><img src="./images/job-detail/D5.webp" alt=""></div>
+                    <div class="course__body">
+                      <div class="course__body-title"><a href="#">Đi làm lập trình viên chỉ sau 18 tháng học trực tuyến</a></div>
+                      <div class="text-right"><a class="btn btn-default btn-sm" href="#">Tìm hiểu ngay</a></div>
+                    </div>
+                  </div>
+                  <div class="course__slider-item">
+                    <div class="course__thumbnail"><img src="./images/job-detail/D6.webp" alt=""></div>
+                    <div class="course__body">
+                      <div class="course__body-title"><a href="#">Học lập trình ứng dụng oto - Ngành nghề hot chưa từng có</a></div>
+                      <div class="text-right"><a class="btn btn-default btn-sm" href="#">Tìm hiểu ngay</a></div>
+                    </div>
+                  </div>
+                  <div class="course__slider-item">
+                    <div class="course__thumbnail"><img src="./images/job-detail/D7.webp" alt=""></div>
+                    <div class="course__body">
+                      <div class="course__body-title"><a href="#">SQLG01 - Truy vấn dữ liệu với SQL</a></div>
+                      <div class="text-right"><a class="btn btn-default btn-sm" href="#">Tìm hiểu ngay</a></div>
+                    </div>
+                  </div>
+                  <div class="course__slider-item">
+                    <div class="course__thumbnail"><img src="./images/job-detail/D8.webp" alt=""></div>
+                    <div class="course__body">
+                      <div class="course__body-title"><a href="#">Học lập trình Online lấy bằng Đại học FPT</a></div>
+                      <div class="text-right"><a class="btn btn-default btn-sm" href="#">Tìm hiểu ngay</a></div>
+                    </div>
+                  </div>
+                  <div class="course__slider-item">
+                    <div class="course__thumbnail"><img src="./images/job-detail/D9.webp" alt=""></div>
+                    <div class="course__body">
+                      <div class="course__body-title"><a href="#">EXG01 - Tuyệt đỉnh Excel - Trở thành bậc thầy Excel trong 16 giờ</a></div>
+                      <div class="text-right"><a class="btn btn-default btn-sm" href="#">Tìm hiểu ngay</a></div>
+                    </div>
+                  </div>
+                  <div class="course__slider-item">
+                    <div class="course__thumbnail"><img src="./images/job-detail/D10.webp" alt=""></div>
+                    <div class="course__body">
+                      <div class="course__body-title"><a href="#">Khóa học Lập trình IOT với LUMI</a></div>
+                      <div class="text-right"><a class="btn btn-default btn-sm" href="#">Tìm hiểu ngay</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer bgcLightGrey">
+        <div class="footer__top">
+          <div class="container">
+            <div class="row">
+              <div class="mb-3 col-sm-6 col-lg-3">
+                <div class="footer__top-hotline">
+                  <h4 class="footer__title">Kết nối với Oncode</h4>
+                  <ul class="footer__hotline-contact">
+                    <li><span class="first"><i class="fal fa-phone"></i>Hotline</span><span class="second">0965863079</span></li>
+                    <li><span class="first"><i class="fal fa-envelope"></i>Email</span><span class="second">hotro@oncode.edu.vn</span></li>
+                  </ul>
+                  <div class="footer__hotline-social"><a href="#" target="_blank"><img src="images/layout/fb_icon_footer.png" alt="fanpage"></a><a href="#" target="_blank"><img src="images/layout/youtube_icon_footer.png" alt="fanpage"></a><a href="#" target="_blank"><img src="images/layout/zalo_icon_footer.png" alt="fanpage"></a></div>
+                </div>
+              </div>
+              <div class="mb-3 col-sm-6 col-lg-3">
+                <div class="footer__top-info">
+                  <h4 class="footer__title">Thông tin Oncode</h4>
+                  <ul>
+                    <li><a href="#">Danh sách khóa học</a></li>
+                    <li><a href="#">Câu hỏi thường gặp</a></li>
+                    <li><a href="#">Cách thanh toán học phí</a></li>
+                    <li><a href="#">Thông tin hữu ích</a></li>
+                    <li><a href="#">VietnamWorks</a></li>
+                    <li><a href="#">PRIMUS</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mb-3 col-sm-6 col-lg-3">
+                <div class="footer__top-about">
+                  <h4 class="footer__title">Về Oncode</h4>
+                  <ul>
+                    <li class="iconfeature"><a href="#">Giảng dạy tại Oncode</a></li>
+                    <li><a href="#">Hợp tác với Oncode</a></li>
+                    <li><a href="#">Đối tác phân phối</a></li>
+                    <li><a href="#">Quy chế hoạt động sàn GDTMĐT</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mb-3 col-sm-6 col-lg-3">
+                <div class="footer__top-fanpage">
+                  <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Foncodeacademy&amp;tabs=272&amp;width=255&amp;height=220&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId=168015681053039" width="255" height="150" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="footer__address">
+                  <div class="footer__address-text">
+                    <p class="footer__address-copyright">&copy; 2020 - Bản quyền của Công ty TNHH Bigvio Media</p>
+                    <p><span>Trụ sở chính: Số nhà 19 ngõ 77 phố Lãng Yên, phường Thanh Lương, quận Hai Bà Trưng, Tp Hà Nội</span>
+                      </p><p>Giấy phép ĐKKD số 123456789 do Sở Kế hoạch và Đầu tư TP Hà Nội cấp</p>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 footer__info"><a class="col-lg-6" href="#" target="_blank"><img class="img-fluid" src="images/layout/dathongbao.png" alt="da thong bao"></a><a class="col-lg-6" href="#" target="_blank"><img class="img-fluid" src="images/layout/logoCCDV.png" alt="da dang ky"></a>
+                <ul>
+                  <li><a href="#" title="title">Điều khoản dịch vụ </a></li>
+                  <li><a href="#" title="title">Chính sách bảo mật</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Start Back to Top-->
+      <div class="back-to-top" id="back-to-top"><a href="#"><i class="fas fa-arrow-up"></i></a></div>
+      <!-- End Back to Top-->
+    </div>
+    <!-- Jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Owl Carousel-->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Fancybox-->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!-- Main Js-->
+    <script src="js/main.js"></script>
+  </body>
+</html>
